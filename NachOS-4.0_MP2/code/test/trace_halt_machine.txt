@@ -1,0 +1,22 @@
+halt
+Starting program in thread: halt, at time: 40
+At PC = 0	JAL 80
+At PC = 4	SLL r0,r0,0
+At PC = 320	ADDIU r29,r29,-24
+At PC = 324	SW r31,20(r29)
+At PC = 328	SW r30,16(r29)
+At PC = 332	JAL 76
+At PC = 336	ADDU r30,r29,r0
+At PC = 304	JR r0,r31
+At PC = 308	SLL r0,r0,0
+At PC = 340	JAL 4
+At PC = 344	SLL r0,r0,0
+At PC = 16	ADDIU r2,r0,0
+At PC = 20	SYSCALL
+Machine halting!
+
+Ticks: total 52, idle 0, system 40, user 12
+Disk I/O: reads 0, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 0
+Network I/O: packets received 0, sent 0

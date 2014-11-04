@@ -1,0 +1,72 @@
+halt
+Time: 10, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+Time: 20, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+Time: 30, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+Time: 40, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+Time: 41, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+Time: 42, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+Time: 43, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+Time: 44, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+Time: 45, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+Time: 46, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+Time: 47, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+Time: 48, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+Time: 49, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+Time: 50, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+Time: 51, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+Time: 52, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+Machine halting!
+
+Ticks: total 52, idle 0, system 40, user 12
+Disk I/O: reads 0, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 0
+Network I/O: packets received 0, sent 0
