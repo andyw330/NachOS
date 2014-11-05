@@ -64,21 +64,25 @@ SwapHeader (NoffHeader *noffH)
 //	memory.  For now, this is really simple (1:1), since we are
 //	only uniprogramming, and we have a single unsegmented page table
 //----------------------------------------------------------------------
+int nPhysPageUse=0; // wudaiyang@@
 
 AddrSpace::AddrSpace()
 {
-    pageTable = new TranslationEntry[NumPhysPages];
-    for (int i = 0; i < NumPhysPages; i++) {
-	pageTable[i].virtualPage = i;	// for now, virt page # = phys page #
-	pageTable[i].physicalPage = i;
-	pageTable[i].valid = TRUE;
-	pageTable[i].use = FALSE;
-	pageTable[i].dirty = FALSE;
-	pageTable[i].readOnly = FALSE;  
+    pageTable = new TranslationEntry[NumPhysPages/4];
+    printf("usde %d @@\n",NumPhysPages/4);    
+    numPages = NumPhysPages/4;
+    for (int i = 0; i < NumPhysPages/4; i++) {
+    	pageTable[i].virtualPage = nPhysPageUse;	// for now, virt page # = phys page #
+    	pageTable[i].physicalPage = nPhysPageUse++;
+        // printf("now %d\n",nPhysPageUse);
+    	pageTable[i].valid = true;
+    	pageTable[i].use = FALSE;
+    	pageTable[i].dirty = FALSE;
+    	pageTable[i].readOnly = FALSE;  
     }
     
     // zero out the entire address space
-    bzero(kernel->machine->mainMemory, MemorySize);
+    // bzero(kernel->machine->mainMemory, MemorySize);
 }
 
 //----------------------------------------------------------------------
@@ -105,6 +109,7 @@ AddrSpace::~AddrSpace()
 bool 
 AddrSpace::Load(char *fileName) 
 {
+    printf("Load %s\n",fileName);// wudaiyang
     OpenFile *executable = kernel->fileSystem->Open(fileName);
     NoffHeader noffH;
     unsigned int size;
@@ -185,7 +190,7 @@ AddrSpace::Load(char *fileName)
 void 
 AddrSpace::Execute(char* fileName) 
 {
-
+    printf("Execute %s\n",fileName);// wudaiyang
     kernel->currentThread->space = this;
 
     this->InitRegisters();		// set the initial register values
