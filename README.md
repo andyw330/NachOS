@@ -8,3 +8,4 @@ Not Another Completely Heuristic Operating System
 october10th => 萌<br />
 sec = october10th<br />
 sec => 萌<br />>///<
+<br />囧
