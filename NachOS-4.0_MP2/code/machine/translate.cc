@@ -93,8 +93,8 @@ Machine::ReadMem(int addr, int size, int *value)
     
     exception = Translate(addr, &physicalAddress, size, FALSE);
     if (exception != NoException) {
-	RaiseException(exception, addr);
-	return FALSE;
+    	RaiseException(exception, addr);
+    	return FALSE;
     }
     switch (size) {
       case 1:
@@ -142,8 +142,8 @@ Machine::WriteMem(int addr, int size, int value)
 
     exception = Translate(addr, &physicalAddress, size, TRUE);
     if (exception != NoException) {
-	RaiseException(exception, addr);
-	return FALSE;
+        RaiseException(exception, addr);
+        return FALSE;
     }
     switch (size) {
       case 1:
@@ -193,8 +193,8 @@ Machine::Translate(int virtAddr, int* physAddr, int size, bool writing)
 
 // check for alignment errors
     if (((size == 4) && (virtAddr & 0x3)) || ((size == 2) && (virtAddr & 0x1))){
-	DEBUG(dbgAddr, "Alignment problem at " << virtAddr << ", size " << size);
-	return AddressErrorException;
+        DEBUG(dbgAddr, "Alignment problem at " << virtAddr << ", size " << size);
+        return AddressErrorException;
     }
     // we must have either a TLB or a page table, but not both!
     ASSERT(tlb == NULL || pageTable == NULL);	
@@ -206,39 +206,39 @@ Machine::Translate(int virtAddr, int* physAddr, int size, bool writing)
     offset = (unsigned) virtAddr % PageSize;
     
     if (tlb == NULL) {		// => page table => vpn is index into table
-	if (vpn >= pageTableSize) {
-	    DEBUG(dbgAddr, "Illegal virtual page # " << virtAddr);
-	    return AddressErrorException;
-	} else if (!pageTable[vpn].valid) {
-	    DEBUG(dbgAddr, "Invalid virtual page # " << virtAddr);
-	    return PageFaultException;
-	}
-	entry = &pageTable[vpn];
+    	if (vpn >= pageTableSize) {
+    	    DEBUG(dbgAddr, "Illegal virtual page # " << virtAddr);
+    	    return AddressErrorException;
+    	} else if (!pageTable[vpn].valid) {
+    	    DEBUG(dbgAddr, "Invalid virtual page # " << virtAddr);
+    	    return PageFaultException;
+    	}
+    	entry = &pageTable[vpn];
     } else {
         for (entry = NULL, i = 0; i < TLBSize; i++)
-    	    if (tlb[i].valid && (tlb[i].virtualPage == ((int)vpn))) {
-		entry = &tlb[i];			// FOUND!
-		break;
-	    }
-	if (entry == NULL) {				// not found
-    	    DEBUG(dbgAddr, "Invalid TLB entry for this virtual page!");
-    	    return PageFaultException;		// really, this is a TLB fault,
-						// the page may be in memory,
-						// but not in the TLB
-	}
+            if (tlb[i].valid && (tlb[i].virtualPage == ((int)vpn))) {
+                entry = &tlb[i];			// FOUND!
+                break;
+            }
+        if (entry == NULL) {				// not found
+            DEBUG(dbgAddr, "Invalid TLB entry for this virtual page!");
+            return PageFaultException;		// really, this is a TLB fault,
+            // the page may be in memory,
+            // but not in the TLB
+        }
     }
 
     if (entry->readOnly && writing) {	// trying to write to a read-only page
-	DEBUG(dbgAddr, "Write to read-only page at " << virtAddr);
-	return ReadOnlyException;
+        DEBUG(dbgAddr, "Write to read-only page at " << virtAddr);
+        return ReadOnlyException;
     }
     pageFrame = entry->physicalPage;
 
     // if the pageFrame is too big, there is something really wrong! 
     // An invalid translation was loaded into the page table or TLB. 
     if (pageFrame >= NumPhysPages) { 
-	DEBUG(dbgAddr, "Illegal pageframe " << pageFrame);
-	return BusErrorException;
+        DEBUG(dbgAddr, "Illegal pageframe " << pageFrame);
+        return BusErrorException;
     }
     entry->use = TRUE;		// set the use, dirty bits
     if (writing)

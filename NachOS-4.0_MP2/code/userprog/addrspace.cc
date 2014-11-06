@@ -68,18 +68,7 @@ int nPhysPageUse=0; // wudaiyang@@
 
 AddrSpace::AddrSpace()
 {
-    pageTable = new TranslationEntry[NumPhysPages/4];
-    printf("usde %d @@\n",NumPhysPages/4);    
-    numPages = NumPhysPages/4;
-    for (int i = 0; i < NumPhysPages/4; i++) {
-    	pageTable[i].virtualPage = nPhysPageUse;	// for now, virt page # = phys page #
-    	pageTable[i].physicalPage = nPhysPageUse++;
-        // printf("now %d\n",nPhysPageUse);
-    	pageTable[i].valid = true;
-    	pageTable[i].use = FALSE;
-    	pageTable[i].dirty = FALSE;
-    	pageTable[i].readOnly = FALSE;  
-    }
+    
     
     // zero out the entire address space
     // bzero(kernel->machine->mainMemory, MemorySize);
@@ -109,14 +98,13 @@ AddrSpace::~AddrSpace()
 bool 
 AddrSpace::Load(char *fileName) 
 {
-    printf("Load %s\n",fileName);// wudaiyang
     OpenFile *executable = kernel->fileSystem->Open(fileName);
     NoffHeader noffH;
     unsigned int size;
 
     if (executable == NULL) {
-	cerr << "Unable to open file " << fileName << "\n";
-	return FALSE;
+    	cerr << "Unable to open file " << fileName << "\n";
+    	return FALSE;
     }
 
     executable->ReadAt((char *)&noffH, sizeof(noffH), 0);
@@ -147,29 +135,48 @@ AddrSpace::Load(char *fileName)
 
     DEBUG(dbgAddr, "Initializing address space: " << numPages << ", " << size);
 
+
+    pageTable = new TranslationEntry[numPages];
+    // numPages = NumPhysPages/4;
+    for (int i = 0; i < numPages; i++) {
+        pageTable[i].virtualPage = i;   // for now, virt page # = phys page #
+        pageTable[i].physicalPage = nPhysPageUse++;
+        // printf("now %d\n",nPhysPageUse);
+        pageTable[i].valid = true;
+        pageTable[i].use = FALSE;
+        pageTable[i].dirty = FALSE;
+        pageTable[i].readOnly = FALSE;  
+    }
+
 // then, copy in the code and data segments into memory
 // Note: this code assumes that virtual address = physical address
     if (noffH.code.size > 0) {
         DEBUG(dbgAddr, "Initializing code segment.");
-	DEBUG(dbgAddr, noffH.code.virtualAddr << ", " << noffH.code.size);
+	    DEBUG(dbgAddr, noffH.code.virtualAddr << ", " << noffH.code.size);
+        unsigned int paddr;
+        Translate(noffH.code.virtualAddr,&paddr, 0);
         executable->ReadAt(
-		&(kernel->machine->mainMemory[noffH.code.virtualAddr]), 
+		&(kernel->machine->mainMemory[paddr]), 
 			noffH.code.size, noffH.code.inFileAddr);
     }
     if (noffH.initData.size > 0) {
         DEBUG(dbgAddr, "Initializing data segment.");
-	DEBUG(dbgAddr, noffH.initData.virtualAddr << ", " << noffH.initData.size);
+	    DEBUG(dbgAddr, noffH.initData.virtualAddr << ", " << noffH.initData.size);
+        unsigned int paddr;
+        Translate(noffH.initData.virtualAddr, &paddr, 0);
         executable->ReadAt(
-		&(kernel->machine->mainMemory[noffH.initData.virtualAddr]),
+		&(kernel->machine->mainMemory[paddr]),
 			noffH.initData.size, noffH.initData.inFileAddr);
     }
 
 #ifdef RDATA
     if (noffH.readonlyData.size > 0) {
         DEBUG(dbgAddr, "Initializing read only data segment.");
-	DEBUG(dbgAddr, noffH.readonlyData.virtualAddr << ", " << noffH.readonlyData.size);
+        DEBUG(dbgAddr, noffH.readonlyData.virtualAddr << ", " << noffH.readonlyData.size);
+        unsigned int paddr;
+        Translate(noffH.readonlyData.virtualAddr, &paddr, 0);
         executable->ReadAt(
-		&(kernel->machine->mainMemory[noffH.readonlyData.virtualAddr]),
+		&(kernel->machine->mainMemory[paddr]),
 			noffH.readonlyData.size, noffH.readonlyData.inFileAddr);
     }
 #endif
@@ -190,7 +197,6 @@ AddrSpace::Load(char *fileName)
 void 
 AddrSpace::Execute(char* fileName) 
 {
-    printf("Execute %s\n",fileName);// wudaiyang
     kernel->currentThread->space = this;
 
     this->InitRegisters();		// set the initial register values
@@ -220,8 +226,7 @@ AddrSpace::InitRegisters()
     Machine *machine = kernel->machine;
     int i;
 
-    for (i = 0; i < NumTotalRegs; i++)
-	machine->WriteRegister(i, 0);
+    for (i = 0; i < NumTotalRegs; i++) machine->WriteRegister(i, 0);
 
     // Initial program counter -- must be location of "Start", which
     //  is assumed to be virtual address zero
@@ -307,7 +312,7 @@ AddrSpace::Translate(unsigned int vaddr, unsigned int *paddr, int isReadWrite)
         pte->dirty = TRUE;
 
     *paddr = pfn*PageSize + offset;
-
+    
     ASSERT((*paddr < MemorySize));
 
     //cerr << " -- AddrSpace::Translate(): vaddr: " << vaddr <<
