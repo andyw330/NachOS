@@ -65,12 +65,7 @@ SwapHeader (NoffHeader *noffH)
 //	only uniprogramming, and we have a single unsegmented page table
 //----------------------------------------------------------------------
 
-bool frameUse[NumPhysPages];
 
-int findUnusedFrame(){
-    for(int i=0; i<NumPhysPages; i++)
-        if(!frameUse[i])return i;
-}
 
 AddrSpace::AddrSpace()
 {
@@ -88,7 +83,7 @@ AddrSpace::AddrSpace()
 AddrSpace::~AddrSpace()
 {
     for(int i=0; i<numPages; i++)
-        frameUse[pageTable[i].physicalPage] = 0;
+        kernel->frameUse[pageTable[i].physicalPage] = 0;
     delete pageTable;
 }
 
@@ -148,7 +143,7 @@ AddrSpace::Load(char *fileName)
     // numPages = NumPhysPages/4;
     for (int i = 0; i < numPages; i++) {
         pageTable[i].virtualPage = i;   // for now, virt page # = phys page #
-        pageTable[i].physicalPage = findUnusedFrame();
+        pageTable[i].physicalPage = kernel->findUnusedFrame();
         frameUse[pageTable[i].physicalPage] = 1;
         pageTable[i].valid = true;
         pageTable[i].use = FALSE;

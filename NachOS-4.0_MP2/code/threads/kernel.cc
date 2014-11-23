@@ -80,6 +80,11 @@ Kernel::Kernel(int argc, char **argv)
     }
 }
 
+int
+Kernel::findUnusedFrame(){
+    for(int i=0; i<NumPhysPages; i++)
+        if(!frameUse[i])return i;
+}
 //----------------------------------------------------------------------
 // Kernel::Initialize
 // 	Initialize Nachos global data structures.  Separate from the 
@@ -94,7 +99,7 @@ Kernel::Initialize()
     // But if it ever tries to give up the CPU, we better have a Thread
     // object to save its state. 
 
-	
+	memset(frameUse, 0, sizeof(frameUse));
     currentThread = new Thread("main", threadNum++);		
     currentThread->setStatus(RUNNING);
 

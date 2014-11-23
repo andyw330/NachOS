@@ -62,6 +62,8 @@ class Kernel {
 
     int hostName;               // machine identifier
 
+    bool frameUse[NumPhysPages];
+    int findUnusedFrame();
   private:
 
 	Thread* t[10];
