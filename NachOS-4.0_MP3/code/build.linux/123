@@ -1,0 +1,304 @@
+../test/test1
+../test/test2
+Thread 0	ProcessNew	0
+Thread 1	../test/test1		(Pri: 75)
+Thread 1	ProcessNew	10
+Thread 1	ProcessReady	10
+Thread 2	../test/test2		(Pri: 75)
+Thread 2	ProcessNew	20
+Thread 2	ProcessReady	20
+Thread 0	ProcessFinish	30
+Thread 0	ProcessSleep	30
+Thread 1	ProcessRunning	30
+result is 10010
+result is 10011
+result is 10012
+Thread 1	ProcessReady	100
+Thread 2	ProcessRunning	100
+result is 200
+Thread 2	ProcessReady	200
+Thread 1	ProcessRunning	200
+result is 10013
+result is 10014
+result is 10015
+result is 10016
+result is 10017
+Thread 1	ProcessReady	300
+Thread 2	ProcessRunning	300
+result is 201
+result is 202
+Thread 2	ProcessReady	400
+Thread 1	ProcessRunning	400
+result is 10018
+result is 10019
+result is 10020
+result is 10021
+result is 10022
+Thread 1	ProcessReady	500
+Thread 2	ProcessRunning	500
+result is 203
+result is 204
+Thread 2	ProcessReady	600
+Thread 1	ProcessRunning	600
+result is 10023
+result is 10024
+result is 10025
+result is 10026
+result is 10027
+result is 10028
+Thread 1	ProcessReady	700
+Thread 2	ProcessRunning	700
+result is 205
+result is 206
+Thread 2	ProcessReady	800
+Thread 1	ProcessRunning	800
+result is 10029
+result is 10030
+result is 10031
+result is 10032
+result is 10033
+Thread 1	ProcessReady	900
+Thread 2	ProcessRunning	900
+result is 207
+result is 208
+Thread 2	ProcessReady	1000
+Thread 1	ProcessRunning	1000
+result is 10034
+result is 10035
+result is 10036
+result is 10037
+result is 10038
+Thread 1	ProcessReady	1100
+Thread 2	ProcessRunning	1100
+result is 209
+Thread 2	ProcessReady	1200
+Thread 1	ProcessRunning	1200
+result is 10039
+result is 10040
+result is 10041
+result is 10042
+result is 10043
+Thread 1	ProcessReady	1300
+Thread 2	ProcessRunning	1300
+result is 210
+result is 211
+Thread 2	ProcessReady	1400
+Thread 1	ProcessRunning	1400
+result is 10044
+result is 10045
+result is 10046
+result is 10047
+result is 10048
+result is 10049
+Thread 1	ProcessReady	1500
+Thread 2	ProcessRunning	1500
+result is 212
+result is 213
+Thread 2	ProcessReady	1600
+Thread 1	ProcessRunning	1600
+result is 10050
+result is 10051
+result is 10052
+result is 10053
+result is 10054
+Thread 1	ProcessReady	1700
+Thread 2	ProcessRunning	1700
+result is 214
+result is 215
+Thread 2	ProcessReady	1800
+Thread 1	ProcessRunning	1800
+result is 10055
+result is 10056
+result is 10057
+result is 10058
+result is 10059
+Thread 1	ProcessReady	1900
+Thread 2	ProcessRunning	1900
+result is 216
+result is 217
+Thread 2	ProcessReady	2000
+Thread 1	ProcessRunning	2000
+result is 10060
+result is 10061
+result is 10062
+result is 10063
+result is 10064
+result is 10065
+Thread 1	ProcessReady	2100
+Thread 2	ProcessRunning	2100
+result is 218
+result is 219
+Thread 2	ProcessReady	2200
+Thread 1	ProcessRunning	2200
+result is 10066
+result is 10067
+result is 10068
+result is 10069
+result is 10070
+Thread 1	ProcessReady	2300
+Thread 2	ProcessRunning	2300
+result is 220
+Thread 2	ProcessReady	2400
+Thread 1	ProcessRunning	2400
+result is 10071
+result is 10072
+result is 10073
+result is 10074
+result is 10075
+Thread 1	ProcessReady	2500
+Thread 2	ProcessRunning	2500
+result is 221
+result is 222
+Thread 2	ProcessReady	2600
+Thread 1	ProcessRunning	2600
+result is 10076
+result is 10077
+result is 10078
+result is 10079
+result is 10080
+result is 10081
+Thread 1	ProcessReady	2700
+Thread 2	ProcessRunning	2700
+result is 223
+result is 224
+Thread 2	ProcessReady	2800
+Thread 1	ProcessRunning	2800
+result is 10082
+result is 10083
+result is 10084
+result is 10085
+result is 10086
+Thread 1	ProcessReady	2900
+Thread 2	ProcessRunning	2900
+result is 225
+result is 226
+Thread 2	ProcessReady	3000
+Thread 1	ProcessRunning	3000
+result is 10087
+result is 10088
+result is 10089
+result is 10090
+result is 10091
+Thread 1	ProcessReady	3100
+Thread 2	ProcessRunning	3100
+result is 227
+result is 228
+Thread 2	ProcessReady	3200
+Thread 1	ProcessRunning	3200
+result is 10092
+result is 10093
+result is 10094
+result is 10095
+result is 10096
+Thread 1	ProcessReady	3300
+Thread 2	ProcessRunning	3300
+result is 229
+result is 230
+Thread 2	ProcessReady	3400
+Thread 1	ProcessRunning	3400
+result is 10097
+result is 10098
+result is 10099
+result is 10100
+result is 10101
+result is 10102
+Thread 1	ProcessReady	3500
+Thread 2	ProcessRunning	3500
+result is 231
+Thread 2	ProcessReady	3600
+Thread 1	ProcessRunning	3600
+result is 10103
+result is 10104
+result is 10105
+result is 10106
+result is 10107
+Thread 1	ProcessReady	3700
+Thread 2	ProcessRunning	3700
+result is 232
+result is 233
+Thread 2	ProcessReady	3800
+Thread 1	ProcessRunning	3800
+result is 10108
+result is 10109
+return value:0
+Thread 1	ProcessFinish	3858
+Thread 1	ProcessSleep	3858
+Thread 2	ProcessRunning	3858
+result is 234
+result is 235
+result is 236
+result is 237
+result is 238
+result is 239
+result is 240
+result is 241
+result is 242
+result is 243
+result is 244
+result is 245
+result is 246
+result is 247
+result is 248
+result is 249
+result is 250
+result is 251
+result is 252
+result is 253
+result is 254
+result is 255
+result is 256
+result is 257
+result is 258
+result is 259
+result is 260
+result is 261
+result is 262
+result is 263
+result is 264
+result is 265
+result is 266
+result is 267
+result is 268
+result is 269
+result is 270
+result is 271
+result is 272
+result is 273
+result is 274
+result is 275
+result is 276
+result is 277
+result is 278
+result is 279
+result is 280
+result is 281
+result is 282
+result is 283
+result is 284
+result is 285
+result is 286
+result is 287
+result is 288
+result is 289
+result is 290
+result is 291
+result is 292
+result is 293
+result is 294
+result is 295
+result is 296
+result is 297
+result is 298
+result is 299
+return value:0
+Thread 2	ProcessFinish	7446
+Thread 2	ProcessSleep	7446
+No threads ready or runnable, and no pending interrupts.
+Assuming the program completed.
+Machine halting!
+
+Ticks: total 7500, idle 54, system 790, user 6656
+Disk I/O: reads 0, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 0
+Network I/O: packets received 0, sent 0

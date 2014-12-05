@@ -1,0 +1,2430 @@
+test1
+test2
+Statistics:	ProcessNew	0	0
+name num is test1,threadNum: 1,threadPri: 75
+Statistics:	ProcessNew	1	10
+Statistics:	ProcessReady	1	10
+name num is test2,threadNum: 2,threadPri: 75
+Statistics:	ProcessNew	2	20
+Statistics:	ProcessReady	2	20
+Statistics:	ProcessFinish	0	30
+Statistics:	ProcessSleep	0	30
+Statistics:	ProcessRunning	1	30
+test:0, 576page is 0
+address is 0
+result is 10000
+result is 10001
+result is 10002
+result is 10003
+result is 10004
+result is 10005
+result is 10006
+result is 10007
+result is 10008
+Statistics:	ProcessReady	1	500
+Statistics:	ProcessRunning	2	500
+test:0, 560page is 2
+address is 2048
+result is 0
+result is 1
+result is 2
+result is 3
+result is 4
+result is 5
+result is 6
+result is 7
+result is 8
+Statistics:	ProcessReady	2	1000
+Statistics:	ProcessRunning	1	1000
+result is 10009
+result is 10010
+result is 10011
+result is 10012
+result is 10013
+result is 10014
+result is 10015
+result is 10016
+result is 10017
+result is 10018
+Statistics:	ProcessReady	1	1500
+Statistics:	ProcessRunning	2	1500
+result is 9
+result is 10
+result is 11
+result is 12
+result is 13
+result is 14
+result is 15
+result is 16
+result is 17
+result is 18
+Statistics:	ProcessReady	2	2000
+Statistics:	ProcessRunning	1	2000
+result is 10019
+result is 10020
+result is 10021
+result is 10022
+result is 10023
+result is 10024
+result is 10025
+result is 10026
+result is 10027
+result is 10028
+Statistics:	ProcessReady	1	2500
+Statistics:	ProcessRunning	2	2500
+result is 19
+result is 20
+result is 21
+result is 22
+result is 23
+result is 24
+result is 25
+result is 26
+result is 27
+result is 28
+Statistics:	ProcessReady	2	3000
+Statistics:	ProcessRunning	1	3000
+result is 10029
+result is 10030
+result is 10031
+result is 10032
+result is 10033
+result is 10034
+result is 10035
+result is 10036
+result is 10037
+result is 10038
+Statistics:	ProcessReady	1	3500
+Statistics:	ProcessRunning	2	3500
+result is 29
+result is 30
+result is 31
+result is 32
+result is 33
+result is 34
+result is 35
+result is 36
+result is 37
+result is 38
+Statistics:	ProcessReady	2	4000
+Statistics:	ProcessRunning	1	4000
+result is 10039
+result is 10040
+result is 10041
+result is 10042
+result is 10043
+result is 10044
+result is 10045
+result is 10046
+result is 10047
+result is 10048
+Statistics:	ProcessReady	1	4500
+Statistics:	ProcessRunning	2	4500
+result is 39
+result is 40
+result is 41
+result is 42
+result is 43
+result is 44
+result is 45
+result is 46
+result is 47
+result is 48
+Statistics:	ProcessReady	2	5000
+Statistics:	ProcessRunning	1	5000
+result is 10049
+result is 10050
+result is 10051
+result is 10052
+result is 10053
+result is 10054
+result is 10055
+result is 10056
+result is 10057
+result is 10058
+Statistics:	ProcessReady	1	5500
+Statistics:	ProcessRunning	2	5500
+result is 49
+result is 50
+result is 51
+result is 52
+result is 53
+result is 54
+result is 55
+result is 56
+result is 57
+result is 58
+Statistics:	ProcessReady	2	6000
+Statistics:	ProcessRunning	1	6000
+result is 10059
+result is 10060
+result is 10061
+result is 10062
+result is 10063
+result is 10064
+result is 10065
+result is 10066
+result is 10067
+result is 10068
+Statistics:	ProcessReady	1	6500
+Statistics:	ProcessRunning	2	6500
+result is 59
+result is 60
+result is 61
+result is 62
+result is 63
+result is 64
+result is 65
+result is 66
+result is 67
+result is 68
+Statistics:	ProcessReady	2	7000
+Statistics:	ProcessRunning	1	7000
+result is 10069
+result is 10070
+result is 10071
+result is 10072
+result is 10073
+result is 10074
+result is 10075
+result is 10076
+result is 10077
+result is 10078
+Statistics:	ProcessReady	1	7500
+Statistics:	ProcessRunning	2	7500
+result is 69
+result is 70
+result is 71
+result is 72
+result is 73
+result is 74
+result is 75
+result is 76
+result is 77
+result is 78
+Statistics:	ProcessReady	2	8000
+Statistics:	ProcessRunning	1	8000
+result is 10079
+result is 10080
+result is 10081
+result is 10082
+result is 10083
+result is 10084
+result is 10085
+result is 10086
+result is 10087
+result is 10088
+Statistics:	ProcessReady	1	8500
+Statistics:	ProcessRunning	2	8500
+result is 79
+result is 80
+result is 81
+result is 82
+result is 83
+result is 84
+result is 85
+result is 86
+result is 87
+result is 88
+Statistics:	ProcessReady	2	9000
+Statistics:	ProcessRunning	1	9000
+result is 10089
+result is 10090
+result is 10091
+result is 10092
+result is 10093
+result is 10094
+result is 10095
+result is 10096
+result is 10097
+result is 10098
+Statistics:	ProcessReady	1	9500
+Statistics:	ProcessRunning	2	9500
+result is 89
+result is 90
+result is 91
+result is 92
+result is 93
+result is 94
+result is 95
+result is 96
+result is 97
+result is 98
+Statistics:	ProcessReady	2	10000
+Statistics:	ProcessRunning	1	10000
+result is 10099
+result is 10100
+result is 10101
+result is 10102
+result is 10103
+result is 10104
+result is 10105
+result is 10106
+result is 10107
+result is 10108
+Statistics:	ProcessReady	1	10500
+Statistics:	ProcessRunning	2	10500
+result is 99
+result is 100
+result is 101
+result is 102
+result is 103
+result is 104
+result is 105
+result is 106
+result is 107
+result is 108
+Statistics:	ProcessReady	2	11000
+Statistics:	ProcessRunning	1	11000
+result is 10109
+result is 10110
+result is 10111
+result is 10112
+result is 10113
+result is 10114
+result is 10115
+result is 10116
+result is 10117
+result is 10118
+Statistics:	ProcessReady	1	11500
+Statistics:	ProcessRunning	2	11500
+result is 109
+result is 110
+result is 111
+result is 112
+result is 113
+result is 114
+result is 115
+result is 116
+result is 117
+result is 118
+Statistics:	ProcessReady	2	12000
+Statistics:	ProcessRunning	1	12000
+result is 10119
+result is 10120
+result is 10121
+result is 10122
+result is 10123
+result is 10124
+result is 10125
+result is 10126
+result is 10127
+result is 10128
+Statistics:	ProcessReady	1	12500
+Statistics:	ProcessRunning	2	12500
+result is 119
+result is 120
+result is 121
+result is 122
+result is 123
+result is 124
+result is 125
+result is 126
+result is 127
+result is 128
+Statistics:	ProcessReady	2	13000
+Statistics:	ProcessRunning	1	13000
+result is 10129
+result is 10130
+result is 10131
+result is 10132
+result is 10133
+result is 10134
+result is 10135
+result is 10136
+result is 10137
+result is 10138
+Statistics:	ProcessReady	1	13500
+Statistics:	ProcessRunning	2	13500
+result is 129
+result is 130
+result is 131
+result is 132
+result is 133
+result is 134
+result is 135
+result is 136
+result is 137
+result is 138
+Statistics:	ProcessReady	2	14000
+Statistics:	ProcessRunning	1	14000
+result is 10139
+result is 10140
+result is 10141
+result is 10142
+result is 10143
+result is 10144
+result is 10145
+result is 10146
+result is 10147
+result is 10148
+Statistics:	ProcessReady	1	14500
+Statistics:	ProcessRunning	2	14500
+result is 139
+result is 140
+result is 141
+result is 142
+result is 143
+result is 144
+result is 145
+result is 146
+result is 147
+result is 148
+Statistics:	ProcessReady	2	15000
+Statistics:	ProcessRunning	1	15000
+result is 10149
+result is 10150
+result is 10151
+result is 10152
+result is 10153
+result is 10154
+result is 10155
+result is 10156
+result is 10157
+result is 10158
+Statistics:	ProcessReady	1	15500
+Statistics:	ProcessRunning	2	15500
+result is 149
+result is 150
+result is 151
+result is 152
+result is 153
+result is 154
+result is 155
+result is 156
+result is 157
+result is 158
+Statistics:	ProcessReady	2	16000
+Statistics:	ProcessRunning	1	16000
+result is 10159
+result is 10160
+result is 10161
+result is 10162
+result is 10163
+result is 10164
+result is 10165
+result is 10166
+result is 10167
+result is 10168
+Statistics:	ProcessReady	1	16500
+Statistics:	ProcessRunning	2	16500
+result is 159
+result is 160
+result is 161
+result is 162
+result is 163
+result is 164
+result is 165
+result is 166
+result is 167
+result is 168
+Statistics:	ProcessReady	2	17000
+Statistics:	ProcessRunning	1	17000
+result is 10169
+result is 10170
+result is 10171
+result is 10172
+result is 10173
+result is 10174
+result is 10175
+result is 10176
+result is 10177
+result is 10178
+Statistics:	ProcessReady	1	17500
+Statistics:	ProcessRunning	2	17500
+result is 169
+result is 170
+result is 171
+result is 172
+result is 173
+result is 174
+result is 175
+result is 176
+result is 177
+result is 178
+Statistics:	ProcessReady	2	18000
+Statistics:	ProcessRunning	1	18000
+result is 10179
+result is 10180
+result is 10181
+result is 10182
+result is 10183
+result is 10184
+result is 10185
+result is 10186
+result is 10187
+result is 10188
+Statistics:	ProcessReady	1	18500
+Statistics:	ProcessRunning	2	18500
+result is 179
+result is 180
+result is 181
+result is 182
+result is 183
+result is 184
+result is 185
+result is 186
+result is 187
+result is 188
+Statistics:	ProcessReady	2	19000
+Statistics:	ProcessRunning	1	19000
+result is 10189
+result is 10190
+result is 10191
+result is 10192
+result is 10193
+result is 10194
+result is 10195
+result is 10196
+result is 10197
+result is 10198
+Statistics:	ProcessReady	1	19500
+Statistics:	ProcessRunning	2	19500
+result is 189
+result is 190
+result is 191
+result is 192
+result is 193
+result is 194
+result is 195
+result is 196
+result is 197
+result is 198
+Statistics:	ProcessReady	2	20000
+Statistics:	ProcessRunning	1	20000
+result is 10199
+result is 10200
+result is 10201
+result is 10202
+result is 10203
+result is 10204
+result is 10205
+result is 10206
+result is 10207
+result is 10208
+Statistics:	ProcessReady	1	20500
+Statistics:	ProcessRunning	2	20500
+result is 199
+result is 200
+result is 201
+result is 202
+result is 203
+result is 204
+result is 205
+result is 206
+result is 207
+result is 208
+Statistics:	ProcessReady	2	21000
+Statistics:	ProcessRunning	1	21000
+result is 10209
+result is 10210
+result is 10211
+result is 10212
+result is 10213
+result is 10214
+result is 10215
+result is 10216
+result is 10217
+result is 10218
+Statistics:	ProcessReady	1	21500
+Statistics:	ProcessRunning	2	21500
+result is 209
+result is 210
+result is 211
+result is 212
+result is 213
+result is 214
+result is 215
+result is 216
+result is 217
+result is 218
+Statistics:	ProcessReady	2	22000
+Statistics:	ProcessRunning	1	22000
+result is 10219
+result is 10220
+result is 10221
+result is 10222
+result is 10223
+result is 10224
+result is 10225
+result is 10226
+result is 10227
+result is 10228
+Statistics:	ProcessReady	1	22500
+Statistics:	ProcessRunning	2	22500
+result is 219
+result is 220
+result is 221
+result is 222
+result is 223
+result is 224
+result is 225
+result is 226
+result is 227
+result is 228
+Statistics:	ProcessReady	2	23000
+Statistics:	ProcessRunning	1	23000
+result is 10229
+result is 10230
+result is 10231
+result is 10232
+result is 10233
+result is 10234
+result is 10235
+result is 10236
+result is 10237
+result is 10238
+Statistics:	ProcessReady	1	23500
+Statistics:	ProcessRunning	2	23500
+result is 229
+result is 230
+result is 231
+result is 232
+result is 233
+result is 234
+result is 235
+result is 236
+result is 237
+result is 238
+Statistics:	ProcessReady	2	24000
+Statistics:	ProcessRunning	1	24000
+result is 10239
+result is 10240
+result is 10241
+result is 10242
+result is 10243
+result is 10244
+result is 10245
+result is 10246
+result is 10247
+result is 10248
+Statistics:	ProcessReady	1	24500
+Statistics:	ProcessRunning	2	24500
+result is 239
+result is 240
+result is 241
+result is 242
+result is 243
+result is 244
+result is 245
+result is 246
+result is 247
+result is 248
+Statistics:	ProcessReady	2	25000
+Statistics:	ProcessRunning	1	25000
+result is 10249
+result is 10250
+result is 10251
+result is 10252
+result is 10253
+result is 10254
+result is 10255
+result is 10256
+result is 10257
+result is 10258
+Statistics:	ProcessReady	1	25500
+Statistics:	ProcessRunning	2	25500
+result is 249
+result is 250
+result is 251
+result is 252
+result is 253
+result is 254
+result is 255
+result is 256
+result is 257
+result is 258
+Statistics:	ProcessReady	2	26000
+Statistics:	ProcessRunning	1	26000
+result is 10259
+result is 10260
+result is 10261
+result is 10262
+result is 10263
+result is 10264
+result is 10265
+result is 10266
+result is 10267
+result is 10268
+Statistics:	ProcessReady	1	26500
+Statistics:	ProcessRunning	2	26500
+result is 259
+result is 260
+result is 261
+result is 262
+result is 263
+result is 264
+result is 265
+result is 266
+result is 267
+result is 268
+Statistics:	ProcessReady	2	27000
+Statistics:	ProcessRunning	1	27000
+result is 10269
+result is 10270
+result is 10271
+result is 10272
+result is 10273
+result is 10274
+result is 10275
+result is 10276
+result is 10277
+result is 10278
+Statistics:	ProcessReady	1	27500
+Statistics:	ProcessRunning	2	27500
+result is 269
+result is 270
+result is 271
+result is 272
+result is 273
+result is 274
+result is 275
+result is 276
+result is 277
+result is 278
+Statistics:	ProcessReady	2	28000
+Statistics:	ProcessRunning	1	28000
+result is 10279
+result is 10280
+result is 10281
+result is 10282
+result is 10283
+result is 10284
+result is 10285
+result is 10286
+result is 10287
+result is 10288
+Statistics:	ProcessReady	1	28500
+Statistics:	ProcessRunning	2	28500
+result is 279
+result is 280
+result is 281
+result is 282
+result is 283
+result is 284
+result is 285
+result is 286
+result is 287
+result is 288
+Statistics:	ProcessReady	2	29000
+Statistics:	ProcessRunning	1	29000
+result is 10289
+result is 10290
+result is 10291
+result is 10292
+result is 10293
+result is 10294
+result is 10295
+result is 10296
+result is 10297
+result is 10298
+Statistics:	ProcessReady	1	29500
+Statistics:	ProcessRunning	2	29500
+result is 289
+result is 290
+result is 291
+result is 292
+result is 293
+result is 294
+result is 295
+result is 296
+result is 297
+result is 298
+Statistics:	ProcessReady	2	30000
+Statistics:	ProcessRunning	1	30000
+result is 10299
+result is 10300
+result is 10301
+result is 10302
+result is 10303
+result is 10304
+result is 10305
+result is 10306
+result is 10307
+result is 10308
+Statistics:	ProcessReady	1	30500
+Statistics:	ProcessRunning	2	30500
+result is 299
+result is 300
+result is 301
+result is 302
+result is 303
+result is 304
+result is 305
+result is 306
+result is 307
+result is 308
+Statistics:	ProcessReady	2	31000
+Statistics:	ProcessRunning	1	31000
+result is 10309
+result is 10310
+result is 10311
+result is 10312
+result is 10313
+result is 10314
+result is 10315
+result is 10316
+result is 10317
+result is 10318
+Statistics:	ProcessReady	1	31500
+Statistics:	ProcessRunning	2	31500
+result is 309
+result is 310
+result is 311
+result is 312
+result is 313
+result is 314
+result is 315
+result is 316
+result is 317
+result is 318
+Statistics:	ProcessReady	2	32000
+Statistics:	ProcessRunning	1	32000
+result is 10319
+result is 10320
+result is 10321
+result is 10322
+result is 10323
+result is 10324
+result is 10325
+result is 10326
+result is 10327
+result is 10328
+Statistics:	ProcessReady	1	32500
+Statistics:	ProcessRunning	2	32500
+result is 319
+result is 320
+result is 321
+result is 322
+result is 323
+result is 324
+result is 325
+result is 326
+result is 327
+result is 328
+Statistics:	ProcessReady	2	33000
+Statistics:	ProcessRunning	1	33000
+result is 10329
+result is 10330
+result is 10331
+result is 10332
+result is 10333
+result is 10334
+result is 10335
+result is 10336
+result is 10337
+result is 10338
+Statistics:	ProcessReady	1	33500
+Statistics:	ProcessRunning	2	33500
+result is 329
+result is 330
+result is 331
+result is 332
+result is 333
+result is 334
+result is 335
+result is 336
+result is 337
+result is 338
+Statistics:	ProcessReady	2	34000
+Statistics:	ProcessRunning	1	34000
+result is 10339
+result is 10340
+result is 10341
+result is 10342
+result is 10343
+result is 10344
+result is 10345
+result is 10346
+result is 10347
+result is 10348
+Statistics:	ProcessReady	1	34500
+Statistics:	ProcessRunning	2	34500
+result is 339
+result is 340
+result is 341
+result is 342
+result is 343
+result is 344
+result is 345
+result is 346
+result is 347
+result is 348
+Statistics:	ProcessReady	2	35000
+Statistics:	ProcessRunning	1	35000
+result is 10349
+result is 10350
+result is 10351
+result is 10352
+result is 10353
+result is 10354
+result is 10355
+result is 10356
+result is 10357
+result is 10358
+Statistics:	ProcessReady	1	35500
+Statistics:	ProcessRunning	2	35500
+result is 349
+result is 350
+result is 351
+result is 352
+result is 353
+result is 354
+result is 355
+result is 356
+result is 357
+result is 358
+Statistics:	ProcessReady	2	36000
+Statistics:	ProcessRunning	1	36000
+result is 10359
+result is 10360
+result is 10361
+result is 10362
+result is 10363
+result is 10364
+result is 10365
+result is 10366
+result is 10367
+result is 10368
+Statistics:	ProcessReady	1	36500
+Statistics:	ProcessRunning	2	36500
+result is 359
+result is 360
+result is 361
+result is 362
+result is 363
+result is 364
+result is 365
+result is 366
+result is 367
+result is 368
+Statistics:	ProcessReady	2	37000
+Statistics:	ProcessRunning	1	37000
+result is 10369
+result is 10370
+result is 10371
+result is 10372
+result is 10373
+result is 10374
+result is 10375
+result is 10376
+result is 10377
+result is 10378
+Statistics:	ProcessReady	1	37500
+Statistics:	ProcessRunning	2	37500
+result is 369
+result is 370
+result is 371
+result is 372
+result is 373
+result is 374
+result is 375
+result is 376
+result is 377
+result is 378
+Statistics:	ProcessReady	2	38000
+Statistics:	ProcessRunning	1	38000
+result is 10379
+result is 10380
+result is 10381
+result is 10382
+result is 10383
+result is 10384
+result is 10385
+result is 10386
+result is 10387
+result is 10388
+Statistics:	ProcessReady	1	38500
+Statistics:	ProcessRunning	2	38500
+result is 379
+result is 380
+result is 381
+result is 382
+result is 383
+result is 384
+result is 385
+result is 386
+result is 387
+result is 388
+Statistics:	ProcessReady	2	39000
+Statistics:	ProcessRunning	1	39000
+result is 10389
+result is 10390
+result is 10391
+result is 10392
+result is 10393
+result is 10394
+result is 10395
+result is 10396
+result is 10397
+result is 10398
+Statistics:	ProcessReady	1	39500
+Statistics:	ProcessRunning	2	39500
+result is 389
+result is 390
+result is 391
+result is 392
+result is 393
+result is 394
+result is 395
+result is 396
+result is 397
+result is 398
+Statistics:	ProcessReady	2	40000
+Statistics:	ProcessRunning	1	40000
+result is 10399
+result is 10400
+result is 10401
+result is 10402
+result is 10403
+result is 10404
+result is 10405
+result is 10406
+result is 10407
+result is 10408
+Statistics:	ProcessReady	1	40500
+Statistics:	ProcessRunning	2	40500
+result is 399
+result is 400
+result is 401
+result is 402
+result is 403
+result is 404
+result is 405
+result is 406
+result is 407
+result is 408
+Statistics:	ProcessReady	2	41000
+Statistics:	ProcessRunning	1	41000
+result is 10409
+result is 10410
+result is 10411
+result is 10412
+result is 10413
+result is 10414
+result is 10415
+result is 10416
+result is 10417
+result is 10418
+Statistics:	ProcessReady	1	41500
+Statistics:	ProcessRunning	2	41500
+result is 409
+result is 410
+result is 411
+result is 412
+result is 413
+result is 414
+result is 415
+result is 416
+result is 417
+result is 418
+Statistics:	ProcessReady	2	42000
+Statistics:	ProcessRunning	1	42000
+result is 10419
+result is 10420
+result is 10421
+result is 10422
+result is 10423
+result is 10424
+result is 10425
+result is 10426
+result is 10427
+result is 10428
+Statistics:	ProcessReady	1	42500
+Statistics:	ProcessRunning	2	42500
+result is 419
+result is 420
+result is 421
+result is 422
+result is 423
+result is 424
+result is 425
+result is 426
+result is 427
+result is 428
+Statistics:	ProcessReady	2	43000
+Statistics:	ProcessRunning	1	43000
+result is 10429
+result is 10430
+result is 10431
+result is 10432
+result is 10433
+result is 10434
+result is 10435
+result is 10436
+result is 10437
+result is 10438
+Statistics:	ProcessReady	1	43500
+Statistics:	ProcessRunning	2	43500
+result is 429
+result is 430
+result is 431
+result is 432
+result is 433
+result is 434
+result is 435
+result is 436
+result is 437
+result is 438
+Statistics:	ProcessReady	2	44000
+Statistics:	ProcessRunning	1	44000
+result is 10439
+result is 10440
+result is 10441
+result is 10442
+result is 10443
+result is 10444
+result is 10445
+result is 10446
+result is 10447
+result is 10448
+Statistics:	ProcessReady	1	44500
+Statistics:	ProcessRunning	2	44500
+result is 439
+result is 440
+result is 441
+result is 442
+result is 443
+result is 444
+result is 445
+result is 446
+result is 447
+result is 448
+Statistics:	ProcessReady	2	45000
+Statistics:	ProcessRunning	1	45000
+result is 10449
+result is 10450
+result is 10451
+result is 10452
+result is 10453
+result is 10454
+result is 10455
+result is 10456
+result is 10457
+result is 10458
+Statistics:	ProcessReady	1	45500
+Statistics:	ProcessRunning	2	45500
+result is 449
+result is 450
+result is 451
+result is 452
+result is 453
+result is 454
+result is 455
+result is 456
+result is 457
+result is 458
+Statistics:	ProcessReady	2	46000
+Statistics:	ProcessRunning	1	46000
+result is 10459
+result is 10460
+result is 10461
+result is 10462
+result is 10463
+result is 10464
+result is 10465
+result is 10466
+result is 10467
+result is 10468
+Statistics:	ProcessReady	1	46500
+Statistics:	ProcessRunning	2	46500
+result is 459
+result is 460
+result is 461
+result is 462
+result is 463
+result is 464
+result is 465
+result is 466
+result is 467
+result is 468
+Statistics:	ProcessReady	2	47000
+Statistics:	ProcessRunning	1	47000
+result is 10469
+result is 10470
+result is 10471
+result is 10472
+result is 10473
+result is 10474
+result is 10475
+result is 10476
+result is 10477
+result is 10478
+Statistics:	ProcessReady	1	47500
+Statistics:	ProcessRunning	2	47500
+result is 469
+result is 470
+result is 471
+result is 472
+result is 473
+result is 474
+result is 475
+result is 476
+result is 477
+result is 478
+Statistics:	ProcessReady	2	48000
+Statistics:	ProcessRunning	1	48000
+result is 10479
+result is 10480
+result is 10481
+result is 10482
+result is 10483
+result is 10484
+result is 10485
+result is 10486
+result is 10487
+result is 10488
+Statistics:	ProcessReady	1	48500
+Statistics:	ProcessRunning	2	48500
+result is 479
+result is 480
+result is 481
+result is 482
+result is 483
+result is 484
+result is 485
+result is 486
+result is 487
+result is 488
+Statistics:	ProcessReady	2	49000
+Statistics:	ProcessRunning	1	49000
+result is 10489
+result is 10490
+result is 10491
+result is 10492
+result is 10493
+result is 10494
+result is 10495
+result is 10496
+result is 10497
+result is 10498
+Statistics:	ProcessReady	1	49500
+Statistics:	ProcessRunning	2	49500
+result is 489
+result is 490
+result is 491
+result is 492
+result is 493
+result is 494
+result is 495
+result is 496
+result is 497
+result is 498
+Statistics:	ProcessReady	2	50000
+Statistics:	ProcessRunning	1	50000
+result is 10499
+result is 10500
+result is 10501
+result is 10502
+result is 10503
+result is 10504
+result is 10505
+result is 10506
+result is 10507
+result is 10508
+Statistics:	ProcessReady	1	50500
+Statistics:	ProcessRunning	2	50500
+result is 499
+result is 500
+result is 501
+result is 502
+result is 503
+result is 504
+result is 505
+result is 506
+result is 507
+result is 508
+Statistics:	ProcessReady	2	51000
+Statistics:	ProcessRunning	1	51000
+result is 10509
+result is 10510
+result is 10511
+result is 10512
+result is 10513
+result is 10514
+result is 10515
+result is 10516
+result is 10517
+result is 10518
+Statistics:	ProcessReady	1	51500
+Statistics:	ProcessRunning	2	51500
+result is 509
+result is 510
+result is 511
+result is 512
+result is 513
+result is 514
+result is 515
+result is 516
+result is 517
+result is 518
+Statistics:	ProcessReady	2	52000
+Statistics:	ProcessRunning	1	52000
+result is 10519
+result is 10520
+result is 10521
+result is 10522
+result is 10523
+result is 10524
+result is 10525
+result is 10526
+result is 10527
+result is 10528
+Statistics:	ProcessReady	1	52500
+Statistics:	ProcessRunning	2	52500
+result is 519
+result is 520
+result is 521
+result is 522
+result is 523
+result is 524
+result is 525
+result is 526
+result is 527
+result is 528
+Statistics:	ProcessReady	2	53000
+Statistics:	ProcessRunning	1	53000
+result is 10529
+result is 10530
+result is 10531
+result is 10532
+result is 10533
+result is 10534
+result is 10535
+result is 10536
+result is 10537
+result is 10538
+Statistics:	ProcessReady	1	53500
+Statistics:	ProcessRunning	2	53500
+result is 529
+result is 530
+result is 531
+result is 532
+result is 533
+result is 534
+result is 535
+result is 536
+result is 537
+result is 538
+Statistics:	ProcessReady	2	54000
+Statistics:	ProcessRunning	1	54000
+result is 10539
+result is 10540
+result is 10541
+result is 10542
+result is 10543
+result is 10544
+result is 10545
+result is 10546
+result is 10547
+result is 10548
+Statistics:	ProcessReady	1	54500
+Statistics:	ProcessRunning	2	54500
+result is 539
+result is 540
+result is 541
+result is 542
+result is 543
+result is 544
+result is 545
+result is 546
+result is 547
+result is 548
+Statistics:	ProcessReady	2	55000
+Statistics:	ProcessRunning	1	55000
+result is 10549
+result is 10550
+result is 10551
+result is 10552
+result is 10553
+result is 10554
+result is 10555
+result is 10556
+result is 10557
+result is 10558
+Statistics:	ProcessReady	1	55500
+Statistics:	ProcessRunning	2	55500
+result is 549
+result is 550
+result is 551
+result is 552
+result is 553
+result is 554
+result is 555
+result is 556
+result is 557
+result is 558
+Statistics:	ProcessReady	2	56000
+Statistics:	ProcessRunning	1	56000
+result is 10559
+result is 10560
+result is 10561
+result is 10562
+result is 10563
+result is 10564
+result is 10565
+result is 10566
+result is 10567
+result is 10568
+Statistics:	ProcessReady	1	56500
+Statistics:	ProcessRunning	2	56500
+result is 559
+result is 560
+result is 561
+result is 562
+result is 563
+result is 564
+result is 565
+result is 566
+result is 567
+result is 568
+Statistics:	ProcessReady	2	57000
+Statistics:	ProcessRunning	1	57000
+result is 10569
+result is 10570
+result is 10571
+result is 10572
+result is 10573
+result is 10574
+result is 10575
+result is 10576
+result is 10577
+result is 10578
+Statistics:	ProcessReady	1	57500
+Statistics:	ProcessRunning	2	57500
+result is 569
+result is 570
+result is 571
+result is 572
+result is 573
+result is 574
+result is 575
+result is 576
+result is 577
+result is 578
+Statistics:	ProcessReady	2	58000
+Statistics:	ProcessRunning	1	58000
+result is 10579
+result is 10580
+result is 10581
+result is 10582
+result is 10583
+result is 10584
+result is 10585
+result is 10586
+result is 10587
+result is 10588
+Statistics:	ProcessReady	1	58500
+Statistics:	ProcessRunning	2	58500
+result is 579
+result is 580
+result is 581
+result is 582
+result is 583
+result is 584
+result is 585
+result is 586
+result is 587
+result is 588
+Statistics:	ProcessReady	2	59000
+Statistics:	ProcessRunning	1	59000
+result is 10589
+result is 10590
+result is 10591
+result is 10592
+result is 10593
+result is 10594
+result is 10595
+result is 10596
+result is 10597
+result is 10598
+Statistics:	ProcessReady	1	59500
+Statistics:	ProcessRunning	2	59500
+result is 589
+result is 590
+result is 591
+result is 592
+result is 593
+result is 594
+result is 595
+result is 596
+result is 597
+result is 598
+Statistics:	ProcessReady	2	60000
+Statistics:	ProcessRunning	1	60000
+result is 10599
+result is 10600
+result is 10601
+result is 10602
+result is 10603
+result is 10604
+result is 10605
+result is 10606
+result is 10607
+result is 10608
+Statistics:	ProcessReady	1	60500
+Statistics:	ProcessRunning	2	60500
+result is 599
+result is 600
+result is 601
+result is 602
+result is 603
+result is 604
+result is 605
+result is 606
+result is 607
+result is 608
+Statistics:	ProcessReady	2	61000
+Statistics:	ProcessRunning	1	61000
+result is 10609
+result is 10610
+result is 10611
+result is 10612
+result is 10613
+result is 10614
+result is 10615
+result is 10616
+result is 10617
+result is 10618
+Statistics:	ProcessReady	1	61500
+Statistics:	ProcessRunning	2	61500
+result is 609
+result is 610
+result is 611
+result is 612
+result is 613
+result is 614
+result is 615
+result is 616
+result is 617
+result is 618
+Statistics:	ProcessReady	2	62000
+Statistics:	ProcessRunning	1	62000
+result is 10619
+result is 10620
+result is 10621
+result is 10622
+result is 10623
+result is 10624
+result is 10625
+result is 10626
+result is 10627
+result is 10628
+Statistics:	ProcessReady	1	62500
+Statistics:	ProcessRunning	2	62500
+result is 619
+result is 620
+result is 621
+result is 622
+result is 623
+result is 624
+result is 625
+result is 626
+result is 627
+result is 628
+Statistics:	ProcessReady	2	63000
+Statistics:	ProcessRunning	1	63000
+result is 10629
+result is 10630
+result is 10631
+result is 10632
+result is 10633
+result is 10634
+result is 10635
+result is 10636
+result is 10637
+result is 10638
+Statistics:	ProcessReady	1	63500
+Statistics:	ProcessRunning	2	63500
+result is 629
+result is 630
+result is 631
+result is 632
+result is 633
+result is 634
+result is 635
+result is 636
+result is 637
+result is 638
+Statistics:	ProcessReady	2	64000
+Statistics:	ProcessRunning	1	64000
+result is 10639
+result is 10640
+result is 10641
+result is 10642
+result is 10643
+result is 10644
+result is 10645
+result is 10646
+result is 10647
+result is 10648
+Statistics:	ProcessReady	1	64500
+Statistics:	ProcessRunning	2	64500
+result is 639
+result is 640
+result is 641
+result is 642
+result is 643
+result is 644
+result is 645
+result is 646
+result is 647
+result is 648
+Statistics:	ProcessReady	2	65000
+Statistics:	ProcessRunning	1	65000
+result is 10649
+result is 10650
+result is 10651
+result is 10652
+result is 10653
+result is 10654
+result is 10655
+result is 10656
+result is 10657
+result is 10658
+Statistics:	ProcessReady	1	65500
+Statistics:	ProcessRunning	2	65500
+result is 649
+result is 650
+result is 651
+result is 652
+result is 653
+result is 654
+result is 655
+result is 656
+result is 657
+result is 658
+Statistics:	ProcessReady	2	66000
+Statistics:	ProcessRunning	1	66000
+result is 10659
+result is 10660
+result is 10661
+result is 10662
+result is 10663
+result is 10664
+result is 10665
+result is 10666
+result is 10667
+result is 10668
+Statistics:	ProcessReady	1	66500
+Statistics:	ProcessRunning	2	66500
+result is 659
+result is 660
+result is 661
+result is 662
+result is 663
+result is 664
+result is 665
+result is 666
+result is 667
+result is 668
+Statistics:	ProcessReady	2	67000
+Statistics:	ProcessRunning	1	67000
+result is 10669
+result is 10670
+result is 10671
+result is 10672
+result is 10673
+result is 10674
+result is 10675
+result is 10676
+result is 10677
+result is 10678
+Statistics:	ProcessReady	1	67500
+Statistics:	ProcessRunning	2	67500
+result is 669
+result is 670
+result is 671
+result is 672
+result is 673
+result is 674
+result is 675
+result is 676
+result is 677
+result is 678
+Statistics:	ProcessReady	2	68000
+Statistics:	ProcessRunning	1	68000
+result is 10679
+result is 10680
+result is 10681
+result is 10682
+result is 10683
+result is 10684
+result is 10685
+result is 10686
+result is 10687
+result is 10688
+Statistics:	ProcessReady	1	68500
+Statistics:	ProcessRunning	2	68500
+result is 679
+result is 680
+result is 681
+result is 682
+result is 683
+result is 684
+result is 685
+result is 686
+result is 687
+result is 688
+Statistics:	ProcessReady	2	69000
+Statistics:	ProcessRunning	1	69000
+result is 10689
+result is 10690
+result is 10691
+result is 10692
+result is 10693
+result is 10694
+result is 10695
+result is 10696
+result is 10697
+result is 10698
+Statistics:	ProcessReady	1	69500
+Statistics:	ProcessRunning	2	69500
+result is 689
+result is 690
+result is 691
+result is 692
+result is 693
+result is 694
+result is 695
+result is 696
+result is 697
+result is 698
+Statistics:	ProcessReady	2	70000
+Statistics:	ProcessRunning	1	70000
+result is 10699
+result is 10700
+result is 10701
+result is 10702
+result is 10703
+result is 10704
+result is 10705
+result is 10706
+result is 10707
+result is 10708
+Statistics:	ProcessReady	1	70500
+Statistics:	ProcessRunning	2	70500
+result is 699
+result is 700
+result is 701
+result is 702
+result is 703
+result is 704
+result is 705
+result is 706
+result is 707
+result is 708
+Statistics:	ProcessReady	2	71000
+Statistics:	ProcessRunning	1	71000
+result is 10709
+result is 10710
+result is 10711
+result is 10712
+result is 10713
+result is 10714
+result is 10715
+result is 10716
+result is 10717
+result is 10718
+Statistics:	ProcessReady	1	71500
+Statistics:	ProcessRunning	2	71500
+result is 709
+result is 710
+result is 711
+result is 712
+result is 713
+result is 714
+result is 715
+result is 716
+result is 717
+result is 718
+Statistics:	ProcessReady	2	72000
+Statistics:	ProcessRunning	1	72000
+result is 10719
+result is 10720
+result is 10721
+result is 10722
+result is 10723
+result is 10724
+result is 10725
+result is 10726
+result is 10727
+result is 10728
+Statistics:	ProcessReady	1	72500
+Statistics:	ProcessRunning	2	72500
+result is 719
+result is 720
+result is 721
+result is 722
+result is 723
+result is 724
+result is 725
+result is 726
+result is 727
+result is 728
+Statistics:	ProcessReady	2	73000
+Statistics:	ProcessRunning	1	73000
+result is 10729
+result is 10730
+result is 10731
+result is 10732
+result is 10733
+result is 10734
+result is 10735
+result is 10736
+result is 10737
+result is 10738
+Statistics:	ProcessReady	1	73500
+Statistics:	ProcessRunning	2	73500
+result is 729
+result is 730
+result is 731
+result is 732
+result is 733
+result is 734
+result is 735
+result is 736
+result is 737
+result is 738
+Statistics:	ProcessReady	2	74000
+Statistics:	ProcessRunning	1	74000
+result is 10739
+result is 10740
+result is 10741
+result is 10742
+result is 10743
+result is 10744
+result is 10745
+result is 10746
+result is 10747
+result is 10748
+Statistics:	ProcessReady	1	74500
+Statistics:	ProcessRunning	2	74500
+result is 739
+result is 740
+result is 741
+result is 742
+result is 743
+result is 744
+result is 745
+result is 746
+result is 747
+result is 748
+Statistics:	ProcessReady	2	75000
+Statistics:	ProcessRunning	1	75000
+result is 10749
+result is 10750
+result is 10751
+result is 10752
+result is 10753
+result is 10754
+result is 10755
+result is 10756
+result is 10757
+result is 10758
+Statistics:	ProcessReady	1	75500
+Statistics:	ProcessRunning	2	75500
+result is 749
+result is 750
+result is 751
+result is 752
+result is 753
+result is 754
+result is 755
+result is 756
+result is 757
+result is 758
+Statistics:	ProcessReady	2	76000
+Statistics:	ProcessRunning	1	76000
+result is 10759
+result is 10760
+result is 10761
+result is 10762
+result is 10763
+result is 10764
+result is 10765
+result is 10766
+result is 10767
+result is 10768
+Statistics:	ProcessReady	1	76500
+Statistics:	ProcessRunning	2	76500
+result is 759
+result is 760
+result is 761
+result is 762
+result is 763
+result is 764
+result is 765
+result is 766
+result is 767
+result is 768
+Statistics:	ProcessReady	2	77000
+Statistics:	ProcessRunning	1	77000
+result is 10769
+result is 10770
+result is 10771
+result is 10772
+result is 10773
+result is 10774
+result is 10775
+result is 10776
+result is 10777
+result is 10778
+Statistics:	ProcessReady	1	77500
+Statistics:	ProcessRunning	2	77500
+result is 769
+result is 770
+result is 771
+result is 772
+result is 773
+result is 774
+result is 775
+result is 776
+result is 777
+result is 778
+Statistics:	ProcessReady	2	78000
+Statistics:	ProcessRunning	1	78000
+result is 10779
+result is 10780
+result is 10781
+result is 10782
+result is 10783
+result is 10784
+result is 10785
+result is 10786
+result is 10787
+result is 10788
+Statistics:	ProcessReady	1	78500
+Statistics:	ProcessRunning	2	78500
+result is 779
+result is 780
+result is 781
+result is 782
+result is 783
+result is 784
+result is 785
+result is 786
+result is 787
+result is 788
+Statistics:	ProcessReady	2	79000
+Statistics:	ProcessRunning	1	79000
+result is 10789
+result is 10790
+result is 10791
+result is 10792
+result is 10793
+result is 10794
+result is 10795
+result is 10796
+result is 10797
+result is 10798
+Statistics:	ProcessReady	1	79500
+Statistics:	ProcessRunning	2	79500
+result is 789
+result is 790
+result is 791
+result is 792
+result is 793
+result is 794
+result is 795
+result is 796
+result is 797
+result is 798
+Statistics:	ProcessReady	2	80000
+Statistics:	ProcessRunning	1	80000
+result is 10799
+result is 10800
+result is 10801
+result is 10802
+result is 10803
+result is 10804
+result is 10805
+result is 10806
+result is 10807
+result is 10808
+Statistics:	ProcessReady	1	80500
+Statistics:	ProcessRunning	2	80500
+result is 799
+result is 800
+result is 801
+result is 802
+result is 803
+result is 804
+result is 805
+result is 806
+result is 807
+result is 808
+Statistics:	ProcessReady	2	81000
+Statistics:	ProcessRunning	1	81000
+result is 10809
+result is 10810
+result is 10811
+result is 10812
+result is 10813
+result is 10814
+result is 10815
+result is 10816
+result is 10817
+result is 10818
+Statistics:	ProcessReady	1	81500
+Statistics:	ProcessRunning	2	81500
+result is 809
+result is 810
+result is 811
+result is 812
+result is 813
+result is 814
+result is 815
+result is 816
+result is 817
+result is 818
+Statistics:	ProcessReady	2	82000
+Statistics:	ProcessRunning	1	82000
+result is 10819
+result is 10820
+result is 10821
+result is 10822
+result is 10823
+result is 10824
+result is 10825
+result is 10826
+result is 10827
+result is 10828
+Statistics:	ProcessReady	1	82500
+Statistics:	ProcessRunning	2	82500
+result is 819
+result is 820
+result is 821
+result is 822
+result is 823
+result is 824
+result is 825
+result is 826
+result is 827
+result is 828
+Statistics:	ProcessReady	2	83000
+Statistics:	ProcessRunning	1	83000
+result is 10829
+result is 10830
+result is 10831
+result is 10832
+result is 10833
+result is 10834
+result is 10835
+result is 10836
+result is 10837
+result is 10838
+Statistics:	ProcessReady	1	83500
+Statistics:	ProcessRunning	2	83500
+result is 829
+result is 830
+result is 831
+result is 832
+result is 833
+result is 834
+result is 835
+result is 836
+result is 837
+result is 838
+Statistics:	ProcessReady	2	84000
+Statistics:	ProcessRunning	1	84000
+result is 10839
+result is 10840
+result is 10841
+result is 10842
+result is 10843
+result is 10844
+result is 10845
+result is 10846
+result is 10847
+result is 10848
+Statistics:	ProcessReady	1	84500
+Statistics:	ProcessRunning	2	84500
+result is 839
+result is 840
+result is 841
+result is 842
+result is 843
+result is 844
+result is 845
+result is 846
+result is 847
+result is 848
+Statistics:	ProcessReady	2	85000
+Statistics:	ProcessRunning	1	85000
+result is 10849
+result is 10850
+result is 10851
+result is 10852
+result is 10853
+result is 10854
+result is 10855
+result is 10856
+result is 10857
+result is 10858
+Statistics:	ProcessReady	1	85500
+Statistics:	ProcessRunning	2	85500
+result is 849
+result is 850
+result is 851
+result is 852
+result is 853
+result is 854
+result is 855
+result is 856
+result is 857
+result is 858
+Statistics:	ProcessReady	2	86000
+Statistics:	ProcessRunning	1	86000
+result is 10859
+result is 10860
+result is 10861
+result is 10862
+result is 10863
+result is 10864
+result is 10865
+result is 10866
+result is 10867
+result is 10868
+Statistics:	ProcessReady	1	86500
+Statistics:	ProcessRunning	2	86500
+result is 859
+result is 860
+result is 861
+result is 862
+result is 863
+result is 864
+result is 865
+result is 866
+result is 867
+result is 868
+Statistics:	ProcessReady	2	87000
+Statistics:	ProcessRunning	1	87000
+result is 10869
+result is 10870
+result is 10871
+result is 10872
+result is 10873
+result is 10874
+result is 10875
+result is 10876
+result is 10877
+result is 10878
+Statistics:	ProcessReady	1	87500
+Statistics:	ProcessRunning	2	87500
+result is 869
+result is 870
+result is 871
+result is 872
+result is 873
+result is 874
+result is 875
+result is 876
+result is 877
+result is 878
+Statistics:	ProcessReady	2	88000
+Statistics:	ProcessRunning	1	88000
+result is 10879
+result is 10880
+result is 10881
+result is 10882
+result is 10883
+result is 10884
+result is 10885
+result is 10886
+result is 10887
+result is 10888
+Statistics:	ProcessReady	1	88500
+Statistics:	ProcessRunning	2	88500
+result is 879
+result is 880
+result is 881
+result is 882
+result is 883
+result is 884
+result is 885
+result is 886
+result is 887
+result is 888
+Statistics:	ProcessReady	2	89000
+Statistics:	ProcessRunning	1	89000
+result is 10889
+result is 10890
+result is 10891
+result is 10892
+result is 10893
+result is 10894
+result is 10895
+result is 10896
+result is 10897
+result is 10898
+Statistics:	ProcessReady	1	89500
+Statistics:	ProcessRunning	2	89500
+result is 889
+result is 890
+result is 891
+result is 892
+result is 893
+result is 894
+result is 895
+result is 896
+result is 897
+result is 898
+Statistics:	ProcessReady	2	90000
+Statistics:	ProcessRunning	1	90000
+result is 10899
+result is 10900
+result is 10901
+result is 10902
+result is 10903
+result is 10904
+result is 10905
+result is 10906
+result is 10907
+result is 10908
+Statistics:	ProcessReady	1	90500
+Statistics:	ProcessRunning	2	90500
+result is 899
+result is 900
+result is 901
+result is 902
+result is 903
+result is 904
+result is 905
+result is 906
+result is 907
+result is 908
+Statistics:	ProcessReady	2	91000
+Statistics:	ProcessRunning	1	91000
+result is 10909
+result is 10910
+result is 10911
+result is 10912
+result is 10913
+result is 10914
+result is 10915
+result is 10916
+result is 10917
+result is 10918
+Statistics:	ProcessReady	1	91500
+Statistics:	ProcessRunning	2	91500
+result is 909
+result is 910
+result is 911
+result is 912
+result is 913
+result is 914
+result is 915
+result is 916
+result is 917
+result is 918
+Statistics:	ProcessReady	2	92000
+Statistics:	ProcessRunning	1	92000
+result is 10919
+result is 10920
+result is 10921
+result is 10922
+result is 10923
+result is 10924
+result is 10925
+result is 10926
+result is 10927
+result is 10928
+Statistics:	ProcessReady	1	92500
+Statistics:	ProcessRunning	2	92500
+result is 919
+result is 920
+result is 921
+result is 922
+result is 923
+result is 924
+result is 925
+result is 926
+result is 927
+result is 928
+Statistics:	ProcessReady	2	93000
+Statistics:	ProcessRunning	1	93000
+result is 10929
+result is 10930
+result is 10931
+result is 10932
+result is 10933
+result is 10934
+result is 10935
+result is 10936
+result is 10937
+result is 10938
+Statistics:	ProcessReady	1	93500
+Statistics:	ProcessRunning	2	93500
+result is 929
+result is 930
+result is 931
+result is 932
+result is 933
+result is 934
+result is 935
+result is 936
+result is 937
+result is 938
+Statistics:	ProcessReady	2	94000
+Statistics:	ProcessRunning	1	94000
+result is 10939
+result is 10940
+result is 10941
+result is 10942
+result is 10943
+result is 10944
+result is 10945
+result is 10946
+result is 10947
+result is 10948
+Statistics:	ProcessReady	1	94500
+Statistics:	ProcessRunning	2	94500
+result is 939
+result is 940
+result is 941
+result is 942
+result is 943
+result is 944
+result is 945
+result is 946
+result is 947
+result is 948
+Statistics:	ProcessReady	2	95000
+Statistics:	ProcessRunning	1	95000
+result is 10949
+result is 10950
+result is 10951
+result is 10952
+result is 10953
+result is 10954
+result is 10955
+result is 10956
+result is 10957
+result is 10958
+Statistics:	ProcessReady	1	95500
+Statistics:	ProcessRunning	2	95500
+result is 949
+result is 950
+result is 951
+result is 952
+result is 953
+result is 954
+result is 955
+result is 956
+result is 957
+result is 958
+Statistics:	ProcessReady	2	96000
+Statistics:	ProcessRunning	1	96000
+result is 10959
+result is 10960
+result is 10961
+result is 10962
+result is 10963
+result is 10964
+result is 10965
+result is 10966
+result is 10967
+result is 10968
+Statistics:	ProcessReady	1	96500
+Statistics:	ProcessRunning	2	96500
+result is 959
+result is 960
+result is 961
+result is 962
+result is 963
+result is 964
+result is 965
+result is 966
+result is 967
+result is 968
+Statistics:	ProcessReady	2	97000
+Statistics:	ProcessRunning	1	97000
+result is 10969
+result is 10970
+result is 10971
+result is 10972
+result is 10973
+result is 10974
+result is 10975
+result is 10976
+result is 10977
+result is 10978
+Statistics:	ProcessReady	1	97500
+Statistics:	ProcessRunning	2	97500
+result is 969
+result is 970
+result is 971
+result is 972
+result is 973
+result is 974
+result is 975
+result is 976
+result is 977
+result is 978
+Statistics:	ProcessReady	2	98000
+Statistics:	ProcessRunning	1	98000
+result is 10979
+result is 10980
+result is 10981
+result is 10982
+result is 10983
+result is 10984
+result is 10985
+result is 10986
+result is 10987
+result is 10988
+Statistics:	ProcessReady	1	98500
+Statistics:	ProcessRunning	2	98500
+result is 979
+result is 980
+result is 981
+result is 982
+result is 983
+result is 984
+result is 985
+result is 986
+result is 987
+result is 988
+Statistics:	ProcessReady	2	99000
+Statistics:	ProcessRunning	1	99000
+result is 10989
+result is 10990
+result is 10991
+result is 10992
+result is 10993
+result is 10994
+result is 10995
+result is 10996
+result is 10997
+result is 10998
+Statistics:	ProcessReady	1	99500
+Statistics:	ProcessRunning	2	99500
+result is 989
+result is 990
+result is 991
+result is 992
+result is 993
+result is 994
+result is 995
+result is 996
+result is 997
+result is 998
+Statistics:	ProcessReady	2	100000
+Statistics:	ProcessRunning	1	100000
+result is 10999
+Statistics:	ProcessFinish	1	100068
+Statistics:	ProcessSleep	1	100068
+Statistics:	ProcessRunning	2	100068
+result is 999
+Statistics:	ProcessFinish	2	100105
+Statistics:	ProcessSleep	2	100105
+No threads ready or runnable, and no pending interrupts.
+Assuming the program completed.
+ QQ Machine halting!
+
+Ticks: total 100500, idle 395, system 2050, user 98055
+Disk I/O: reads 0, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 0
+Network I/O: packets received 0, sent 0
