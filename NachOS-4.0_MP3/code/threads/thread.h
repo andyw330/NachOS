@@ -108,7 +108,12 @@ class Thread {
     void SelfTest();        // test whether thread impl is working
     bool setPriority(int _priority);// OAO
     int getPriority();// OAO
-
+    static int compare_by_priority(Thread* t1, Thread* t2){//OAO
+        int pri1=t1->getPriority(), pri2=t2->getPriority();
+        if(pri1>pri2)return -1;
+        if(pri1<pri2)return 1;
+        return 0;
+    }
   private:
     // some of the private data for this class is listed above
     
@@ -134,6 +139,7 @@ class Thread {
 
     AddrSpace *space;           // User code this thread is running.
 };
+
 
 // external function, dummy routine whose sole job is to call Thread::Print
 extern void ThreadPrint(Thread *thread);     

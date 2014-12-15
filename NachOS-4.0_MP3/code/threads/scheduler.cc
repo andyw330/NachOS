@@ -31,7 +31,7 @@
 
 Scheduler::Scheduler()
 { 
-    readyList = new List<Thread *>; 
+    readyList = new SortedList< Thread *>(Thread::compare_by_priority); // OAO
     toBeDestroyed = NULL;
 } 
 
@@ -61,7 +61,7 @@ Scheduler::ReadyToRun (Thread *thread)
 	//cout << "Putting thread on ready list: " << thread->getName() << endl ;
     thread->setStatus(READY);
     cout << "Thread " <<  thread->getID() << "\tProcessReady\t" << kernel->stats->totalTicks << endl;
-    readyList->Append(thread);
+    readyList->Insert(thread);
 }
 
 //----------------------------------------------------------------------
