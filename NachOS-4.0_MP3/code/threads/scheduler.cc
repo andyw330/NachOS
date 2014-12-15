@@ -61,7 +61,7 @@ Scheduler::ReadyToRun (Thread *thread)
 	//cout << "Putting thread on ready list: " << thread->getName() << endl ;
     thread->setStatus(READY);
     cout << "Thread " <<  thread->getID() << "\tProcessReady\t" << kernel->stats->totalTicks << endl;
-    readyList->Insert(thread);
+    readyList->Insert(thread);// OAO
 }
 
 //----------------------------------------------------------------------
@@ -107,6 +107,9 @@ Scheduler::Run (Thread *nextThread, bool finishing)
     Thread *oldThread = kernel->currentThread;
     
     ASSERT(kernel->interrupt->getLevel() == IntOff);
+
+    //OAO old thread == new thread => don't do context switch(?)
+    if(oldThread->getID()==nextThread->getID())return;
 
     if (finishing) {	// mark that we need to delete current thread
          ASSERT(toBeDestroyed == NULL);
