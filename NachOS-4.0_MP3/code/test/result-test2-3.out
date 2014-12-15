@@ -1,0 +1,462 @@
+../test/test2
+../test/test3
+Statistics:	ProcessNew	0	0
+name num is ../test/test2,threadNum: 1,threadPri: 40
+Statistics:	ProcessNew	1	10
+Tick 10 Thread 1 move to Priority queue
+Thread 1	ProcessReady	10
+name num is ../test/test3,threadNum: 2,threadPri: 80
+Statistics:	ProcessNew	2	20
+Tick 20 Thread 2 move to RR queue
+Thread 2	ProcessReady	20
+Statistics:	ProcessFinish	0	30
+Statistics:	ProcessSleep	0	30
+Thread 2	ProcessRunning	30
+test:0, 496page is 0
+address is 0
+Tick 52 Thread2 changes its burst time to 11
+Tick 52 Thread2 changes its priority to 80
+Tick 500 Thread 2 move to RR queue
+Thread 2	ProcessReady	500
+Tick 1000 Thread 2 move to RR queue
+Thread 2	ProcessReady	1000
+Tick 1500 Thread 2 move to RR queue
+Thread 2	ProcessReady	1500
+Tick 2000 Thread1 changes its priority to 50
+Tick 2000 Thread 2 move to RR queue
+Thread 2	ProcessReady	2000
+Tick 2500 Thread1 changes its priority to 60
+Tick 2500 Thread 1 move to RR queue
+Tick 2500 Thread1 changes its priority to 70
+Tick 2500 Thread 2 move to RR queue
+Thread 2	ProcessReady	2500
+Tick 3000 Thread1 changes its priority to 80
+Tick 3000 Thread 2 move to RR queue
+Thread 2	ProcessReady	3000
+Thread 1	ProcessRunning	3000
+Tick 3000 Thread2 changes its burst time to 1479.5
+test:0, 448page is 2
+address is 2048
+Tick 3022 Thread1 changes its burst time to 11
+Tick 3022 Thread1 changes its priority to 40
+Tick 3500 Thread 1 move to Priority queue
+Thread 1	ProcessReady	3500
+Thread 2	ProcessRunning	3500
+Tick 3500 Thread1 changes its burst time to 244.5
+Tick 4000 Thread 2 move to RR queue
+Thread 2	ProcessReady	4000
+Tick 4500 Thread 2 move to RR queue
+Thread 2	ProcessReady	4500
+Tick 5000 Thread1 changes its priority to 50
+Tick 5000 Thread 2 move to RR queue
+Thread 2	ProcessReady	5000
+Tick 5500 Thread1 changes its priority to 60
+Tick 5500 Thread 1 move to RR queue
+Tick 5500 Thread1 changes its priority to 70
+Tick 5500 Thread 2 move to RR queue
+Thread 2	ProcessReady	5500
+Tick 6000 Thread1 changes its priority to 80
+Tick 6000 Thread 2 move to RR queue
+Thread 2	ProcessReady	6000
+Thread 1	ProcessRunning	6000
+Tick 6000 Thread2 changes its burst time to 1989.75
+Tick 6500 Thread 1 move to RR queue
+Thread 1	ProcessReady	6500
+Thread 2	ProcessRunning	6500
+Tick 6500 Thread1 changes its burst time to 372.25
+Tick 7000 Thread 2 move to RR queue
+Thread 2	ProcessReady	7000
+Thread 1	ProcessRunning	7000
+Tick 7000 Thread2 changes its burst time to 1244.88
+Tick 7500 Thread 1 move to RR queue
+Thread 1	ProcessReady	7500
+Thread 2	ProcessRunning	7500
+Tick 7500 Thread1 changes its burst time to 436.125
+Tick 8000 Thread 2 move to RR queue
+Thread 2	ProcessReady	8000
+Thread 1	ProcessRunning	8000
+Tick 8000 Thread2 changes its burst time to 872.438
+Tick 8500 Thread 1 move to RR queue
+Thread 1	ProcessReady	8500
+Thread 2	ProcessRunning	8500
+Tick 8500 Thread1 changes its burst time to 468.062
+Tick 9000 Thread 2 move to RR queue
+Thread 2	ProcessReady	9000
+Thread 1	ProcessRunning	9000
+Tick 9000 Thread2 changes its burst time to 686.219
+Tick 9500 Thread 1 move to RR queue
+Thread 1	ProcessReady	9500
+Thread 2	ProcessRunning	9500
+Tick 9500 Thread1 changes its burst time to 484.031
+Tick 10000 Thread 2 move to RR queue
+Thread 2	ProcessReady	10000
+Thread 1	ProcessRunning	10000
+Tick 10000 Thread2 changes its burst time to 593.109
+Tick 10500 Thread 1 move to RR queue
+Thread 1	ProcessReady	10500
+Thread 2	ProcessRunning	10500
+Tick 10500 Thread1 changes its burst time to 492.016
+Tick 11000 Thread 2 move to RR queue
+Thread 2	ProcessReady	11000
+Thread 1	ProcessRunning	11000
+Tick 11000 Thread2 changes its burst time to 546.555
+Tick 11500 Thread 1 move to RR queue
+Thread 1	ProcessReady	11500
+Thread 2	ProcessRunning	11500
+Tick 11500 Thread1 changes its burst time to 496.008
+Tick 12000 Thread 2 move to RR queue
+Thread 2	ProcessReady	12000
+Thread 1	ProcessRunning	12000
+Tick 12000 Thread2 changes its burst time to 523.277
+Tick 12500 Thread 1 move to RR queue
+Thread 1	ProcessReady	12500
+Thread 2	ProcessRunning	12500
+Tick 12500 Thread1 changes its burst time to 498.004
+Tick 13000 Thread 2 move to RR queue
+Thread 2	ProcessReady	13000
+Thread 1	ProcessRunning	13000
+Tick 13000 Thread2 changes its burst time to 511.639
+Tick 13500 Thread 1 move to RR queue
+Thread 1	ProcessReady	13500
+Thread 2	ProcessRunning	13500
+Tick 13500 Thread1 changes its burst time to 499.002
+Tick 14000 Thread 2 move to RR queue
+Thread 2	ProcessReady	14000
+Thread 1	ProcessRunning	14000
+Tick 14000 Thread2 changes its burst time to 505.819
+Tick 14500 Thread 1 move to RR queue
+Thread 1	ProcessReady	14500
+Thread 2	ProcessRunning	14500
+Tick 14500 Thread1 changes its burst time to 499.501
+Tick 15000 Thread 2 move to RR queue
+Thread 2	ProcessReady	15000
+Thread 1	ProcessRunning	15000
+Tick 15000 Thread2 changes its burst time to 502.91
+Tick 15500 Thread 1 move to RR queue
+Thread 1	ProcessReady	15500
+Thread 2	ProcessRunning	15500
+Tick 15500 Thread1 changes its burst time to 499.75
+Tick 16000 Thread 2 move to RR queue
+Thread 2	ProcessReady	16000
+Thread 1	ProcessRunning	16000
+Tick 16000 Thread2 changes its burst time to 501.455
+Tick 16500 Thread 1 move to RR queue
+Thread 1	ProcessReady	16500
+Thread 2	ProcessRunning	16500
+Tick 16500 Thread1 changes its burst time to 499.875
+Tick 17000 Thread 2 move to RR queue
+Thread 2	ProcessReady	17000
+Thread 1	ProcessRunning	17000
+Tick 17000 Thread2 changes its burst time to 500.727
+Tick 17500 Thread 1 move to RR queue
+Thread 1	ProcessReady	17500
+Thread 2	ProcessRunning	17500
+Tick 17500 Thread1 changes its burst time to 499.938
+Tick 18000 Thread 2 move to RR queue
+Thread 2	ProcessReady	18000
+Thread 1	ProcessRunning	18000
+Tick 18000 Thread2 changes its burst time to 500.364
+Tick 18500 Thread 1 move to RR queue
+Thread 1	ProcessReady	18500
+Thread 2	ProcessRunning	18500
+Tick 18500 Thread1 changes its burst time to 499.969
+Tick 19000 Thread 2 move to RR queue
+Thread 2	ProcessReady	19000
+Thread 1	ProcessRunning	19000
+Tick 19000 Thread2 changes its burst time to 500.182
+Tick 19500 Thread 1 move to RR queue
+Thread 1	ProcessReady	19500
+Thread 2	ProcessRunning	19500
+Tick 19500 Thread1 changes its burst time to 499.984
+Tick 20000 Thread 2 move to RR queue
+Thread 2	ProcessReady	20000
+Thread 1	ProcessRunning	20000
+Tick 20000 Thread2 changes its burst time to 500.091
+Tick 20500 Thread 1 move to RR queue
+Thread 1	ProcessReady	20500
+Thread 2	ProcessRunning	20500
+Tick 20500 Thread1 changes its burst time to 499.992
+Tick 21000 Thread 2 move to RR queue
+Thread 2	ProcessReady	21000
+Thread 1	ProcessRunning	21000
+Tick 21000 Thread2 changes its burst time to 500.045
+Tick 21500 Thread 1 move to RR queue
+Thread 1	ProcessReady	21500
+Thread 2	ProcessRunning	21500
+Tick 21500 Thread1 changes its burst time to 499.996
+Tick 22000 Thread 2 move to RR queue
+Thread 2	ProcessReady	22000
+Thread 1	ProcessRunning	22000
+Tick 22000 Thread2 changes its burst time to 500.023
+Tick 22500 Thread 1 move to RR queue
+Thread 1	ProcessReady	22500
+Thread 2	ProcessRunning	22500
+Tick 22500 Thread1 changes its burst time to 499.998
+Tick 23000 Thread 2 move to RR queue
+Thread 2	ProcessReady	23000
+Thread 1	ProcessRunning	23000
+Tick 23000 Thread2 changes its burst time to 500.011
+Tick 23500 Thread 1 move to RR queue
+Thread 1	ProcessReady	23500
+Thread 2	ProcessRunning	23500
+Tick 23500 Thread1 changes its burst time to 499.999
+Tick 24000 Thread 2 move to RR queue
+Thread 2	ProcessReady	24000
+Thread 1	ProcessRunning	24000
+Tick 24000 Thread2 changes its burst time to 500.006
+Tick 24500 Thread 1 move to RR queue
+Thread 1	ProcessReady	24500
+Thread 2	ProcessRunning	24500
+Tick 24500 Thread1 changes its burst time to 500
+Tick 25000 Thread 2 move to RR queue
+Thread 2	ProcessReady	25000
+Thread 1	ProcessRunning	25000
+Tick 25000 Thread2 changes its burst time to 500.003
+Tick 25500 Thread 1 move to RR queue
+Thread 1	ProcessReady	25500
+Thread 2	ProcessRunning	25500
+Tick 25500 Thread1 changes its burst time to 500
+Tick 26000 Thread 2 move to RR queue
+Thread 2	ProcessReady	26000
+Thread 1	ProcessRunning	26000
+Tick 26000 Thread2 changes its burst time to 500.001
+Tick 26500 Thread 1 move to RR queue
+Thread 1	ProcessReady	26500
+Thread 2	ProcessRunning	26500
+Tick 26500 Thread1 changes its burst time to 500
+Tick 27000 Thread 2 move to RR queue
+Thread 2	ProcessReady	27000
+Thread 1	ProcessRunning	27000
+Tick 27000 Thread2 changes its burst time to 500.001
+Tick 27500 Thread 1 move to RR queue
+Thread 1	ProcessReady	27500
+Thread 2	ProcessRunning	27500
+Tick 27500 Thread1 changes its burst time to 500
+Tick 28000 Thread 2 move to RR queue
+Thread 2	ProcessReady	28000
+Thread 1	ProcessRunning	28000
+Tick 28000 Thread2 changes its burst time to 500
+Tick 28500 Thread 1 move to RR queue
+Thread 1	ProcessReady	28500
+Thread 2	ProcessRunning	28500
+Tick 28500 Thread1 changes its burst time to 500
+Tick 29000 Thread 2 move to RR queue
+Thread 2	ProcessReady	29000
+Thread 1	ProcessRunning	29000
+Tick 29000 Thread2 changes its burst time to 500
+Tick 29500 Thread 1 move to RR queue
+Thread 1	ProcessReady	29500
+Thread 2	ProcessRunning	29500
+Tick 29500 Thread1 changes its burst time to 500
+Tick 30000 Thread 2 move to RR queue
+Thread 2	ProcessReady	30000
+Thread 1	ProcessRunning	30000
+Tick 30000 Thread2 changes its burst time to 500
+Tick 30500 Thread 1 move to RR queue
+Thread 1	ProcessReady	30500
+Thread 2	ProcessRunning	30500
+Tick 30500 Thread1 changes its burst time to 500
+Tick 31000 Thread 2 move to RR queue
+Thread 2	ProcessReady	31000
+Thread 1	ProcessRunning	31000
+Tick 31000 Thread2 changes its burst time to 500
+Tick 31500 Thread 1 move to RR queue
+Thread 1	ProcessReady	31500
+Thread 2	ProcessRunning	31500
+Tick 31500 Thread1 changes its burst time to 500
+Tick 32000 Thread 2 move to RR queue
+Thread 2	ProcessReady	32000
+Thread 1	ProcessRunning	32000
+Tick 32000 Thread2 changes its burst time to 500
+Tick 32500 Thread 1 move to RR queue
+Thread 1	ProcessReady	32500
+Thread 2	ProcessRunning	32500
+Tick 32500 Thread1 changes its burst time to 500
+Tick 33000 Thread 2 move to RR queue
+Thread 2	ProcessReady	33000
+Thread 1	ProcessRunning	33000
+Tick 33000 Thread2 changes its burst time to 500
+Tick 33500 Thread 1 move to RR queue
+Thread 1	ProcessReady	33500
+Thread 2	ProcessRunning	33500
+Tick 33500 Thread1 changes its burst time to 500
+Tick 34000 Thread 2 move to RR queue
+Thread 2	ProcessReady	34000
+Thread 1	ProcessRunning	34000
+Tick 34000 Thread2 changes its burst time to 500
+Tick 34500 Thread 1 move to RR queue
+Thread 1	ProcessReady	34500
+Thread 2	ProcessRunning	34500
+Tick 34500 Thread1 changes its burst time to 500
+Tick 35000 Thread 2 move to RR queue
+Thread 2	ProcessReady	35000
+Thread 1	ProcessRunning	35000
+Tick 35000 Thread2 changes its burst time to 500
+Tick 35500 Thread 1 move to RR queue
+Thread 1	ProcessReady	35500
+Thread 2	ProcessRunning	35500
+Tick 35500 Thread1 changes its burst time to 500
+Tick 36000 Thread 2 move to RR queue
+Thread 2	ProcessReady	36000
+Thread 1	ProcessRunning	36000
+Tick 36000 Thread2 changes its burst time to 500
+Tick 36500 Thread 1 move to RR queue
+Thread 1	ProcessReady	36500
+Thread 2	ProcessRunning	36500
+Tick 36500 Thread1 changes its burst time to 500
+Tick 37000 Thread 2 move to RR queue
+Thread 2	ProcessReady	37000
+Thread 1	ProcessRunning	37000
+Tick 37000 Thread2 changes its burst time to 500
+Tick 37500 Thread 1 move to RR queue
+Thread 1	ProcessReady	37500
+Thread 2	ProcessRunning	37500
+Tick 37500 Thread1 changes its burst time to 500
+Tick 38000 Thread 2 move to RR queue
+Thread 2	ProcessReady	38000
+Thread 1	ProcessRunning	38000
+Tick 38000 Thread2 changes its burst time to 500
+Tick 38500 Thread 1 move to RR queue
+Thread 1	ProcessReady	38500
+Thread 2	ProcessRunning	38500
+Tick 38500 Thread1 changes its burst time to 500
+Tick 39000 Thread 2 move to RR queue
+Thread 2	ProcessReady	39000
+Thread 1	ProcessRunning	39000
+Tick 39000 Thread2 changes its burst time to 500
+Tick 39500 Thread 1 move to RR queue
+Thread 1	ProcessReady	39500
+Thread 2	ProcessRunning	39500
+Tick 39500 Thread1 changes its burst time to 500
+Tick 40000 Thread 2 move to RR queue
+Thread 2	ProcessReady	40000
+Thread 1	ProcessRunning	40000
+Tick 40000 Thread2 changes its burst time to 500
+Tick 40500 Thread 1 move to RR queue
+Thread 1	ProcessReady	40500
+Thread 2	ProcessRunning	40500
+Tick 40500 Thread1 changes its burst time to 500
+Tick 41000 Thread 2 move to RR queue
+Thread 2	ProcessReady	41000
+Thread 1	ProcessRunning	41000
+Tick 41000 Thread2 changes its burst time to 500
+Tick 41500 Thread 1 move to RR queue
+Thread 1	ProcessReady	41500
+Thread 2	ProcessRunning	41500
+Tick 41500 Thread1 changes its burst time to 500
+Tick 42000 Thread 2 move to RR queue
+Thread 2	ProcessReady	42000
+Thread 1	ProcessRunning	42000
+Tick 42000 Thread2 changes its burst time to 500
+Tick 42500 Thread 1 move to RR queue
+Thread 1	ProcessReady	42500
+Thread 2	ProcessRunning	42500
+Tick 42500 Thread1 changes its burst time to 500
+Tick 43000 Thread 2 move to RR queue
+Thread 2	ProcessReady	43000
+Thread 1	ProcessRunning	43000
+Tick 43000 Thread2 changes its burst time to 500
+Tick 43500 Thread 1 move to RR queue
+Thread 1	ProcessReady	43500
+Thread 2	ProcessRunning	43500
+Tick 43500 Thread1 changes its burst time to 500
+Tick 44000 Thread 2 move to RR queue
+Thread 2	ProcessReady	44000
+Thread 1	ProcessRunning	44000
+Tick 44000 Thread2 changes its burst time to 500
+Tick 44500 Thread 1 move to RR queue
+Thread 1	ProcessReady	44500
+Thread 2	ProcessRunning	44500
+Tick 44500 Thread1 changes its burst time to 500
+Tick 45000 Thread 2 move to RR queue
+Thread 2	ProcessReady	45000
+Thread 1	ProcessRunning	45000
+Tick 45000 Thread2 changes its burst time to 500
+Tick 45500 Thread 1 move to RR queue
+Thread 1	ProcessReady	45500
+Thread 2	ProcessRunning	45500
+Tick 45500 Thread1 changes its burst time to 500
+Tick 46000 Thread 2 move to RR queue
+Thread 2	ProcessReady	46000
+Thread 1	ProcessRunning	46000
+Tick 46000 Thread2 changes its burst time to 500
+Tick 46500 Thread 1 move to RR queue
+Thread 1	ProcessReady	46500
+Thread 2	ProcessRunning	46500
+Tick 46500 Thread1 changes its burst time to 500
+Tick 46576 Thread2 changes its burst time to 288
+Tick 46576 Thread2 changes its priority to 20
+Tick 47000 Thread 2 move to Priority queue
+Thread 2	ProcessReady	47000
+Thread 1	ProcessRunning	47000
+Tick 47000 Thread2 changes its burst time to 356
+Tick 47500 Thread 1 move to RR queue
+Thread 1	ProcessReady	47500
+Tick 48000 Thread 1 move to RR queue
+Thread 1	ProcessReady	48000
+Tick 48500 Thread2 changes its priority to 30
+Tick 48500 Thread 1 move to RR queue
+Thread 1	ProcessReady	48500
+Tick 49000 Thread2 changes its priority to 40
+Tick 49000 Thread 1 move to RR queue
+Thread 1	ProcessReady	49000
+Tick 49500 Thread2 changes its priority to 50
+Tick 49500 Thread 1 move to RR queue
+Thread 1	ProcessReady	49500
+Tick 50000 Thread2 changes its priority to 60
+Tick 50000 Thread 2 move to RR queue
+Tick 50000 Thread2 changes its priority to 70
+Tick 50000 Thread 1 move to RR queue
+Thread 1	ProcessReady	50000
+Tick 50500 Thread2 changes its priority to 80
+Tick 50500 Thread 1 move to RR queue
+Thread 1	ProcessReady	50500
+Thread 2	ProcessRunning	50500
+Tick 50500 Thread1 changes its burst time to 2000
+Tick 51000 Thread 2 move to RR queue
+Thread 2	ProcessReady	51000
+Thread 1	ProcessRunning	51000
+Tick 51000 Thread2 changes its burst time to 428
+Tick 51500 Thread 1 move to RR queue
+Thread 1	ProcessReady	51500
+Thread 2	ProcessRunning	51500
+Tick 51500 Thread1 changes its burst time to 1250
+Tick 52000 Thread 2 move to RR queue
+Thread 2	ProcessReady	52000
+Thread 1	ProcessRunning	52000
+Tick 52000 Thread2 changes its burst time to 464
+Tick 52500 Thread 1 move to RR queue
+Thread 1	ProcessReady	52500
+Thread 2	ProcessRunning	52500
+Tick 52500 Thread1 changes its burst time to 875
+Tick 53000 Thread 2 move to RR queue
+Thread 2	ProcessReady	53000
+Thread 1	ProcessRunning	53000
+Tick 53000 Thread2 changes its burst time to 482
+Statistics:	ProcessFinish	1	53051
+Statistics:	ProcessSleep	1	53051
+Thread 2	ProcessRunning	53051
+Tick 53051 Thread1 changes its burst time to 463
+Tick 53500 Thread 2 move to RR queue
+Thread 2	ProcessReady	53500
+Tick 54000 Thread 2 move to RR queue
+Thread 2	ProcessReady	54000
+Tick 54500 Thread 2 move to RR queue
+Thread 2	ProcessReady	54500
+Tick 55000 Thread 2 move to RR queue
+Thread 2	ProcessReady	55000
+Tick 55500 Thread 2 move to RR queue
+Thread 2	ProcessReady	55500
+Tick 56000 Thread 2 move to RR queue
+Thread 2	ProcessReady	56000
+Statistics:	ProcessFinish	2	56246
+Statistics:	ProcessSleep	2	56246
+No threads ready or runnable, and no pending interrupts.
+Assuming the program completed.
+ QQ Machine halting!
+
+Ticks: total 56500, idle 254, system 1170, user 55076
+Disk I/O: reads 0, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 0
+Network I/O: packets received 0, sent 0
