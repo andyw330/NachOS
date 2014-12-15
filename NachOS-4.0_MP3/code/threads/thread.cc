@@ -436,3 +436,14 @@ Thread::SelfTest()
     kernel->currentThread->Yield();
     SimpleThread(0);
 }
+bool Thread::setPriority(int _priority)// OAO
+{
+    if(_priority<0 || _priority>149)return false;
+    priority=_priority;
+    cout<< "Tick " << kernel->stats->totalTicks << " Thread" << ID << " changes its priority to " << priority <<endl;
+    return true;
+}
+int Thread::getPriority()// OAO
+{
+    return priority;
+}

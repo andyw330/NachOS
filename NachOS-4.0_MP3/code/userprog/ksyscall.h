@@ -30,4 +30,9 @@ void SysPrintInt(int number)
 {
 	kernel->interrupt->PrintInt(number);
 }
+void SysNice(int priority)// OAO
+{
+	// do
+	kernel->currentThread->setPriority(priority);
+}
 #endif /* ! __USERPROG_KSYSCALL_H__ */

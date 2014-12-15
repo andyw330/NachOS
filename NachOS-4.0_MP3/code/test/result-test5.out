@@ -1,0 +1,48 @@
+../test/test5
+Statistics:	ProcessNew	0	0
+name num is ../test/test5,threadNum: 1,threadPri: 100
+Statistics:	ProcessNew	1	10
+Tick 10 Thread 1 move to SJF queue
+Thread 1	ProcessReady	10
+Statistics:	ProcessFinish	0	20
+Statistics:	ProcessSleep	0	20
+Thread 1	ProcessRunning	20
+test:0, 496page is 0
+address is 0
+Tick 42 Thread1 changes its burst time to 11
+Tick 42 Thread1 changes its priority to 100
+Tick 162 Thread1 changes its burst time to 65.5
+Tick 162 Thread1 changes its priority to 100
+Tick 286 Thread1 changes its burst time to 94.75
+Tick 286 Thread1 changes its priority to 100
+Tick 410 Thread1 changes its burst time to 109.375
+Tick 410 Thread1 changes its priority to 100
+Tick 500 Thread 1 move to SJF queue
+Thread 1	ProcessReady	500
+Tick 544 Thread1 changes its burst time to 121.688
+Tick 544 Thread1 changes its priority to 100
+Tick 668 Thread1 changes its burst time to 122.844
+Tick 668 Thread1 changes its priority to 100
+Tick 792 Thread1 changes its burst time to 123.422
+Tick 792 Thread1 changes its priority to 100
+Tick 916 Thread1 changes its burst time to 123.711
+Tick 916 Thread1 changes its priority to 100
+Tick 1000 Thread 1 move to SJF queue
+Thread 1	ProcessReady	1000
+Tick 1050 Thread1 changes its burst time to 128.855
+Tick 1050 Thread1 changes its priority to 100
+Tick 1174 Thread1 changes its burst time to 126.428
+Tick 1174 Thread1 changes its priority to 100
+Tick 1298 Thread1 changes its burst time to 125.214
+Tick 1298 Thread1 changes its priority to 100
+Statistics:	ProcessFinish	1	1321
+Statistics:	ProcessSleep	1	1321
+No threads ready or runnable, and no pending interrupts.
+Assuming the program completed.
+ QQ Machine halting!
+
+Ticks: total 1500, idle 179, system 50, user 1271
+Disk I/O: reads 0, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 0
+Network I/O: packets received 0, sent 0

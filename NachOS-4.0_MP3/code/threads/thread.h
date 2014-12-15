@@ -79,7 +79,7 @@ class Thread {
     // THEY MUST be in this position for SWITCH to work.
     int *stackTop;			 // the current stack pointer
     void *machineState[MachineStateSize];  // all registers except for stackTop
-
+    int priority;
   public:
     Thread(char* debugName, int threadID);		// initialize a Thread 
     ~Thread(); 				// deallocate a Thread
@@ -106,6 +106,8 @@ class Thread {
 	int getID() { return (ID); }
     void Print() { cout << name; }
     void SelfTest();		// test whether thread impl is working
+    bool setPriority(int _priority);// OAO
+    int getPriority();// OAO
 
   private:
     // some of the private data for this class is listed above
