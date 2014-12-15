@@ -3,8 +3,11 @@
 int
 main()
 {
-    int i;
-    Nice(25);
-    for (i=0;i<100;i++);
+    int result,i,a,b;
+	result=0;
+        b=0;    
+    for (i=10000;i<10030;i++){
+		Add(i,10);
+	}
 }
 

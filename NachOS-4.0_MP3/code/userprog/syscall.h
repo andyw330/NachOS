@@ -36,7 +36,6 @@
 #define SC_ThreadJoin   15
 #define SC_PrintInt     16
 #define SC_Add		42
-#define SC_Nice 	43
 
 #ifndef IN_ASM
 
@@ -61,8 +60,6 @@ void Halt();
 int Add(int op1, int op2);
 void PrintInt(int number);
 /* Address space control operations: Exit, Exec, Execv, and Join */
-
-void Nice(int priority);// OAO
 
 /* This user program is done (status = 0 means exited normally). */
 void Exit(int status);	
