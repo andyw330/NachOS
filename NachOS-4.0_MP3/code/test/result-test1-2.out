@@ -31,21 +31,21 @@ Thread 2	ProcessReady	1500
 Tick 2000 Thread1 changes its priority to 35
 Tick 2000 Thread 2 move to Priority queue
 Thread 2	ProcessReady	2000
-Tick 2500 Thread1 changes its priority to 45
 Tick 2500 Thread 2 move to Priority queue
 Thread 2	ProcessReady	2500
-Thread 1	ProcessRunning	2500
-Tick 2500 Thread2 changes its burst time to 994.5
-Tick 3000 Thread 1 move to Priority queue
-Thread 1	ProcessReady	3000
-Statistics:	ProcessFinish	1	3091
-Statistics:	ProcessSleep	1	3091
-Thread 2	ProcessRunning	3091
-Tick 3091 Thread1 changes its burst time to 410.25
+Tick 3000 Thread 2 move to Priority queue
+Thread 2	ProcessReady	3000
+Tick 3500 Thread1 changes its priority to 45
 Tick 3500 Thread 2 move to Priority queue
 Thread 2	ProcessReady	3500
-Tick 4000 Thread 2 move to Priority queue
-Thread 2	ProcessReady	4000
+Thread 1	ProcessRunning	3500
+Tick 3500 Thread2 changes its burst time to 1494.5
+Tick 4000 Thread 1 move to Priority queue
+Thread 1	ProcessReady	4000
+Statistics:	ProcessFinish	1	4091
+Statistics:	ProcessSleep	1	4091
+Thread 2	ProcessRunning	4091
+Tick 4091 Thread1 changes its burst time to 410.25
 Tick 4500 Thread 2 move to Priority queue
 Thread 2	ProcessReady	4500
 Tick 5000 Thread 2 move to Priority queue
