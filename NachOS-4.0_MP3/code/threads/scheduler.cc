@@ -60,6 +60,7 @@ Scheduler::ReadyToRun (Thread *thread)
     DEBUG(dbgThread, "Putting thread on ready list: " << thread->getName());
 	//cout << "Putting thread on ready list: " << thread->getName() << endl ;
     thread->setStatus(READY);
+    thread->setReadyTime(kernel->stats->totalTicks);//OAO work item 1(3)
     cout << "Thread " <<  thread->getID() << "\tProcessReady\t" << kernel->stats->totalTicks << endl;
     readyList->Insert(thread);// OAO Append is private
 }
@@ -76,7 +77,7 @@ Thread *
 Scheduler::FindNextToRun ()
 {
     ASSERT(kernel->interrupt->getLevel() == IntOff);
-
+    aging(readyList);//OAO work item 1(3)
     if (readyList->IsEmpty()) {
 		return NULL;
     } else {
@@ -186,5 +187,15 @@ Scheduler::Print()
 void
 Scheduler::aging(SortedList<Thread*>* list)// OAO
 {
+    ListIterator<Thread *> *iter = new ListIterator<Thread *>((List<Thread *>*)list);
+    for (; !iter->IsDone(); iter->Next()) {
+        Thread* thread = iter->Item();
+        if(kernel->stats->totalTicks - thread->getReadyTime() >= 1500){
+            list->Remove(thread);
+            thread->setReadyTime(kernel->stats->totalTicks);
+            thread->setPriority(thread->getPriority()+10);
+            list->Insert(thread);
 
+        }
+    }
 }
