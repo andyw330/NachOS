@@ -208,11 +208,13 @@ Thread::Yield ()
     ASSERT(this == kernel->currentThread);
     
     DEBUG(dbgThread, "Yielding thread: " << name);
-    
+    kernel->scheduler->ReadyToRun(this);// OAO
     nextThread = kernel->scheduler->FindNextToRun();
+
     if (nextThread != NULL) {
-    kernel->scheduler->ReadyToRun(this);
-    kernel->scheduler->Run(nextThread, FALSE);
+        if(nextThread != kernel->currentThread){
+            kernel->scheduler->Run(nextThread, FALSE);
+        }
     }
     (void) kernel->interrupt->SetLevel(oldLevel);
 }

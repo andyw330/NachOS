@@ -61,7 +61,7 @@ Scheduler::ReadyToRun (Thread *thread)
 	//cout << "Putting thread on ready list: " << thread->getName() << endl ;
     thread->setStatus(READY);
     cout << "Thread " <<  thread->getID() << "\tProcessReady\t" << kernel->stats->totalTicks << endl;
-    readyList->Insert(thread);// OAO Append
+    readyList->Insert(thread);// OAO Append is private
 }
 
 //----------------------------------------------------------------------
@@ -73,19 +73,13 @@ Scheduler::ReadyToRun (Thread *thread)
 //----------------------------------------------------------------------
 
 Thread *
-Scheduler::FindNextToRun ()//OAO?
+Scheduler::FindNextToRun ()
 {
     ASSERT(kernel->interrupt->getLevel() == IntOff);
 
     if (readyList->IsEmpty()) {
 		return NULL;
     } else {
-        //OAO????
-        // Thread *next=readyList->RemoveFront(), *now=kernel->currentThread;
-        // if(next->getPriority()>now->getPriority())
-    	   // return next;
-        // readyList->Insert(next);
-        // return NULL;// return now;
         return readyList->RemoveFront();
     }
 }
