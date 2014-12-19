@@ -79,7 +79,7 @@ class Thread {
     // THEY MUST be in this position for SWITCH to work.
     int *stackTop;           // the current stack pointer
     void *machineState[MachineStateSize];  // all registers except for stackTop
-    int priority;
+    int priority, startReadyTime;//OAO
   public:
     Thread(char* debugName, int threadID);      // initialize a Thread 
     ~Thread();              // deallocate a Thread
@@ -114,6 +114,8 @@ class Thread {
         if(pri1<pri2)return 1;
         return 0;
     }
+    void setReadyTime(int);//OAO
+    int getReadyTime();//OAO
   private:
     // some of the private data for this class is listed above
     

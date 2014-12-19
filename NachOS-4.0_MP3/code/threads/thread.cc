@@ -450,3 +450,12 @@ int Thread::getPriority()// OAO
 {
     return priority;
 }
+
+void Thread::setReadyTime(int _readyTime)//OAO
+{
+    startReadyTime=_readyTime;
+}
+int Thread::getReadyTime()//OAO
+{
+    return startReadyTime;
+}
