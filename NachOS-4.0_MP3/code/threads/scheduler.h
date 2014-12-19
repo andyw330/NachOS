@@ -35,6 +35,7 @@ class Scheduler {
     // SelfTest for scheduler is implemented in class Thread
     
   private:
+    void aging(SortedList<Thread*>* list);//OAO
     // OAO
     SortedList<Thread *> *readyList;  // queue of threads that are ready to run,
 				// but not running

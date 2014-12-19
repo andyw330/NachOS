@@ -35,7 +35,7 @@ const int STACK_FENCEPOST = 0xdedbeef;
 
 Thread::Thread(char* threadName, int threadID)
 {
-    priority=75;//OAO
+    priority=75;// OAO set default priority = 75
     ID = threadID;
     name = threadName;
     stackTop = NULL;
