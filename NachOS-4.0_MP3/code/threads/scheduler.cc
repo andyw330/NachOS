@@ -32,6 +32,7 @@
 Scheduler::Scheduler()
 { 
     readyList = new SortedList< Thread *>(Thread::compare_by_priority); // OAO
+    readyRRList = new SortedList< Thread *>(Thread::compare_by_priority); // OAO work item 2(1)
     toBeDestroyed = NULL;
 } 
 
@@ -43,6 +44,7 @@ Scheduler::Scheduler()
 Scheduler::~Scheduler()
 { 
     delete readyList; 
+    delete readyRRList;
 } 
 
 //----------------------------------------------------------------------

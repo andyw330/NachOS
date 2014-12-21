@@ -36,7 +36,8 @@ class Scheduler {
     
   private:
     void aging(SortedList<Thread*>* list);//OAO
-    // OAO
+    SortedList<Thread *>*readyRRList;
+    // OAO priority queue
     SortedList<Thread *> *readyList;  // queue of threads that are ready to run,
 				// but not running
     Thread *toBeDestroyed;	// finishing thread to be destroyed
