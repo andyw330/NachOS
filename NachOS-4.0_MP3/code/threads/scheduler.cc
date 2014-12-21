@@ -32,7 +32,7 @@
 Scheduler::Scheduler()
 { 
     readyList = new SortedList< Thread *>(Thread::compare_by_priority); // OAO
-    readyRRList = new SortedList< Thread *>(Thread::compare_by_priority); // OAO work item 2(1)
+    readyRRList = new List< Thread *>(); // OAO work item 2(1)
     toBeDestroyed = NULL;
 } 
 
@@ -64,7 +64,14 @@ Scheduler::ReadyToRun (Thread *thread)
     thread->setStatus(READY);
     thread->setReadyTime(kernel->stats->totalTicks);//OAO work item 1(3)
     cout << "Thread " <<  thread->getID() << "\tProcessReady\t" << kernel->stats->totalTicks << endl;
-    readyList->Insert(thread);// OAO Append is private
+    if(thread->getPriority()<=60){// OAO priority queue
+        cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to Priority queue"<<endl;
+        readyList->Insert(thread);// OAO Append is private
+    }
+    else{ // OAO RR queue
+        cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to RR queue"<<endl;
+        readyRRList->Append(thread);
+    }
 }
 
 //----------------------------------------------------------------------
@@ -80,11 +87,20 @@ Scheduler::FindNextToRun ()
 {
     ASSERT(kernel->interrupt->getLevel() == IntOff);
     aging(readyList);//OAO work item 1(3)
-    if (readyList->IsEmpty()) {
-		return NULL;
-    } else {
-        return readyList->RemoveFront();
+    aging(readyRRList);// OAO work item 2(1)
+    // aging(readySJFList);// not yet OAO work item 2(2)
+    moveBetweenQueues();//OAO check priority
+    if(readyRRList->IsEmpty()){// work item 2(1)
+        if (readyList->IsEmpty()) {
+            return NULL;
+        } else {
+            return readyList->RemoveFront();
+        }    
     }
+    else{
+        return readyRRList->RemoveFront();
+    }
+    
 }
 
 //----------------------------------------------------------------------
@@ -188,7 +204,7 @@ Scheduler::Print()
 
 void
 Scheduler::aging(SortedList<Thread*>* list)// OAO
-{
+{// list = SJF/RR/priority queues
     ListIterator<Thread *> *iter = new ListIterator<Thread *>((List<Thread *>*)list);
     for (; !iter->IsDone(); iter->Next()) {
         Thread* thread = iter->Item();
@@ -197,7 +213,53 @@ Scheduler::aging(SortedList<Thread*>* list)// OAO
             thread->setReadyTime(kernel->stats->totalTicks);
             thread->setPriority(thread->getPriority()+10);
             list->Insert(thread);
+        }
+    }
+}
+void
+Scheduler::aging(List<Thread*>* list)// OAO
+{// list = SJF/RR/priority queues
+    ListIterator<Thread *> *iter = new ListIterator<Thread *>((List<Thread *>*)list);
+    for (; !iter->IsDone(); iter->Next()) {
+        Thread* thread = iter->Item();
+        if(kernel->stats->totalTicks - thread->getReadyTime() >= 1500){
+            list->Remove(thread);
+            thread->setReadyTime(kernel->stats->totalTicks);
+            thread->setPriority(thread->getPriority()+10);
+            list->Append(thread);
+        }
+    }
+}
+void
+Scheduler::moveBetweenQueues()// check priority OAO
+{
+    // after aging
 
+    ListIterator<Thread *> *iter = new ListIterator<Thread *>((List<Thread *>*)readyList);
+    for (; !iter->IsDone(); iter->Next()) {
+        Thread* thread = iter->Item();
+        if(thread->getPriority() > 60){// < 100 
+            //to RR Q
+            readyList->Remove(thread);
+            readyRRList->Append(thread);
+            cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to RR queue"<<endl;
+        }
+        else{// should I print this or not?
+            cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" stay in Priority queue"<<endl;
+        }
+    }
+    
+    iter= new ListIterator<Thread *>((List<Thread *>*)readyRRList);
+    for (; !iter->IsDone(); iter->Next()) {
+        Thread* thread = iter->Item();
+        if(thread->getPriority() <= 60){
+            // to priority Q
+            readyRRList->Remove(thread);
+            readyList->Insert(thread);
+            cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to Priority queue"<<endl;
+        }
+        else{// should I print this or not?
+            cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" stay in RR queue"<<endl;
         }
     }
 }

@@ -299,7 +299,7 @@ int Kernel::Exec(char* name)
 {
 	cout << "Thread " << threadNum << "\t" << name << "\t\t(Pri: " << priority[threadNum] << ")" <<endl;
 	fflush(stdout);
-	t[threadNum] = new Thread(name, threadNum);
+	t[threadNum] = new Thread(name, threadNum, priority[threadNum]);
 	t[threadNum]->space = new AddrSpace();
 	t[threadNum]->Fork((VoidFunctionPtr) &ForkExecute, (void *)t[threadNum]);
 	threadNum++;

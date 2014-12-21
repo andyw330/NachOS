@@ -49,7 +49,22 @@ Thread::Thread(char* threadName, int threadID)
     }
     space = NULL;
 }
-
+Thread::Thread(char* threadName, int threadID, int _priority)//OAO
+{
+    priority=_priority;// OAO set default priority = _priority
+    ID = threadID;
+    name = threadName;
+    stackTop = NULL;
+    stack = NULL;
+    status = JUST_CREATED;
+    cout << "Thread " << ID << "\tProcessNew\t" << kernel->stats->totalTicks << endl;
+    for (int i = 0; i < MachineStateSize; i++) {
+    machineState[i] = NULL;     // not strictly necessary, since
+                    // new thread ignores contents 
+                    // of machine registers
+    }
+    space = NULL;
+}
 //----------------------------------------------------------------------
 // Thread::~Thread
 //  De-allocate a thread.

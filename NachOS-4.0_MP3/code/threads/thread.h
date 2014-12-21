@@ -82,6 +82,7 @@ class Thread {
     int priority, startReadyTime;//OAO
   public:
     Thread(char* debugName, int threadID);      // initialize a Thread 
+    Thread(char* threadName, int threadID, int _priority);// OAO initialize with priority
     ~Thread();              // deallocate a Thread
                     // NOTE -- thread being deleted
                     // must not be running when delete 
