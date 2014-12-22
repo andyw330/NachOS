@@ -64,14 +64,17 @@ Scheduler::ReadyToRun (Thread *thread)
     thread->setStatus(READY);
     thread->setReadyTime(kernel->stats->totalTicks);//OAO work item 1(3)
     cout << "Thread " <<  thread->getID() << "\tProcessReady\t" << kernel->stats->totalTicks << endl;
-    if(thread->getPriority()<=60){// OAO priority queue
+    // 0 ~ 59 : priority queue
+    if(thread->getPriority()<60){// OAO priority queue
         cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to Priority queue"<<endl;
         readyList->Insert(thread);// OAO Append is private
     }
+    // 60 ~ 99 : RR queue
     else{ // OAO RR queue
         cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to RR queue"<<endl;
         readyRRList->Append(thread);
     }
+    // 100 ~ 149 : SJF queue
 }
 
 //----------------------------------------------------------------------
@@ -234,7 +237,9 @@ void
 Scheduler::moveBetweenQueues()// check priority OAO
 {
     // after aging
-
+    // 0 ~ 59 : priority queue
+    // 60 ~ 99 : RR queue
+    // 100 ~ 149 : SJF queue
     ListIterator<Thread *> *iter = new ListIterator<Thread *>((List<Thread *>*)readyList);
     for (; !iter->IsDone(); iter->Next()) {
         Thread* thread = iter->Item();
