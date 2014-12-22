@@ -238,7 +238,7 @@ Scheduler::moveBetweenQueues()// check priority OAO
     ListIterator<Thread *> *iter = new ListIterator<Thread *>((List<Thread *>*)readyList);
     for (; !iter->IsDone(); iter->Next()) {
         Thread* thread = iter->Item();
-        if(thread->getPriority() > 60){// < 100 
+        if(thread->getPriority() >= 60){// < 100 
             //to RR Q
             readyList->Remove(thread);
             readyRRList->Append(thread);
@@ -252,7 +252,7 @@ Scheduler::moveBetweenQueues()// check priority OAO
     iter= new ListIterator<Thread *>((List<Thread *>*)readyRRList);
     for (; !iter->IsDone(); iter->Next()) {
         Thread* thread = iter->Item();
-        if(thread->getPriority() <= 60){
+        if(thread->getPriority() < 60){
             // to priority Q
             readyRRList->Remove(thread);
             readyList->Insert(thread);
