@@ -1,0 +1,21 @@
+test1
+Thread 0	ProcessNew	0
+Thread 1	test1		(Pri: 75)
+Thread 1	ProcessNew	10
+Thread 1	ProcessReady	10
+Thread 0	ProcessFinish	20
+Thread 0	ProcessSleep	20
+Thread 1	ProcessRunning	20
+Tick 42 Thread1 changes its priority to 25
+return value:0
+Thread 1	ProcessFinish	1171
+Thread 1	ProcessSleep	1171
+No threads ready or runnable, and no pending interrupts.
+Assuming the program completed.
+Machine halting!
+
+Ticks: total 1200, idle 29, system 140, user 1031
+Disk I/O: reads 0, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 0
+Network I/O: packets received 0, sent 0

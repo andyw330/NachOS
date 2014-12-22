@@ -1,0 +1,2866 @@
+test2
+test3
+Thread 0	ProcessNew	0
+Thread 1	test2		(Pri: 40)
+Thread 1	ProcessNew	10
+Thread 1	ProcessReady	10
+Tick 10 Thread 1 move to Priority queue
+Thread 2	test3		(Pri: 80)
+Thread 2	ProcessNew	20
+Thread 2	ProcessReady	20
+Tick 20 Thread 2 move to RR queue
+Thread 0	ProcessFinish	30
+Thread 0	ProcessSleep	30
+Tick 30 Thread 1 stay in Priority queue
+Tick 30 Thread 2 stay in RR queue
+Thread 2	ProcessRunning	30
+Tick 52 Thread2 changes its priority to 80
+Thread 2	ProcessReady	100
+Tick 100 Thread 2 move to RR queue
+Tick 100 Thread 1 stay in Priority queue
+Tick 100 Thread 2 stay in RR queue
+Thread 2	ProcessReady	200
+Tick 200 Thread 2 move to RR queue
+Tick 200 Thread 1 stay in Priority queue
+Tick 200 Thread 2 stay in RR queue
+Thread 2	ProcessReady	300
+Tick 300 Thread 2 move to RR queue
+Tick 300 Thread 1 stay in Priority queue
+Tick 300 Thread 2 stay in RR queue
+Thread 2	ProcessReady	400
+Tick 400 Thread 2 move to RR queue
+Tick 400 Thread 1 stay in Priority queue
+Tick 400 Thread 2 stay in RR queue
+Thread 2	ProcessReady	500
+Tick 500 Thread 2 move to RR queue
+Tick 500 Thread 1 stay in Priority queue
+Tick 500 Thread 2 stay in RR queue
+Thread 2	ProcessReady	600
+Tick 600 Thread 2 move to RR queue
+Tick 600 Thread 1 stay in Priority queue
+Tick 600 Thread 2 stay in RR queue
+Thread 2	ProcessReady	700
+Tick 700 Thread 2 move to RR queue
+Tick 700 Thread 1 stay in Priority queue
+Tick 700 Thread 2 stay in RR queue
+Thread 2	ProcessReady	800
+Tick 800 Thread 2 move to RR queue
+Tick 800 Thread 1 stay in Priority queue
+Tick 800 Thread 2 stay in RR queue
+Thread 2	ProcessReady	900
+Tick 900 Thread 2 move to RR queue
+Tick 900 Thread 1 stay in Priority queue
+Tick 900 Thread 2 stay in RR queue
+Thread 2	ProcessReady	1000
+Tick 1000 Thread 2 move to RR queue
+Tick 1000 Thread 1 stay in Priority queue
+Tick 1000 Thread 2 stay in RR queue
+Thread 2	ProcessReady	1100
+Tick 1100 Thread 2 move to RR queue
+Tick 1100 Thread 1 stay in Priority queue
+Tick 1100 Thread 2 stay in RR queue
+Thread 2	ProcessReady	1200
+Tick 1200 Thread 2 move to RR queue
+Tick 1200 Thread 1 stay in Priority queue
+Tick 1200 Thread 2 stay in RR queue
+Thread 2	ProcessReady	1300
+Tick 1300 Thread 2 move to RR queue
+Tick 1300 Thread 1 stay in Priority queue
+Tick 1300 Thread 2 stay in RR queue
+Thread 2	ProcessReady	1400
+Tick 1400 Thread 2 move to RR queue
+Tick 1400 Thread 1 stay in Priority queue
+Tick 1400 Thread 2 stay in RR queue
+Thread 2	ProcessReady	1500
+Tick 1500 Thread 2 move to RR queue
+Tick 1500 Thread 1 stay in Priority queue
+Tick 1500 Thread 2 stay in RR queue
+Thread 2	ProcessReady	1600
+Tick 1600 Thread 2 move to RR queue
+Tick 1600 Thread1 changes its priority to 50
+Tick 1600 Thread 1 stay in Priority queue
+Tick 1600 Thread 2 stay in RR queue
+Thread 2	ProcessReady	1700
+Tick 1700 Thread 2 move to RR queue
+Tick 1700 Thread 1 stay in Priority queue
+Tick 1700 Thread 2 stay in RR queue
+Thread 2	ProcessReady	1800
+Tick 1800 Thread 2 move to RR queue
+Tick 1800 Thread 1 stay in Priority queue
+Tick 1800 Thread 2 stay in RR queue
+Thread 2	ProcessReady	1900
+Tick 1900 Thread 2 move to RR queue
+Tick 1900 Thread 1 stay in Priority queue
+Tick 1900 Thread 2 stay in RR queue
+Thread 2	ProcessReady	2000
+Tick 2000 Thread 2 move to RR queue
+Tick 2000 Thread 1 stay in Priority queue
+Tick 2000 Thread 2 stay in RR queue
+Thread 2	ProcessReady	2100
+Tick 2100 Thread 2 move to RR queue
+Tick 2100 Thread 1 stay in Priority queue
+Tick 2100 Thread 2 stay in RR queue
+Thread 2	ProcessReady	2200
+Tick 2200 Thread 2 move to RR queue
+Tick 2200 Thread 1 stay in Priority queue
+Tick 2200 Thread 2 stay in RR queue
+Thread 2	ProcessReady	2300
+Tick 2300 Thread 2 move to RR queue
+Tick 2300 Thread 1 stay in Priority queue
+Tick 2300 Thread 2 stay in RR queue
+Thread 2	ProcessReady	2400
+Tick 2400 Thread 2 move to RR queue
+Tick 2400 Thread 1 stay in Priority queue
+Tick 2400 Thread 2 stay in RR queue
+Thread 2	ProcessReady	2500
+Tick 2500 Thread 2 move to RR queue
+Tick 2500 Thread 1 stay in Priority queue
+Tick 2500 Thread 2 stay in RR queue
+Thread 2	ProcessReady	2600
+Tick 2600 Thread 2 move to RR queue
+Tick 2600 Thread 1 stay in Priority queue
+Tick 2600 Thread 2 stay in RR queue
+Thread 2	ProcessReady	2700
+Tick 2700 Thread 2 move to RR queue
+Tick 2700 Thread 1 stay in Priority queue
+Tick 2700 Thread 2 stay in RR queue
+Thread 2	ProcessReady	2800
+Tick 2800 Thread 2 move to RR queue
+Tick 2800 Thread 1 stay in Priority queue
+Tick 2800 Thread 2 stay in RR queue
+Thread 2	ProcessReady	2900
+Tick 2900 Thread 2 move to RR queue
+Tick 2900 Thread 1 stay in Priority queue
+Tick 2900 Thread 2 stay in RR queue
+Thread 2	ProcessReady	3000
+Tick 3000 Thread 2 move to RR queue
+Tick 3000 Thread 1 stay in Priority queue
+Tick 3000 Thread 2 stay in RR queue
+Thread 2	ProcessReady	3100
+Tick 3100 Thread 2 move to RR queue
+Tick 3100 Thread1 changes its priority to 60
+Tick 3100 Thread 1 stay in Priority queue
+Tick 3100 Thread 2 stay in RR queue
+Thread 2	ProcessReady	3200
+Tick 3200 Thread 2 move to RR queue
+Tick 3200 Thread 1 stay in Priority queue
+Tick 3200 Thread 2 stay in RR queue
+Thread 2	ProcessReady	3300
+Tick 3300 Thread 2 move to RR queue
+Tick 3300 Thread 1 stay in Priority queue
+Tick 3300 Thread 2 stay in RR queue
+Thread 2	ProcessReady	3400
+Tick 3400 Thread 2 move to RR queue
+Tick 3400 Thread 1 stay in Priority queue
+Tick 3400 Thread 2 stay in RR queue
+Thread 2	ProcessReady	3500
+Tick 3500 Thread 2 move to RR queue
+Tick 3500 Thread 1 stay in Priority queue
+Tick 3500 Thread 2 stay in RR queue
+Thread 2	ProcessReady	3600
+Tick 3600 Thread 2 move to RR queue
+Tick 3600 Thread 1 stay in Priority queue
+Tick 3600 Thread 2 stay in RR queue
+Thread 2	ProcessReady	3700
+Tick 3700 Thread 2 move to RR queue
+Tick 3700 Thread 1 stay in Priority queue
+Tick 3700 Thread 2 stay in RR queue
+Thread 2	ProcessReady	3800
+Tick 3800 Thread 2 move to RR queue
+Tick 3800 Thread 1 stay in Priority queue
+Tick 3800 Thread 2 stay in RR queue
+Thread 2	ProcessReady	3900
+Tick 3900 Thread 2 move to RR queue
+Tick 3900 Thread 1 stay in Priority queue
+Tick 3900 Thread 2 stay in RR queue
+Thread 2	ProcessReady	4000
+Tick 4000 Thread 2 move to RR queue
+Tick 4000 Thread 1 stay in Priority queue
+Tick 4000 Thread 2 stay in RR queue
+Thread 2	ProcessReady	4100
+Tick 4100 Thread 2 move to RR queue
+Tick 4100 Thread 1 stay in Priority queue
+Tick 4100 Thread 2 stay in RR queue
+Thread 2	ProcessReady	4200
+Tick 4200 Thread 2 move to RR queue
+Tick 4200 Thread 1 stay in Priority queue
+Tick 4200 Thread 2 stay in RR queue
+Thread 2	ProcessReady	4300
+Tick 4300 Thread 2 move to RR queue
+Tick 4300 Thread 1 stay in Priority queue
+Tick 4300 Thread 2 stay in RR queue
+Thread 2	ProcessReady	4400
+Tick 4400 Thread 2 move to RR queue
+Tick 4400 Thread 1 stay in Priority queue
+Tick 4400 Thread 2 stay in RR queue
+Thread 2	ProcessReady	4500
+Tick 4500 Thread 2 move to RR queue
+Tick 4500 Thread 1 stay in Priority queue
+Tick 4500 Thread 2 stay in RR queue
+Thread 2	ProcessReady	4600
+Tick 4600 Thread 2 move to RR queue
+Tick 4600 Thread1 changes its priority to 70
+Tick 4600 Thread 1 move to RR queue
+Tick 4600 Thread 2 stay in RR queue
+Tick 4600 Thread 1 stay in RR queue
+Thread 2	ProcessReady	4700
+Tick 4700 Thread 2 move to RR queue
+Tick 4700 Thread 1 stay in RR queue
+Tick 4700 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	4700
+Tick 4722 Thread1 changes its priority to 40
+Thread 1	ProcessReady	4800
+Tick 4800 Thread 1 move to Priority queue
+Tick 4800 Thread 1 stay in Priority queue
+Tick 4800 Thread 2 stay in RR queue
+Thread 2	ProcessRunning	4800
+Thread 2	ProcessReady	4900
+Tick 4900 Thread 2 move to RR queue
+Tick 4900 Thread 1 stay in Priority queue
+Tick 4900 Thread 2 stay in RR queue
+Thread 2	ProcessReady	5000
+Tick 5000 Thread 2 move to RR queue
+Tick 5000 Thread 1 stay in Priority queue
+Tick 5000 Thread 2 stay in RR queue
+Thread 2	ProcessReady	5100
+Tick 5100 Thread 2 move to RR queue
+Tick 5100 Thread 1 stay in Priority queue
+Tick 5100 Thread 2 stay in RR queue
+Thread 2	ProcessReady	5200
+Tick 5200 Thread 2 move to RR queue
+Tick 5200 Thread 1 stay in Priority queue
+Tick 5200 Thread 2 stay in RR queue
+Thread 2	ProcessReady	5300
+Tick 5300 Thread 2 move to RR queue
+Tick 5300 Thread 1 stay in Priority queue
+Tick 5300 Thread 2 stay in RR queue
+Thread 2	ProcessReady	5400
+Tick 5400 Thread 2 move to RR queue
+Tick 5400 Thread 1 stay in Priority queue
+Tick 5400 Thread 2 stay in RR queue
+Thread 2	ProcessReady	5500
+Tick 5500 Thread 2 move to RR queue
+Tick 5500 Thread 1 stay in Priority queue
+Tick 5500 Thread 2 stay in RR queue
+Thread 2	ProcessReady	5600
+Tick 5600 Thread 2 move to RR queue
+Tick 5600 Thread 1 stay in Priority queue
+Tick 5600 Thread 2 stay in RR queue
+Thread 2	ProcessReady	5700
+Tick 5700 Thread 2 move to RR queue
+Tick 5700 Thread 1 stay in Priority queue
+Tick 5700 Thread 2 stay in RR queue
+Thread 2	ProcessReady	5800
+Tick 5800 Thread 2 move to RR queue
+Tick 5800 Thread 1 stay in Priority queue
+Tick 5800 Thread 2 stay in RR queue
+Thread 2	ProcessReady	5900
+Tick 5900 Thread 2 move to RR queue
+Tick 5900 Thread 1 stay in Priority queue
+Tick 5900 Thread 2 stay in RR queue
+Thread 2	ProcessReady	6000
+Tick 6000 Thread 2 move to RR queue
+Tick 6000 Thread 1 stay in Priority queue
+Tick 6000 Thread 2 stay in RR queue
+Thread 2	ProcessReady	6100
+Tick 6100 Thread 2 move to RR queue
+Tick 6100 Thread 1 stay in Priority queue
+Tick 6100 Thread 2 stay in RR queue
+Thread 2	ProcessReady	6200
+Tick 6200 Thread 2 move to RR queue
+Tick 6200 Thread 1 stay in Priority queue
+Tick 6200 Thread 2 stay in RR queue
+Thread 2	ProcessReady	6300
+Tick 6300 Thread 2 move to RR queue
+Tick 6300 Thread1 changes its priority to 50
+Tick 6300 Thread 1 stay in Priority queue
+Tick 6300 Thread 2 stay in RR queue
+Thread 2	ProcessReady	6400
+Tick 6400 Thread 2 move to RR queue
+Tick 6400 Thread 1 stay in Priority queue
+Tick 6400 Thread 2 stay in RR queue
+Thread 2	ProcessReady	6500
+Tick 6500 Thread 2 move to RR queue
+Tick 6500 Thread 1 stay in Priority queue
+Tick 6500 Thread 2 stay in RR queue
+Thread 2	ProcessReady	6600
+Tick 6600 Thread 2 move to RR queue
+Tick 6600 Thread 1 stay in Priority queue
+Tick 6600 Thread 2 stay in RR queue
+Thread 2	ProcessReady	6700
+Tick 6700 Thread 2 move to RR queue
+Tick 6700 Thread 1 stay in Priority queue
+Tick 6700 Thread 2 stay in RR queue
+Thread 2	ProcessReady	6800
+Tick 6800 Thread 2 move to RR queue
+Tick 6800 Thread 1 stay in Priority queue
+Tick 6800 Thread 2 stay in RR queue
+Thread 2	ProcessReady	6900
+Tick 6900 Thread 2 move to RR queue
+Tick 6900 Thread 1 stay in Priority queue
+Tick 6900 Thread 2 stay in RR queue
+Thread 2	ProcessReady	7000
+Tick 7000 Thread 2 move to RR queue
+Tick 7000 Thread 1 stay in Priority queue
+Tick 7000 Thread 2 stay in RR queue
+Thread 2	ProcessReady	7100
+Tick 7100 Thread 2 move to RR queue
+Tick 7100 Thread 1 stay in Priority queue
+Tick 7100 Thread 2 stay in RR queue
+Thread 2	ProcessReady	7200
+Tick 7200 Thread 2 move to RR queue
+Tick 7200 Thread 1 stay in Priority queue
+Tick 7200 Thread 2 stay in RR queue
+Thread 2	ProcessReady	7300
+Tick 7300 Thread 2 move to RR queue
+Tick 7300 Thread 1 stay in Priority queue
+Tick 7300 Thread 2 stay in RR queue
+Thread 2	ProcessReady	7400
+Tick 7400 Thread 2 move to RR queue
+Tick 7400 Thread 1 stay in Priority queue
+Tick 7400 Thread 2 stay in RR queue
+Thread 2	ProcessReady	7500
+Tick 7500 Thread 2 move to RR queue
+Tick 7500 Thread 1 stay in Priority queue
+Tick 7500 Thread 2 stay in RR queue
+Thread 2	ProcessReady	7600
+Tick 7600 Thread 2 move to RR queue
+Tick 7600 Thread 1 stay in Priority queue
+Tick 7600 Thread 2 stay in RR queue
+Thread 2	ProcessReady	7700
+Tick 7700 Thread 2 move to RR queue
+Tick 7700 Thread 1 stay in Priority queue
+Tick 7700 Thread 2 stay in RR queue
+Thread 2	ProcessReady	7800
+Tick 7800 Thread 2 move to RR queue
+Tick 7800 Thread1 changes its priority to 60
+Tick 7800 Thread 1 stay in Priority queue
+Tick 7800 Thread 2 stay in RR queue
+Thread 2	ProcessReady	7900
+Tick 7900 Thread 2 move to RR queue
+Tick 7900 Thread 1 stay in Priority queue
+Tick 7900 Thread 2 stay in RR queue
+Thread 2	ProcessReady	8000
+Tick 8000 Thread 2 move to RR queue
+Tick 8000 Thread 1 stay in Priority queue
+Tick 8000 Thread 2 stay in RR queue
+Thread 2	ProcessReady	8100
+Tick 8100 Thread 2 move to RR queue
+Tick 8100 Thread 1 stay in Priority queue
+Tick 8100 Thread 2 stay in RR queue
+Thread 2	ProcessReady	8200
+Tick 8200 Thread 2 move to RR queue
+Tick 8200 Thread 1 stay in Priority queue
+Tick 8200 Thread 2 stay in RR queue
+Thread 2	ProcessReady	8300
+Tick 8300 Thread 2 move to RR queue
+Tick 8300 Thread 1 stay in Priority queue
+Tick 8300 Thread 2 stay in RR queue
+Thread 2	ProcessReady	8400
+Tick 8400 Thread 2 move to RR queue
+Tick 8400 Thread 1 stay in Priority queue
+Tick 8400 Thread 2 stay in RR queue
+Thread 2	ProcessReady	8500
+Tick 8500 Thread 2 move to RR queue
+Tick 8500 Thread 1 stay in Priority queue
+Tick 8500 Thread 2 stay in RR queue
+Thread 2	ProcessReady	8600
+Tick 8600 Thread 2 move to RR queue
+Tick 8600 Thread 1 stay in Priority queue
+Tick 8600 Thread 2 stay in RR queue
+Thread 2	ProcessReady	8700
+Tick 8700 Thread 2 move to RR queue
+Tick 8700 Thread 1 stay in Priority queue
+Tick 8700 Thread 2 stay in RR queue
+Thread 2	ProcessReady	8800
+Tick 8800 Thread 2 move to RR queue
+Tick 8800 Thread 1 stay in Priority queue
+Tick 8800 Thread 2 stay in RR queue
+Thread 2	ProcessReady	8900
+Tick 8900 Thread 2 move to RR queue
+Tick 8900 Thread 1 stay in Priority queue
+Tick 8900 Thread 2 stay in RR queue
+Thread 2	ProcessReady	9000
+Tick 9000 Thread 2 move to RR queue
+Tick 9000 Thread 1 stay in Priority queue
+Tick 9000 Thread 2 stay in RR queue
+Thread 2	ProcessReady	9100
+Tick 9100 Thread 2 move to RR queue
+Tick 9100 Thread 1 stay in Priority queue
+Tick 9100 Thread 2 stay in RR queue
+Thread 2	ProcessReady	9200
+Tick 9200 Thread 2 move to RR queue
+Tick 9200 Thread 1 stay in Priority queue
+Tick 9200 Thread 2 stay in RR queue
+Thread 2	ProcessReady	9300
+Tick 9300 Thread 2 move to RR queue
+Tick 9300 Thread1 changes its priority to 70
+Tick 9300 Thread 1 move to RR queue
+Tick 9300 Thread 2 stay in RR queue
+Tick 9300 Thread 1 stay in RR queue
+Thread 2	ProcessReady	9400
+Tick 9400 Thread 2 move to RR queue
+Tick 9400 Thread 1 stay in RR queue
+Tick 9400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	9400
+Thread 1	ProcessReady	9500
+Tick 9500 Thread 1 move to RR queue
+Tick 9500 Thread 2 stay in RR queue
+Tick 9500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	9500
+Thread 2	ProcessReady	9600
+Tick 9600 Thread 2 move to RR queue
+Tick 9600 Thread 1 stay in RR queue
+Tick 9600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	9600
+Thread 1	ProcessReady	9700
+Tick 9700 Thread 1 move to RR queue
+Tick 9700 Thread 2 stay in RR queue
+Tick 9700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	9700
+Thread 2	ProcessReady	9800
+Tick 9800 Thread 2 move to RR queue
+Tick 9800 Thread 1 stay in RR queue
+Tick 9800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	9800
+Thread 1	ProcessReady	9900
+Tick 9900 Thread 1 move to RR queue
+Tick 9900 Thread 2 stay in RR queue
+Tick 9900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	9900
+Thread 2	ProcessReady	10000
+Tick 10000 Thread 2 move to RR queue
+Tick 10000 Thread 1 stay in RR queue
+Tick 10000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	10000
+Thread 1	ProcessReady	10100
+Tick 10100 Thread 1 move to RR queue
+Tick 10100 Thread 2 stay in RR queue
+Tick 10100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	10100
+Thread 2	ProcessReady	10200
+Tick 10200 Thread 2 move to RR queue
+Tick 10200 Thread 1 stay in RR queue
+Tick 10200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	10200
+Thread 1	ProcessReady	10300
+Tick 10300 Thread 1 move to RR queue
+Tick 10300 Thread 2 stay in RR queue
+Tick 10300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	10300
+Thread 2	ProcessReady	10400
+Tick 10400 Thread 2 move to RR queue
+Tick 10400 Thread 1 stay in RR queue
+Tick 10400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	10400
+Thread 1	ProcessReady	10500
+Tick 10500 Thread 1 move to RR queue
+Tick 10500 Thread 2 stay in RR queue
+Tick 10500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	10500
+Thread 2	ProcessReady	10600
+Tick 10600 Thread 2 move to RR queue
+Tick 10600 Thread 1 stay in RR queue
+Tick 10600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	10600
+Thread 1	ProcessReady	10700
+Tick 10700 Thread 1 move to RR queue
+Tick 10700 Thread 2 stay in RR queue
+Tick 10700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	10700
+Thread 2	ProcessReady	10800
+Tick 10800 Thread 2 move to RR queue
+Tick 10800 Thread 1 stay in RR queue
+Tick 10800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	10800
+Thread 1	ProcessReady	10900
+Tick 10900 Thread 1 move to RR queue
+Tick 10900 Thread 2 stay in RR queue
+Tick 10900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	10900
+Thread 2	ProcessReady	11000
+Tick 11000 Thread 2 move to RR queue
+Tick 11000 Thread 1 stay in RR queue
+Tick 11000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	11000
+Thread 1	ProcessReady	11100
+Tick 11100 Thread 1 move to RR queue
+Tick 11100 Thread 2 stay in RR queue
+Tick 11100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	11100
+Thread 2	ProcessReady	11200
+Tick 11200 Thread 2 move to RR queue
+Tick 11200 Thread 1 stay in RR queue
+Tick 11200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	11200
+Thread 1	ProcessReady	11300
+Tick 11300 Thread 1 move to RR queue
+Tick 11300 Thread 2 stay in RR queue
+Tick 11300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	11300
+Thread 2	ProcessReady	11400
+Tick 11400 Thread 2 move to RR queue
+Tick 11400 Thread 1 stay in RR queue
+Tick 11400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	11400
+Thread 1	ProcessReady	11500
+Tick 11500 Thread 1 move to RR queue
+Tick 11500 Thread 2 stay in RR queue
+Tick 11500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	11500
+Thread 2	ProcessReady	11600
+Tick 11600 Thread 2 move to RR queue
+Tick 11600 Thread 1 stay in RR queue
+Tick 11600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	11600
+Thread 1	ProcessReady	11700
+Tick 11700 Thread 1 move to RR queue
+Tick 11700 Thread 2 stay in RR queue
+Tick 11700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	11700
+Thread 2	ProcessReady	11800
+Tick 11800 Thread 2 move to RR queue
+Tick 11800 Thread 1 stay in RR queue
+Tick 11800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	11800
+Thread 1	ProcessReady	11900
+Tick 11900 Thread 1 move to RR queue
+Tick 11900 Thread 2 stay in RR queue
+Tick 11900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	11900
+Thread 2	ProcessReady	12000
+Tick 12000 Thread 2 move to RR queue
+Tick 12000 Thread 1 stay in RR queue
+Tick 12000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	12000
+Thread 1	ProcessReady	12100
+Tick 12100 Thread 1 move to RR queue
+Tick 12100 Thread 2 stay in RR queue
+Tick 12100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	12100
+Thread 2	ProcessReady	12200
+Tick 12200 Thread 2 move to RR queue
+Tick 12200 Thread 1 stay in RR queue
+Tick 12200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	12200
+Thread 1	ProcessReady	12300
+Tick 12300 Thread 1 move to RR queue
+Tick 12300 Thread 2 stay in RR queue
+Tick 12300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	12300
+Thread 2	ProcessReady	12400
+Tick 12400 Thread 2 move to RR queue
+Tick 12400 Thread 1 stay in RR queue
+Tick 12400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	12400
+Thread 1	ProcessReady	12500
+Tick 12500 Thread 1 move to RR queue
+Tick 12500 Thread 2 stay in RR queue
+Tick 12500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	12500
+Thread 2	ProcessReady	12600
+Tick 12600 Thread 2 move to RR queue
+Tick 12600 Thread 1 stay in RR queue
+Tick 12600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	12600
+Thread 1	ProcessReady	12700
+Tick 12700 Thread 1 move to RR queue
+Tick 12700 Thread 2 stay in RR queue
+Tick 12700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	12700
+Thread 2	ProcessReady	12800
+Tick 12800 Thread 2 move to RR queue
+Tick 12800 Thread 1 stay in RR queue
+Tick 12800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	12800
+Thread 1	ProcessReady	12900
+Tick 12900 Thread 1 move to RR queue
+Tick 12900 Thread 2 stay in RR queue
+Tick 12900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	12900
+Thread 2	ProcessReady	13000
+Tick 13000 Thread 2 move to RR queue
+Tick 13000 Thread 1 stay in RR queue
+Tick 13000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	13000
+Thread 1	ProcessReady	13100
+Tick 13100 Thread 1 move to RR queue
+Tick 13100 Thread 2 stay in RR queue
+Tick 13100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	13100
+Thread 2	ProcessReady	13200
+Tick 13200 Thread 2 move to RR queue
+Tick 13200 Thread 1 stay in RR queue
+Tick 13200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	13200
+Thread 1	ProcessReady	13300
+Tick 13300 Thread 1 move to RR queue
+Tick 13300 Thread 2 stay in RR queue
+Tick 13300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	13300
+Thread 2	ProcessReady	13400
+Tick 13400 Thread 2 move to RR queue
+Tick 13400 Thread 1 stay in RR queue
+Tick 13400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	13400
+Thread 1	ProcessReady	13500
+Tick 13500 Thread 1 move to RR queue
+Tick 13500 Thread 2 stay in RR queue
+Tick 13500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	13500
+Thread 2	ProcessReady	13600
+Tick 13600 Thread 2 move to RR queue
+Tick 13600 Thread 1 stay in RR queue
+Tick 13600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	13600
+Thread 1	ProcessReady	13700
+Tick 13700 Thread 1 move to RR queue
+Tick 13700 Thread 2 stay in RR queue
+Tick 13700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	13700
+Thread 2	ProcessReady	13800
+Tick 13800 Thread 2 move to RR queue
+Tick 13800 Thread 1 stay in RR queue
+Tick 13800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	13800
+Thread 1	ProcessReady	13900
+Tick 13900 Thread 1 move to RR queue
+Tick 13900 Thread 2 stay in RR queue
+Tick 13900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	13900
+Thread 2	ProcessReady	14000
+Tick 14000 Thread 2 move to RR queue
+Tick 14000 Thread 1 stay in RR queue
+Tick 14000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	14000
+Thread 1	ProcessReady	14100
+Tick 14100 Thread 1 move to RR queue
+Tick 14100 Thread 2 stay in RR queue
+Tick 14100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	14100
+Thread 2	ProcessReady	14200
+Tick 14200 Thread 2 move to RR queue
+Tick 14200 Thread 1 stay in RR queue
+Tick 14200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	14200
+Thread 1	ProcessReady	14300
+Tick 14300 Thread 1 move to RR queue
+Tick 14300 Thread 2 stay in RR queue
+Tick 14300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	14300
+Thread 2	ProcessReady	14400
+Tick 14400 Thread 2 move to RR queue
+Tick 14400 Thread 1 stay in RR queue
+Tick 14400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	14400
+Thread 1	ProcessReady	14500
+Tick 14500 Thread 1 move to RR queue
+Tick 14500 Thread 2 stay in RR queue
+Tick 14500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	14500
+Thread 2	ProcessReady	14600
+Tick 14600 Thread 2 move to RR queue
+Tick 14600 Thread 1 stay in RR queue
+Tick 14600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	14600
+Thread 1	ProcessReady	14700
+Tick 14700 Thread 1 move to RR queue
+Tick 14700 Thread 2 stay in RR queue
+Tick 14700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	14700
+Thread 2	ProcessReady	14800
+Tick 14800 Thread 2 move to RR queue
+Tick 14800 Thread 1 stay in RR queue
+Tick 14800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	14800
+Thread 1	ProcessReady	14900
+Tick 14900 Thread 1 move to RR queue
+Tick 14900 Thread 2 stay in RR queue
+Tick 14900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	14900
+Thread 2	ProcessReady	15000
+Tick 15000 Thread 2 move to RR queue
+Tick 15000 Thread 1 stay in RR queue
+Tick 15000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	15000
+Thread 1	ProcessReady	15100
+Tick 15100 Thread 1 move to RR queue
+Tick 15100 Thread 2 stay in RR queue
+Tick 15100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	15100
+Thread 2	ProcessReady	15200
+Tick 15200 Thread 2 move to RR queue
+Tick 15200 Thread 1 stay in RR queue
+Tick 15200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	15200
+Thread 1	ProcessReady	15300
+Tick 15300 Thread 1 move to RR queue
+Tick 15300 Thread 2 stay in RR queue
+Tick 15300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	15300
+Thread 2	ProcessReady	15400
+Tick 15400 Thread 2 move to RR queue
+Tick 15400 Thread 1 stay in RR queue
+Tick 15400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	15400
+Thread 1	ProcessReady	15500
+Tick 15500 Thread 1 move to RR queue
+Tick 15500 Thread 2 stay in RR queue
+Tick 15500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	15500
+Thread 2	ProcessReady	15600
+Tick 15600 Thread 2 move to RR queue
+Tick 15600 Thread 1 stay in RR queue
+Tick 15600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	15600
+Thread 1	ProcessReady	15700
+Tick 15700 Thread 1 move to RR queue
+Tick 15700 Thread 2 stay in RR queue
+Tick 15700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	15700
+Thread 2	ProcessReady	15800
+Tick 15800 Thread 2 move to RR queue
+Tick 15800 Thread 1 stay in RR queue
+Tick 15800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	15800
+Thread 1	ProcessReady	15900
+Tick 15900 Thread 1 move to RR queue
+Tick 15900 Thread 2 stay in RR queue
+Tick 15900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	15900
+Thread 2	ProcessReady	16000
+Tick 16000 Thread 2 move to RR queue
+Tick 16000 Thread 1 stay in RR queue
+Tick 16000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	16000
+Thread 1	ProcessReady	16100
+Tick 16100 Thread 1 move to RR queue
+Tick 16100 Thread 2 stay in RR queue
+Tick 16100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	16100
+Thread 2	ProcessReady	16200
+Tick 16200 Thread 2 move to RR queue
+Tick 16200 Thread 1 stay in RR queue
+Tick 16200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	16200
+Thread 1	ProcessReady	16300
+Tick 16300 Thread 1 move to RR queue
+Tick 16300 Thread 2 stay in RR queue
+Tick 16300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	16300
+Thread 2	ProcessReady	16400
+Tick 16400 Thread 2 move to RR queue
+Tick 16400 Thread 1 stay in RR queue
+Tick 16400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	16400
+Thread 1	ProcessReady	16500
+Tick 16500 Thread 1 move to RR queue
+Tick 16500 Thread 2 stay in RR queue
+Tick 16500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	16500
+Thread 2	ProcessReady	16600
+Tick 16600 Thread 2 move to RR queue
+Tick 16600 Thread 1 stay in RR queue
+Tick 16600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	16600
+Thread 1	ProcessReady	16700
+Tick 16700 Thread 1 move to RR queue
+Tick 16700 Thread 2 stay in RR queue
+Tick 16700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	16700
+Thread 2	ProcessReady	16800
+Tick 16800 Thread 2 move to RR queue
+Tick 16800 Thread 1 stay in RR queue
+Tick 16800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	16800
+Thread 1	ProcessReady	16900
+Tick 16900 Thread 1 move to RR queue
+Tick 16900 Thread 2 stay in RR queue
+Tick 16900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	16900
+Thread 2	ProcessReady	17000
+Tick 17000 Thread 2 move to RR queue
+Tick 17000 Thread 1 stay in RR queue
+Tick 17000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	17000
+Thread 1	ProcessReady	17100
+Tick 17100 Thread 1 move to RR queue
+Tick 17100 Thread 2 stay in RR queue
+Tick 17100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	17100
+Thread 2	ProcessReady	17200
+Tick 17200 Thread 2 move to RR queue
+Tick 17200 Thread 1 stay in RR queue
+Tick 17200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	17200
+Thread 1	ProcessReady	17300
+Tick 17300 Thread 1 move to RR queue
+Tick 17300 Thread 2 stay in RR queue
+Tick 17300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	17300
+Thread 2	ProcessReady	17400
+Tick 17400 Thread 2 move to RR queue
+Tick 17400 Thread 1 stay in RR queue
+Tick 17400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	17400
+Thread 1	ProcessReady	17500
+Tick 17500 Thread 1 move to RR queue
+Tick 17500 Thread 2 stay in RR queue
+Tick 17500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	17500
+Thread 2	ProcessReady	17600
+Tick 17600 Thread 2 move to RR queue
+Tick 17600 Thread 1 stay in RR queue
+Tick 17600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	17600
+Thread 1	ProcessReady	17700
+Tick 17700 Thread 1 move to RR queue
+Tick 17700 Thread 2 stay in RR queue
+Tick 17700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	17700
+Thread 2	ProcessReady	17800
+Tick 17800 Thread 2 move to RR queue
+Tick 17800 Thread 1 stay in RR queue
+Tick 17800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	17800
+Thread 1	ProcessReady	17900
+Tick 17900 Thread 1 move to RR queue
+Tick 17900 Thread 2 stay in RR queue
+Tick 17900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	17900
+Thread 2	ProcessReady	18000
+Tick 18000 Thread 2 move to RR queue
+Tick 18000 Thread 1 stay in RR queue
+Tick 18000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	18000
+Thread 1	ProcessReady	18100
+Tick 18100 Thread 1 move to RR queue
+Tick 18100 Thread 2 stay in RR queue
+Tick 18100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	18100
+Thread 2	ProcessReady	18200
+Tick 18200 Thread 2 move to RR queue
+Tick 18200 Thread 1 stay in RR queue
+Tick 18200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	18200
+Thread 1	ProcessReady	18300
+Tick 18300 Thread 1 move to RR queue
+Tick 18300 Thread 2 stay in RR queue
+Tick 18300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	18300
+Thread 2	ProcessReady	18400
+Tick 18400 Thread 2 move to RR queue
+Tick 18400 Thread 1 stay in RR queue
+Tick 18400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	18400
+Thread 1	ProcessReady	18500
+Tick 18500 Thread 1 move to RR queue
+Tick 18500 Thread 2 stay in RR queue
+Tick 18500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	18500
+Thread 2	ProcessReady	18600
+Tick 18600 Thread 2 move to RR queue
+Tick 18600 Thread 1 stay in RR queue
+Tick 18600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	18600
+Thread 1	ProcessReady	18700
+Tick 18700 Thread 1 move to RR queue
+Tick 18700 Thread 2 stay in RR queue
+Tick 18700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	18700
+Thread 2	ProcessReady	18800
+Tick 18800 Thread 2 move to RR queue
+Tick 18800 Thread 1 stay in RR queue
+Tick 18800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	18800
+Thread 1	ProcessReady	18900
+Tick 18900 Thread 1 move to RR queue
+Tick 18900 Thread 2 stay in RR queue
+Tick 18900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	18900
+Thread 2	ProcessReady	19000
+Tick 19000 Thread 2 move to RR queue
+Tick 19000 Thread 1 stay in RR queue
+Tick 19000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	19000
+Thread 1	ProcessReady	19100
+Tick 19100 Thread 1 move to RR queue
+Tick 19100 Thread 2 stay in RR queue
+Tick 19100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	19100
+Thread 2	ProcessReady	19200
+Tick 19200 Thread 2 move to RR queue
+Tick 19200 Thread 1 stay in RR queue
+Tick 19200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	19200
+Thread 1	ProcessReady	19300
+Tick 19300 Thread 1 move to RR queue
+Tick 19300 Thread 2 stay in RR queue
+Tick 19300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	19300
+Thread 2	ProcessReady	19400
+Tick 19400 Thread 2 move to RR queue
+Tick 19400 Thread 1 stay in RR queue
+Tick 19400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	19400
+Thread 1	ProcessReady	19500
+Tick 19500 Thread 1 move to RR queue
+Tick 19500 Thread 2 stay in RR queue
+Tick 19500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	19500
+Thread 2	ProcessReady	19600
+Tick 19600 Thread 2 move to RR queue
+Tick 19600 Thread 1 stay in RR queue
+Tick 19600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	19600
+Thread 1	ProcessReady	19700
+Tick 19700 Thread 1 move to RR queue
+Tick 19700 Thread 2 stay in RR queue
+Tick 19700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	19700
+Thread 2	ProcessReady	19800
+Tick 19800 Thread 2 move to RR queue
+Tick 19800 Thread 1 stay in RR queue
+Tick 19800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	19800
+Thread 1	ProcessReady	19900
+Tick 19900 Thread 1 move to RR queue
+Tick 19900 Thread 2 stay in RR queue
+Tick 19900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	19900
+Thread 2	ProcessReady	20000
+Tick 20000 Thread 2 move to RR queue
+Tick 20000 Thread 1 stay in RR queue
+Tick 20000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	20000
+Thread 1	ProcessReady	20100
+Tick 20100 Thread 1 move to RR queue
+Tick 20100 Thread 2 stay in RR queue
+Tick 20100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	20100
+Thread 2	ProcessReady	20200
+Tick 20200 Thread 2 move to RR queue
+Tick 20200 Thread 1 stay in RR queue
+Tick 20200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	20200
+Thread 1	ProcessReady	20300
+Tick 20300 Thread 1 move to RR queue
+Tick 20300 Thread 2 stay in RR queue
+Tick 20300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	20300
+Thread 2	ProcessReady	20400
+Tick 20400 Thread 2 move to RR queue
+Tick 20400 Thread 1 stay in RR queue
+Tick 20400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	20400
+Thread 1	ProcessReady	20500
+Tick 20500 Thread 1 move to RR queue
+Tick 20500 Thread 2 stay in RR queue
+Tick 20500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	20500
+Thread 2	ProcessReady	20600
+Tick 20600 Thread 2 move to RR queue
+Tick 20600 Thread 1 stay in RR queue
+Tick 20600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	20600
+Thread 1	ProcessReady	20700
+Tick 20700 Thread 1 move to RR queue
+Tick 20700 Thread 2 stay in RR queue
+Tick 20700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	20700
+Thread 2	ProcessReady	20800
+Tick 20800 Thread 2 move to RR queue
+Tick 20800 Thread 1 stay in RR queue
+Tick 20800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	20800
+Thread 1	ProcessReady	20900
+Tick 20900 Thread 1 move to RR queue
+Tick 20900 Thread 2 stay in RR queue
+Tick 20900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	20900
+Thread 2	ProcessReady	21000
+Tick 21000 Thread 2 move to RR queue
+Tick 21000 Thread 1 stay in RR queue
+Tick 21000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	21000
+Thread 1	ProcessReady	21100
+Tick 21100 Thread 1 move to RR queue
+Tick 21100 Thread 2 stay in RR queue
+Tick 21100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	21100
+Thread 2	ProcessReady	21200
+Tick 21200 Thread 2 move to RR queue
+Tick 21200 Thread 1 stay in RR queue
+Tick 21200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	21200
+Thread 1	ProcessReady	21300
+Tick 21300 Thread 1 move to RR queue
+Tick 21300 Thread 2 stay in RR queue
+Tick 21300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	21300
+Thread 2	ProcessReady	21400
+Tick 21400 Thread 2 move to RR queue
+Tick 21400 Thread 1 stay in RR queue
+Tick 21400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	21400
+Thread 1	ProcessReady	21500
+Tick 21500 Thread 1 move to RR queue
+Tick 21500 Thread 2 stay in RR queue
+Tick 21500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	21500
+Thread 2	ProcessReady	21600
+Tick 21600 Thread 2 move to RR queue
+Tick 21600 Thread 1 stay in RR queue
+Tick 21600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	21600
+Thread 1	ProcessReady	21700
+Tick 21700 Thread 1 move to RR queue
+Tick 21700 Thread 2 stay in RR queue
+Tick 21700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	21700
+Thread 2	ProcessReady	21800
+Tick 21800 Thread 2 move to RR queue
+Tick 21800 Thread 1 stay in RR queue
+Tick 21800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	21800
+Thread 1	ProcessReady	21900
+Tick 21900 Thread 1 move to RR queue
+Tick 21900 Thread 2 stay in RR queue
+Tick 21900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	21900
+Thread 2	ProcessReady	22000
+Tick 22000 Thread 2 move to RR queue
+Tick 22000 Thread 1 stay in RR queue
+Tick 22000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	22000
+Thread 1	ProcessReady	22100
+Tick 22100 Thread 1 move to RR queue
+Tick 22100 Thread 2 stay in RR queue
+Tick 22100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	22100
+Thread 2	ProcessReady	22200
+Tick 22200 Thread 2 move to RR queue
+Tick 22200 Thread 1 stay in RR queue
+Tick 22200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	22200
+Thread 1	ProcessReady	22300
+Tick 22300 Thread 1 move to RR queue
+Tick 22300 Thread 2 stay in RR queue
+Tick 22300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	22300
+Thread 2	ProcessReady	22400
+Tick 22400 Thread 2 move to RR queue
+Tick 22400 Thread 1 stay in RR queue
+Tick 22400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	22400
+Thread 1	ProcessReady	22500
+Tick 22500 Thread 1 move to RR queue
+Tick 22500 Thread 2 stay in RR queue
+Tick 22500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	22500
+Thread 2	ProcessReady	22600
+Tick 22600 Thread 2 move to RR queue
+Tick 22600 Thread 1 stay in RR queue
+Tick 22600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	22600
+Thread 1	ProcessReady	22700
+Tick 22700 Thread 1 move to RR queue
+Tick 22700 Thread 2 stay in RR queue
+Tick 22700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	22700
+Thread 2	ProcessReady	22800
+Tick 22800 Thread 2 move to RR queue
+Tick 22800 Thread 1 stay in RR queue
+Tick 22800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	22800
+Thread 1	ProcessReady	22900
+Tick 22900 Thread 1 move to RR queue
+Tick 22900 Thread 2 stay in RR queue
+Tick 22900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	22900
+Thread 2	ProcessReady	23000
+Tick 23000 Thread 2 move to RR queue
+Tick 23000 Thread 1 stay in RR queue
+Tick 23000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	23000
+Thread 1	ProcessReady	23100
+Tick 23100 Thread 1 move to RR queue
+Tick 23100 Thread 2 stay in RR queue
+Tick 23100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	23100
+Thread 2	ProcessReady	23200
+Tick 23200 Thread 2 move to RR queue
+Tick 23200 Thread 1 stay in RR queue
+Tick 23200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	23200
+Thread 1	ProcessReady	23300
+Tick 23300 Thread 1 move to RR queue
+Tick 23300 Thread 2 stay in RR queue
+Tick 23300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	23300
+Thread 2	ProcessReady	23400
+Tick 23400 Thread 2 move to RR queue
+Tick 23400 Thread 1 stay in RR queue
+Tick 23400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	23400
+Thread 1	ProcessReady	23500
+Tick 23500 Thread 1 move to RR queue
+Tick 23500 Thread 2 stay in RR queue
+Tick 23500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	23500
+Thread 2	ProcessReady	23600
+Tick 23600 Thread 2 move to RR queue
+Tick 23600 Thread 1 stay in RR queue
+Tick 23600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	23600
+Thread 1	ProcessReady	23700
+Tick 23700 Thread 1 move to RR queue
+Tick 23700 Thread 2 stay in RR queue
+Tick 23700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	23700
+Thread 2	ProcessReady	23800
+Tick 23800 Thread 2 move to RR queue
+Tick 23800 Thread 1 stay in RR queue
+Tick 23800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	23800
+Thread 1	ProcessReady	23900
+Tick 23900 Thread 1 move to RR queue
+Tick 23900 Thread 2 stay in RR queue
+Tick 23900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	23900
+Thread 2	ProcessReady	24000
+Tick 24000 Thread 2 move to RR queue
+Tick 24000 Thread 1 stay in RR queue
+Tick 24000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	24000
+Thread 1	ProcessReady	24100
+Tick 24100 Thread 1 move to RR queue
+Tick 24100 Thread 2 stay in RR queue
+Tick 24100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	24100
+Thread 2	ProcessReady	24200
+Tick 24200 Thread 2 move to RR queue
+Tick 24200 Thread 1 stay in RR queue
+Tick 24200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	24200
+Thread 1	ProcessReady	24300
+Tick 24300 Thread 1 move to RR queue
+Tick 24300 Thread 2 stay in RR queue
+Tick 24300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	24300
+Thread 2	ProcessReady	24400
+Tick 24400 Thread 2 move to RR queue
+Tick 24400 Thread 1 stay in RR queue
+Tick 24400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	24400
+Thread 1	ProcessReady	24500
+Tick 24500 Thread 1 move to RR queue
+Tick 24500 Thread 2 stay in RR queue
+Tick 24500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	24500
+Thread 2	ProcessReady	24600
+Tick 24600 Thread 2 move to RR queue
+Tick 24600 Thread 1 stay in RR queue
+Tick 24600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	24600
+Thread 1	ProcessReady	24700
+Tick 24700 Thread 1 move to RR queue
+Tick 24700 Thread 2 stay in RR queue
+Tick 24700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	24700
+Thread 2	ProcessReady	24800
+Tick 24800 Thread 2 move to RR queue
+Tick 24800 Thread 1 stay in RR queue
+Tick 24800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	24800
+Thread 1	ProcessReady	24900
+Tick 24900 Thread 1 move to RR queue
+Tick 24900 Thread 2 stay in RR queue
+Tick 24900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	24900
+Thread 2	ProcessReady	25000
+Tick 25000 Thread 2 move to RR queue
+Tick 25000 Thread 1 stay in RR queue
+Tick 25000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	25000
+Thread 1	ProcessReady	25100
+Tick 25100 Thread 1 move to RR queue
+Tick 25100 Thread 2 stay in RR queue
+Tick 25100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	25100
+Thread 2	ProcessReady	25200
+Tick 25200 Thread 2 move to RR queue
+Tick 25200 Thread 1 stay in RR queue
+Tick 25200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	25200
+Thread 1	ProcessReady	25300
+Tick 25300 Thread 1 move to RR queue
+Tick 25300 Thread 2 stay in RR queue
+Tick 25300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	25300
+Thread 2	ProcessReady	25400
+Tick 25400 Thread 2 move to RR queue
+Tick 25400 Thread 1 stay in RR queue
+Tick 25400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	25400
+Thread 1	ProcessReady	25500
+Tick 25500 Thread 1 move to RR queue
+Tick 25500 Thread 2 stay in RR queue
+Tick 25500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	25500
+Thread 2	ProcessReady	25600
+Tick 25600 Thread 2 move to RR queue
+Tick 25600 Thread 1 stay in RR queue
+Tick 25600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	25600
+Thread 1	ProcessReady	25700
+Tick 25700 Thread 1 move to RR queue
+Tick 25700 Thread 2 stay in RR queue
+Tick 25700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	25700
+Thread 2	ProcessReady	25800
+Tick 25800 Thread 2 move to RR queue
+Tick 25800 Thread 1 stay in RR queue
+Tick 25800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	25800
+Thread 1	ProcessReady	25900
+Tick 25900 Thread 1 move to RR queue
+Tick 25900 Thread 2 stay in RR queue
+Tick 25900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	25900
+Thread 2	ProcessReady	26000
+Tick 26000 Thread 2 move to RR queue
+Tick 26000 Thread 1 stay in RR queue
+Tick 26000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	26000
+Thread 1	ProcessReady	26100
+Tick 26100 Thread 1 move to RR queue
+Tick 26100 Thread 2 stay in RR queue
+Tick 26100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	26100
+Thread 2	ProcessReady	26200
+Tick 26200 Thread 2 move to RR queue
+Tick 26200 Thread 1 stay in RR queue
+Tick 26200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	26200
+Thread 1	ProcessReady	26300
+Tick 26300 Thread 1 move to RR queue
+Tick 26300 Thread 2 stay in RR queue
+Tick 26300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	26300
+Thread 2	ProcessReady	26400
+Tick 26400 Thread 2 move to RR queue
+Tick 26400 Thread 1 stay in RR queue
+Tick 26400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	26400
+Thread 1	ProcessReady	26500
+Tick 26500 Thread 1 move to RR queue
+Tick 26500 Thread 2 stay in RR queue
+Tick 26500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	26500
+Thread 2	ProcessReady	26600
+Tick 26600 Thread 2 move to RR queue
+Tick 26600 Thread 1 stay in RR queue
+Tick 26600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	26600
+Thread 1	ProcessReady	26700
+Tick 26700 Thread 1 move to RR queue
+Tick 26700 Thread 2 stay in RR queue
+Tick 26700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	26700
+Thread 2	ProcessReady	26800
+Tick 26800 Thread 2 move to RR queue
+Tick 26800 Thread 1 stay in RR queue
+Tick 26800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	26800
+Thread 1	ProcessReady	26900
+Tick 26900 Thread 1 move to RR queue
+Tick 26900 Thread 2 stay in RR queue
+Tick 26900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	26900
+Thread 2	ProcessReady	27000
+Tick 27000 Thread 2 move to RR queue
+Tick 27000 Thread 1 stay in RR queue
+Tick 27000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	27000
+Thread 1	ProcessReady	27100
+Tick 27100 Thread 1 move to RR queue
+Tick 27100 Thread 2 stay in RR queue
+Tick 27100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	27100
+Thread 2	ProcessReady	27200
+Tick 27200 Thread 2 move to RR queue
+Tick 27200 Thread 1 stay in RR queue
+Tick 27200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	27200
+Thread 1	ProcessReady	27300
+Tick 27300 Thread 1 move to RR queue
+Tick 27300 Thread 2 stay in RR queue
+Tick 27300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	27300
+Thread 2	ProcessReady	27400
+Tick 27400 Thread 2 move to RR queue
+Tick 27400 Thread 1 stay in RR queue
+Tick 27400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	27400
+Thread 1	ProcessReady	27500
+Tick 27500 Thread 1 move to RR queue
+Tick 27500 Thread 2 stay in RR queue
+Tick 27500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	27500
+Thread 2	ProcessReady	27600
+Tick 27600 Thread 2 move to RR queue
+Tick 27600 Thread 1 stay in RR queue
+Tick 27600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	27600
+Thread 1	ProcessReady	27700
+Tick 27700 Thread 1 move to RR queue
+Tick 27700 Thread 2 stay in RR queue
+Tick 27700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	27700
+Thread 2	ProcessReady	27800
+Tick 27800 Thread 2 move to RR queue
+Tick 27800 Thread 1 stay in RR queue
+Tick 27800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	27800
+Thread 1	ProcessReady	27900
+Tick 27900 Thread 1 move to RR queue
+Tick 27900 Thread 2 stay in RR queue
+Tick 27900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	27900
+Thread 2	ProcessReady	28000
+Tick 28000 Thread 2 move to RR queue
+Tick 28000 Thread 1 stay in RR queue
+Tick 28000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	28000
+Thread 1	ProcessReady	28100
+Tick 28100 Thread 1 move to RR queue
+Tick 28100 Thread 2 stay in RR queue
+Tick 28100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	28100
+Thread 2	ProcessReady	28200
+Tick 28200 Thread 2 move to RR queue
+Tick 28200 Thread 1 stay in RR queue
+Tick 28200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	28200
+Thread 1	ProcessReady	28300
+Tick 28300 Thread 1 move to RR queue
+Tick 28300 Thread 2 stay in RR queue
+Tick 28300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	28300
+Thread 2	ProcessReady	28400
+Tick 28400 Thread 2 move to RR queue
+Tick 28400 Thread 1 stay in RR queue
+Tick 28400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	28400
+Thread 1	ProcessReady	28500
+Tick 28500 Thread 1 move to RR queue
+Tick 28500 Thread 2 stay in RR queue
+Tick 28500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	28500
+Thread 2	ProcessReady	28600
+Tick 28600 Thread 2 move to RR queue
+Tick 28600 Thread 1 stay in RR queue
+Tick 28600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	28600
+Thread 1	ProcessReady	28700
+Tick 28700 Thread 1 move to RR queue
+Tick 28700 Thread 2 stay in RR queue
+Tick 28700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	28700
+Thread 2	ProcessReady	28800
+Tick 28800 Thread 2 move to RR queue
+Tick 28800 Thread 1 stay in RR queue
+Tick 28800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	28800
+Thread 1	ProcessReady	28900
+Tick 28900 Thread 1 move to RR queue
+Tick 28900 Thread 2 stay in RR queue
+Tick 28900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	28900
+Thread 2	ProcessReady	29000
+Tick 29000 Thread 2 move to RR queue
+Tick 29000 Thread 1 stay in RR queue
+Tick 29000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	29000
+Thread 1	ProcessReady	29100
+Tick 29100 Thread 1 move to RR queue
+Tick 29100 Thread 2 stay in RR queue
+Tick 29100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	29100
+Thread 2	ProcessReady	29200
+Tick 29200 Thread 2 move to RR queue
+Tick 29200 Thread 1 stay in RR queue
+Tick 29200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	29200
+Thread 1	ProcessReady	29300
+Tick 29300 Thread 1 move to RR queue
+Tick 29300 Thread 2 stay in RR queue
+Tick 29300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	29300
+Thread 2	ProcessReady	29400
+Tick 29400 Thread 2 move to RR queue
+Tick 29400 Thread 1 stay in RR queue
+Tick 29400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	29400
+Thread 1	ProcessReady	29500
+Tick 29500 Thread 1 move to RR queue
+Tick 29500 Thread 2 stay in RR queue
+Tick 29500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	29500
+Thread 2	ProcessReady	29600
+Tick 29600 Thread 2 move to RR queue
+Tick 29600 Thread 1 stay in RR queue
+Tick 29600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	29600
+Thread 1	ProcessReady	29700
+Tick 29700 Thread 1 move to RR queue
+Tick 29700 Thread 2 stay in RR queue
+Tick 29700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	29700
+Thread 2	ProcessReady	29800
+Tick 29800 Thread 2 move to RR queue
+Tick 29800 Thread 1 stay in RR queue
+Tick 29800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	29800
+Thread 1	ProcessReady	29900
+Tick 29900 Thread 1 move to RR queue
+Tick 29900 Thread 2 stay in RR queue
+Tick 29900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	29900
+Thread 2	ProcessReady	30000
+Tick 30000 Thread 2 move to RR queue
+Tick 30000 Thread 1 stay in RR queue
+Tick 30000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	30000
+Thread 1	ProcessReady	30100
+Tick 30100 Thread 1 move to RR queue
+Tick 30100 Thread 2 stay in RR queue
+Tick 30100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	30100
+Thread 2	ProcessReady	30200
+Tick 30200 Thread 2 move to RR queue
+Tick 30200 Thread 1 stay in RR queue
+Tick 30200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	30200
+Thread 1	ProcessReady	30300
+Tick 30300 Thread 1 move to RR queue
+Tick 30300 Thread 2 stay in RR queue
+Tick 30300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	30300
+Thread 2	ProcessReady	30400
+Tick 30400 Thread 2 move to RR queue
+Tick 30400 Thread 1 stay in RR queue
+Tick 30400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	30400
+Thread 1	ProcessReady	30500
+Tick 30500 Thread 1 move to RR queue
+Tick 30500 Thread 2 stay in RR queue
+Tick 30500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	30500
+Thread 2	ProcessReady	30600
+Tick 30600 Thread 2 move to RR queue
+Tick 30600 Thread 1 stay in RR queue
+Tick 30600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	30600
+Thread 1	ProcessReady	30700
+Tick 30700 Thread 1 move to RR queue
+Tick 30700 Thread 2 stay in RR queue
+Tick 30700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	30700
+Thread 2	ProcessReady	30800
+Tick 30800 Thread 2 move to RR queue
+Tick 30800 Thread 1 stay in RR queue
+Tick 30800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	30800
+Thread 1	ProcessReady	30900
+Tick 30900 Thread 1 move to RR queue
+Tick 30900 Thread 2 stay in RR queue
+Tick 30900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	30900
+Thread 2	ProcessReady	31000
+Tick 31000 Thread 2 move to RR queue
+Tick 31000 Thread 1 stay in RR queue
+Tick 31000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	31000
+Thread 1	ProcessReady	31100
+Tick 31100 Thread 1 move to RR queue
+Tick 31100 Thread 2 stay in RR queue
+Tick 31100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	31100
+Thread 2	ProcessReady	31200
+Tick 31200 Thread 2 move to RR queue
+Tick 31200 Thread 1 stay in RR queue
+Tick 31200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	31200
+Thread 1	ProcessReady	31300
+Tick 31300 Thread 1 move to RR queue
+Tick 31300 Thread 2 stay in RR queue
+Tick 31300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	31300
+Thread 2	ProcessReady	31400
+Tick 31400 Thread 2 move to RR queue
+Tick 31400 Thread 1 stay in RR queue
+Tick 31400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	31400
+Thread 1	ProcessReady	31500
+Tick 31500 Thread 1 move to RR queue
+Tick 31500 Thread 2 stay in RR queue
+Tick 31500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	31500
+Thread 2	ProcessReady	31600
+Tick 31600 Thread 2 move to RR queue
+Tick 31600 Thread 1 stay in RR queue
+Tick 31600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	31600
+Thread 1	ProcessReady	31700
+Tick 31700 Thread 1 move to RR queue
+Tick 31700 Thread 2 stay in RR queue
+Tick 31700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	31700
+Thread 2	ProcessReady	31800
+Tick 31800 Thread 2 move to RR queue
+Tick 31800 Thread 1 stay in RR queue
+Tick 31800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	31800
+Thread 1	ProcessReady	31900
+Tick 31900 Thread 1 move to RR queue
+Tick 31900 Thread 2 stay in RR queue
+Tick 31900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	31900
+Thread 2	ProcessReady	32000
+Tick 32000 Thread 2 move to RR queue
+Tick 32000 Thread 1 stay in RR queue
+Tick 32000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	32000
+Thread 1	ProcessReady	32100
+Tick 32100 Thread 1 move to RR queue
+Tick 32100 Thread 2 stay in RR queue
+Tick 32100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	32100
+Thread 2	ProcessReady	32200
+Tick 32200 Thread 2 move to RR queue
+Tick 32200 Thread 1 stay in RR queue
+Tick 32200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	32200
+Thread 1	ProcessReady	32300
+Tick 32300 Thread 1 move to RR queue
+Tick 32300 Thread 2 stay in RR queue
+Tick 32300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	32300
+Thread 2	ProcessReady	32400
+Tick 32400 Thread 2 move to RR queue
+Tick 32400 Thread 1 stay in RR queue
+Tick 32400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	32400
+Thread 1	ProcessReady	32500
+Tick 32500 Thread 1 move to RR queue
+Tick 32500 Thread 2 stay in RR queue
+Tick 32500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	32500
+Thread 2	ProcessReady	32600
+Tick 32600 Thread 2 move to RR queue
+Tick 32600 Thread 1 stay in RR queue
+Tick 32600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	32600
+Thread 1	ProcessReady	32700
+Tick 32700 Thread 1 move to RR queue
+Tick 32700 Thread 2 stay in RR queue
+Tick 32700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	32700
+Thread 2	ProcessReady	32800
+Tick 32800 Thread 2 move to RR queue
+Tick 32800 Thread 1 stay in RR queue
+Tick 32800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	32800
+Thread 1	ProcessReady	32900
+Tick 32900 Thread 1 move to RR queue
+Tick 32900 Thread 2 stay in RR queue
+Tick 32900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	32900
+Thread 2	ProcessReady	33000
+Tick 33000 Thread 2 move to RR queue
+Tick 33000 Thread 1 stay in RR queue
+Tick 33000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	33000
+Thread 1	ProcessReady	33100
+Tick 33100 Thread 1 move to RR queue
+Tick 33100 Thread 2 stay in RR queue
+Tick 33100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	33100
+Thread 2	ProcessReady	33200
+Tick 33200 Thread 2 move to RR queue
+Tick 33200 Thread 1 stay in RR queue
+Tick 33200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	33200
+Thread 1	ProcessReady	33300
+Tick 33300 Thread 1 move to RR queue
+Tick 33300 Thread 2 stay in RR queue
+Tick 33300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	33300
+Thread 2	ProcessReady	33400
+Tick 33400 Thread 2 move to RR queue
+Tick 33400 Thread 1 stay in RR queue
+Tick 33400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	33400
+Thread 1	ProcessReady	33500
+Tick 33500 Thread 1 move to RR queue
+Tick 33500 Thread 2 stay in RR queue
+Tick 33500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	33500
+Thread 2	ProcessReady	33600
+Tick 33600 Thread 2 move to RR queue
+Tick 33600 Thread 1 stay in RR queue
+Tick 33600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	33600
+Thread 1	ProcessReady	33700
+Tick 33700 Thread 1 move to RR queue
+Tick 33700 Thread 2 stay in RR queue
+Tick 33700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	33700
+Thread 2	ProcessReady	33800
+Tick 33800 Thread 2 move to RR queue
+Tick 33800 Thread 1 stay in RR queue
+Tick 33800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	33800
+Thread 1	ProcessReady	33900
+Tick 33900 Thread 1 move to RR queue
+Tick 33900 Thread 2 stay in RR queue
+Tick 33900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	33900
+Thread 2	ProcessReady	34000
+Tick 34000 Thread 2 move to RR queue
+Tick 34000 Thread 1 stay in RR queue
+Tick 34000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	34000
+Thread 1	ProcessReady	34100
+Tick 34100 Thread 1 move to RR queue
+Tick 34100 Thread 2 stay in RR queue
+Tick 34100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	34100
+Thread 2	ProcessReady	34200
+Tick 34200 Thread 2 move to RR queue
+Tick 34200 Thread 1 stay in RR queue
+Tick 34200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	34200
+Thread 1	ProcessReady	34300
+Tick 34300 Thread 1 move to RR queue
+Tick 34300 Thread 2 stay in RR queue
+Tick 34300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	34300
+Thread 2	ProcessReady	34400
+Tick 34400 Thread 2 move to RR queue
+Tick 34400 Thread 1 stay in RR queue
+Tick 34400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	34400
+Thread 1	ProcessReady	34500
+Tick 34500 Thread 1 move to RR queue
+Tick 34500 Thread 2 stay in RR queue
+Tick 34500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	34500
+Thread 2	ProcessReady	34600
+Tick 34600 Thread 2 move to RR queue
+Tick 34600 Thread 1 stay in RR queue
+Tick 34600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	34600
+Thread 1	ProcessReady	34700
+Tick 34700 Thread 1 move to RR queue
+Tick 34700 Thread 2 stay in RR queue
+Tick 34700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	34700
+Thread 2	ProcessReady	34800
+Tick 34800 Thread 2 move to RR queue
+Tick 34800 Thread 1 stay in RR queue
+Tick 34800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	34800
+Thread 1	ProcessReady	34900
+Tick 34900 Thread 1 move to RR queue
+Tick 34900 Thread 2 stay in RR queue
+Tick 34900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	34900
+Thread 2	ProcessReady	35000
+Tick 35000 Thread 2 move to RR queue
+Tick 35000 Thread 1 stay in RR queue
+Tick 35000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	35000
+Thread 1	ProcessReady	35100
+Tick 35100 Thread 1 move to RR queue
+Tick 35100 Thread 2 stay in RR queue
+Tick 35100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	35100
+Thread 2	ProcessReady	35200
+Tick 35200 Thread 2 move to RR queue
+Tick 35200 Thread 1 stay in RR queue
+Tick 35200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	35200
+Thread 1	ProcessReady	35300
+Tick 35300 Thread 1 move to RR queue
+Tick 35300 Thread 2 stay in RR queue
+Tick 35300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	35300
+Thread 2	ProcessReady	35400
+Tick 35400 Thread 2 move to RR queue
+Tick 35400 Thread 1 stay in RR queue
+Tick 35400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	35400
+Thread 1	ProcessReady	35500
+Tick 35500 Thread 1 move to RR queue
+Tick 35500 Thread 2 stay in RR queue
+Tick 35500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	35500
+Thread 2	ProcessReady	35600
+Tick 35600 Thread 2 move to RR queue
+Tick 35600 Thread 1 stay in RR queue
+Tick 35600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	35600
+Thread 1	ProcessReady	35700
+Tick 35700 Thread 1 move to RR queue
+Tick 35700 Thread 2 stay in RR queue
+Tick 35700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	35700
+Thread 2	ProcessReady	35800
+Tick 35800 Thread 2 move to RR queue
+Tick 35800 Thread 1 stay in RR queue
+Tick 35800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	35800
+Thread 1	ProcessReady	35900
+Tick 35900 Thread 1 move to RR queue
+Tick 35900 Thread 2 stay in RR queue
+Tick 35900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	35900
+Thread 2	ProcessReady	36000
+Tick 36000 Thread 2 move to RR queue
+Tick 36000 Thread 1 stay in RR queue
+Tick 36000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	36000
+Thread 1	ProcessReady	36100
+Tick 36100 Thread 1 move to RR queue
+Tick 36100 Thread 2 stay in RR queue
+Tick 36100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	36100
+Thread 2	ProcessReady	36200
+Tick 36200 Thread 2 move to RR queue
+Tick 36200 Thread 1 stay in RR queue
+Tick 36200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	36200
+Thread 1	ProcessReady	36300
+Tick 36300 Thread 1 move to RR queue
+Tick 36300 Thread 2 stay in RR queue
+Tick 36300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	36300
+Thread 2	ProcessReady	36400
+Tick 36400 Thread 2 move to RR queue
+Tick 36400 Thread 1 stay in RR queue
+Tick 36400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	36400
+Thread 1	ProcessReady	36500
+Tick 36500 Thread 1 move to RR queue
+Tick 36500 Thread 2 stay in RR queue
+Tick 36500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	36500
+Thread 2	ProcessReady	36600
+Tick 36600 Thread 2 move to RR queue
+Tick 36600 Thread 1 stay in RR queue
+Tick 36600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	36600
+Thread 1	ProcessReady	36700
+Tick 36700 Thread 1 move to RR queue
+Tick 36700 Thread 2 stay in RR queue
+Tick 36700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	36700
+Thread 2	ProcessReady	36800
+Tick 36800 Thread 2 move to RR queue
+Tick 36800 Thread 1 stay in RR queue
+Tick 36800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	36800
+Thread 1	ProcessReady	36900
+Tick 36900 Thread 1 move to RR queue
+Tick 36900 Thread 2 stay in RR queue
+Tick 36900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	36900
+Thread 2	ProcessReady	37000
+Tick 37000 Thread 2 move to RR queue
+Tick 37000 Thread 1 stay in RR queue
+Tick 37000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	37000
+Thread 1	ProcessReady	37100
+Tick 37100 Thread 1 move to RR queue
+Tick 37100 Thread 2 stay in RR queue
+Tick 37100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	37100
+Thread 2	ProcessReady	37200
+Tick 37200 Thread 2 move to RR queue
+Tick 37200 Thread 1 stay in RR queue
+Tick 37200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	37200
+Thread 1	ProcessReady	37300
+Tick 37300 Thread 1 move to RR queue
+Tick 37300 Thread 2 stay in RR queue
+Tick 37300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	37300
+Thread 2	ProcessReady	37400
+Tick 37400 Thread 2 move to RR queue
+Tick 37400 Thread 1 stay in RR queue
+Tick 37400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	37400
+Thread 1	ProcessReady	37500
+Tick 37500 Thread 1 move to RR queue
+Tick 37500 Thread 2 stay in RR queue
+Tick 37500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	37500
+Thread 2	ProcessReady	37600
+Tick 37600 Thread 2 move to RR queue
+Tick 37600 Thread 1 stay in RR queue
+Tick 37600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	37600
+Thread 1	ProcessReady	37700
+Tick 37700 Thread 1 move to RR queue
+Tick 37700 Thread 2 stay in RR queue
+Tick 37700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	37700
+Thread 2	ProcessReady	37800
+Tick 37800 Thread 2 move to RR queue
+Tick 37800 Thread 1 stay in RR queue
+Tick 37800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	37800
+Thread 1	ProcessReady	37900
+Tick 37900 Thread 1 move to RR queue
+Tick 37900 Thread 2 stay in RR queue
+Tick 37900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	37900
+Thread 2	ProcessReady	38000
+Tick 38000 Thread 2 move to RR queue
+Tick 38000 Thread 1 stay in RR queue
+Tick 38000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	38000
+Thread 1	ProcessReady	38100
+Tick 38100 Thread 1 move to RR queue
+Tick 38100 Thread 2 stay in RR queue
+Tick 38100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	38100
+Thread 2	ProcessReady	38200
+Tick 38200 Thread 2 move to RR queue
+Tick 38200 Thread 1 stay in RR queue
+Tick 38200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	38200
+Thread 1	ProcessReady	38300
+Tick 38300 Thread 1 move to RR queue
+Tick 38300 Thread 2 stay in RR queue
+Tick 38300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	38300
+Thread 2	ProcessReady	38400
+Tick 38400 Thread 2 move to RR queue
+Tick 38400 Thread 1 stay in RR queue
+Tick 38400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	38400
+Thread 1	ProcessReady	38500
+Tick 38500 Thread 1 move to RR queue
+Tick 38500 Thread 2 stay in RR queue
+Tick 38500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	38500
+Thread 2	ProcessReady	38600
+Tick 38600 Thread 2 move to RR queue
+Tick 38600 Thread 1 stay in RR queue
+Tick 38600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	38600
+Thread 1	ProcessReady	38700
+Tick 38700 Thread 1 move to RR queue
+Tick 38700 Thread 2 stay in RR queue
+Tick 38700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	38700
+Thread 2	ProcessReady	38800
+Tick 38800 Thread 2 move to RR queue
+Tick 38800 Thread 1 stay in RR queue
+Tick 38800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	38800
+Thread 1	ProcessReady	38900
+Tick 38900 Thread 1 move to RR queue
+Tick 38900 Thread 2 stay in RR queue
+Tick 38900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	38900
+Thread 2	ProcessReady	39000
+Tick 39000 Thread 2 move to RR queue
+Tick 39000 Thread 1 stay in RR queue
+Tick 39000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	39000
+Thread 1	ProcessReady	39100
+Tick 39100 Thread 1 move to RR queue
+Tick 39100 Thread 2 stay in RR queue
+Tick 39100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	39100
+Thread 2	ProcessReady	39200
+Tick 39200 Thread 2 move to RR queue
+Tick 39200 Thread 1 stay in RR queue
+Tick 39200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	39200
+Thread 1	ProcessReady	39300
+Tick 39300 Thread 1 move to RR queue
+Tick 39300 Thread 2 stay in RR queue
+Tick 39300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	39300
+Thread 2	ProcessReady	39400
+Tick 39400 Thread 2 move to RR queue
+Tick 39400 Thread 1 stay in RR queue
+Tick 39400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	39400
+Thread 1	ProcessReady	39500
+Tick 39500 Thread 1 move to RR queue
+Tick 39500 Thread 2 stay in RR queue
+Tick 39500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	39500
+Thread 2	ProcessReady	39600
+Tick 39600 Thread 2 move to RR queue
+Tick 39600 Thread 1 stay in RR queue
+Tick 39600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	39600
+Thread 1	ProcessReady	39700
+Tick 39700 Thread 1 move to RR queue
+Tick 39700 Thread 2 stay in RR queue
+Tick 39700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	39700
+Thread 2	ProcessReady	39800
+Tick 39800 Thread 2 move to RR queue
+Tick 39800 Thread 1 stay in RR queue
+Tick 39800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	39800
+Thread 1	ProcessReady	39900
+Tick 39900 Thread 1 move to RR queue
+Tick 39900 Thread 2 stay in RR queue
+Tick 39900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	39900
+Thread 2	ProcessReady	40000
+Tick 40000 Thread 2 move to RR queue
+Tick 40000 Thread 1 stay in RR queue
+Tick 40000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	40000
+Thread 1	ProcessReady	40100
+Tick 40100 Thread 1 move to RR queue
+Tick 40100 Thread 2 stay in RR queue
+Tick 40100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	40100
+Thread 2	ProcessReady	40200
+Tick 40200 Thread 2 move to RR queue
+Tick 40200 Thread 1 stay in RR queue
+Tick 40200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	40200
+Thread 1	ProcessReady	40300
+Tick 40300 Thread 1 move to RR queue
+Tick 40300 Thread 2 stay in RR queue
+Tick 40300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	40300
+Thread 2	ProcessReady	40400
+Tick 40400 Thread 2 move to RR queue
+Tick 40400 Thread 1 stay in RR queue
+Tick 40400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	40400
+Thread 1	ProcessReady	40500
+Tick 40500 Thread 1 move to RR queue
+Tick 40500 Thread 2 stay in RR queue
+Tick 40500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	40500
+Thread 2	ProcessReady	40600
+Tick 40600 Thread 2 move to RR queue
+Tick 40600 Thread 1 stay in RR queue
+Tick 40600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	40600
+Thread 1	ProcessReady	40700
+Tick 40700 Thread 1 move to RR queue
+Tick 40700 Thread 2 stay in RR queue
+Tick 40700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	40700
+Thread 2	ProcessReady	40800
+Tick 40800 Thread 2 move to RR queue
+Tick 40800 Thread 1 stay in RR queue
+Tick 40800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	40800
+Thread 1	ProcessReady	40900
+Tick 40900 Thread 1 move to RR queue
+Tick 40900 Thread 2 stay in RR queue
+Tick 40900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	40900
+Thread 2	ProcessReady	41000
+Tick 41000 Thread 2 move to RR queue
+Tick 41000 Thread 1 stay in RR queue
+Tick 41000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	41000
+Thread 1	ProcessReady	41100
+Tick 41100 Thread 1 move to RR queue
+Tick 41100 Thread 2 stay in RR queue
+Tick 41100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	41100
+Thread 2	ProcessReady	41200
+Tick 41200 Thread 2 move to RR queue
+Tick 41200 Thread 1 stay in RR queue
+Tick 41200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	41200
+Thread 1	ProcessReady	41300
+Tick 41300 Thread 1 move to RR queue
+Tick 41300 Thread 2 stay in RR queue
+Tick 41300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	41300
+Thread 2	ProcessReady	41400
+Tick 41400 Thread 2 move to RR queue
+Tick 41400 Thread 1 stay in RR queue
+Tick 41400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	41400
+Thread 1	ProcessReady	41500
+Tick 41500 Thread 1 move to RR queue
+Tick 41500 Thread 2 stay in RR queue
+Tick 41500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	41500
+Thread 2	ProcessReady	41600
+Tick 41600 Thread 2 move to RR queue
+Tick 41600 Thread 1 stay in RR queue
+Tick 41600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	41600
+Thread 1	ProcessReady	41700
+Tick 41700 Thread 1 move to RR queue
+Tick 41700 Thread 2 stay in RR queue
+Tick 41700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	41700
+Thread 2	ProcessReady	41800
+Tick 41800 Thread 2 move to RR queue
+Tick 41800 Thread 1 stay in RR queue
+Tick 41800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	41800
+Thread 1	ProcessReady	41900
+Tick 41900 Thread 1 move to RR queue
+Tick 41900 Thread 2 stay in RR queue
+Tick 41900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	41900
+Thread 2	ProcessReady	42000
+Tick 42000 Thread 2 move to RR queue
+Tick 42000 Thread 1 stay in RR queue
+Tick 42000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	42000
+Thread 1	ProcessReady	42100
+Tick 42100 Thread 1 move to RR queue
+Tick 42100 Thread 2 stay in RR queue
+Tick 42100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	42100
+Thread 2	ProcessReady	42200
+Tick 42200 Thread 2 move to RR queue
+Tick 42200 Thread 1 stay in RR queue
+Tick 42200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	42200
+Thread 1	ProcessReady	42300
+Tick 42300 Thread 1 move to RR queue
+Tick 42300 Thread 2 stay in RR queue
+Tick 42300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	42300
+Thread 2	ProcessReady	42400
+Tick 42400 Thread 2 move to RR queue
+Tick 42400 Thread 1 stay in RR queue
+Tick 42400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	42400
+Thread 1	ProcessReady	42500
+Tick 42500 Thread 1 move to RR queue
+Tick 42500 Thread 2 stay in RR queue
+Tick 42500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	42500
+Thread 2	ProcessReady	42600
+Tick 42600 Thread 2 move to RR queue
+Tick 42600 Thread 1 stay in RR queue
+Tick 42600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	42600
+Thread 1	ProcessReady	42700
+Tick 42700 Thread 1 move to RR queue
+Tick 42700 Thread 2 stay in RR queue
+Tick 42700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	42700
+Thread 2	ProcessReady	42800
+Tick 42800 Thread 2 move to RR queue
+Tick 42800 Thread 1 stay in RR queue
+Tick 42800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	42800
+Thread 1	ProcessReady	42900
+Tick 42900 Thread 1 move to RR queue
+Tick 42900 Thread 2 stay in RR queue
+Tick 42900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	42900
+Thread 2	ProcessReady	43000
+Tick 43000 Thread 2 move to RR queue
+Tick 43000 Thread 1 stay in RR queue
+Tick 43000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	43000
+Thread 1	ProcessReady	43100
+Tick 43100 Thread 1 move to RR queue
+Tick 43100 Thread 2 stay in RR queue
+Tick 43100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	43100
+Thread 2	ProcessReady	43200
+Tick 43200 Thread 2 move to RR queue
+Tick 43200 Thread 1 stay in RR queue
+Tick 43200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	43200
+Thread 1	ProcessReady	43300
+Tick 43300 Thread 1 move to RR queue
+Tick 43300 Thread 2 stay in RR queue
+Tick 43300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	43300
+Thread 2	ProcessReady	43400
+Tick 43400 Thread 2 move to RR queue
+Tick 43400 Thread 1 stay in RR queue
+Tick 43400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	43400
+Thread 1	ProcessReady	43500
+Tick 43500 Thread 1 move to RR queue
+Tick 43500 Thread 2 stay in RR queue
+Tick 43500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	43500
+Thread 2	ProcessReady	43600
+Tick 43600 Thread 2 move to RR queue
+Tick 43600 Thread 1 stay in RR queue
+Tick 43600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	43600
+Thread 1	ProcessReady	43700
+Tick 43700 Thread 1 move to RR queue
+Tick 43700 Thread 2 stay in RR queue
+Tick 43700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	43700
+Thread 2	ProcessReady	43800
+Tick 43800 Thread 2 move to RR queue
+Tick 43800 Thread 1 stay in RR queue
+Tick 43800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	43800
+Thread 1	ProcessReady	43900
+Tick 43900 Thread 1 move to RR queue
+Tick 43900 Thread 2 stay in RR queue
+Tick 43900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	43900
+Thread 2	ProcessReady	44000
+Tick 44000 Thread 2 move to RR queue
+Tick 44000 Thread 1 stay in RR queue
+Tick 44000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	44000
+Thread 1	ProcessReady	44100
+Tick 44100 Thread 1 move to RR queue
+Tick 44100 Thread 2 stay in RR queue
+Tick 44100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	44100
+Thread 2	ProcessReady	44200
+Tick 44200 Thread 2 move to RR queue
+Tick 44200 Thread 1 stay in RR queue
+Tick 44200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	44200
+Thread 1	ProcessReady	44300
+Tick 44300 Thread 1 move to RR queue
+Tick 44300 Thread 2 stay in RR queue
+Tick 44300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	44300
+Thread 2	ProcessReady	44400
+Tick 44400 Thread 2 move to RR queue
+Tick 44400 Thread 1 stay in RR queue
+Tick 44400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	44400
+Thread 1	ProcessReady	44500
+Tick 44500 Thread 1 move to RR queue
+Tick 44500 Thread 2 stay in RR queue
+Tick 44500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	44500
+Thread 2	ProcessReady	44600
+Tick 44600 Thread 2 move to RR queue
+Tick 44600 Thread 1 stay in RR queue
+Tick 44600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	44600
+Thread 1	ProcessReady	44700
+Tick 44700 Thread 1 move to RR queue
+Tick 44700 Thread 2 stay in RR queue
+Tick 44700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	44700
+Thread 2	ProcessReady	44800
+Tick 44800 Thread 2 move to RR queue
+Tick 44800 Thread 1 stay in RR queue
+Tick 44800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	44800
+Thread 1	ProcessReady	44900
+Tick 44900 Thread 1 move to RR queue
+Tick 44900 Thread 2 stay in RR queue
+Tick 44900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	44900
+Thread 2	ProcessReady	45000
+Tick 45000 Thread 2 move to RR queue
+Tick 45000 Thread 1 stay in RR queue
+Tick 45000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	45000
+Thread 1	ProcessReady	45100
+Tick 45100 Thread 1 move to RR queue
+Tick 45100 Thread 2 stay in RR queue
+Tick 45100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	45100
+Thread 2	ProcessReady	45200
+Tick 45200 Thread 2 move to RR queue
+Tick 45200 Thread 1 stay in RR queue
+Tick 45200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	45200
+Thread 1	ProcessReady	45300
+Tick 45300 Thread 1 move to RR queue
+Tick 45300 Thread 2 stay in RR queue
+Tick 45300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	45300
+Thread 2	ProcessReady	45400
+Tick 45400 Thread 2 move to RR queue
+Tick 45400 Thread 1 stay in RR queue
+Tick 45400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	45400
+Thread 1	ProcessReady	45500
+Tick 45500 Thread 1 move to RR queue
+Tick 45500 Thread 2 stay in RR queue
+Tick 45500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	45500
+Thread 2	ProcessReady	45600
+Tick 45600 Thread 2 move to RR queue
+Tick 45600 Thread 1 stay in RR queue
+Tick 45600 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	45600
+Thread 1	ProcessReady	45700
+Tick 45700 Thread 1 move to RR queue
+Tick 45700 Thread 2 stay in RR queue
+Tick 45700 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	45700
+Thread 2	ProcessReady	45800
+Tick 45800 Thread 2 move to RR queue
+Tick 45800 Thread 1 stay in RR queue
+Tick 45800 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	45800
+Thread 1	ProcessReady	45900
+Tick 45900 Thread 1 move to RR queue
+Tick 45900 Thread 2 stay in RR queue
+Tick 45900 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	45900
+Thread 2	ProcessReady	46000
+Tick 46000 Thread 2 move to RR queue
+Tick 46000 Thread 1 stay in RR queue
+Tick 46000 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	46000
+Thread 1	ProcessReady	46100
+Tick 46100 Thread 1 move to RR queue
+Tick 46100 Thread 2 stay in RR queue
+Tick 46100 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	46100
+Thread 2	ProcessReady	46200
+Tick 46200 Thread 2 move to RR queue
+Tick 46200 Thread 1 stay in RR queue
+Tick 46200 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	46200
+Thread 1	ProcessReady	46300
+Tick 46300 Thread 1 move to RR queue
+Tick 46300 Thread 2 stay in RR queue
+Tick 46300 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	46300
+Thread 2	ProcessReady	46400
+Tick 46400 Thread 2 move to RR queue
+Tick 46400 Thread 1 stay in RR queue
+Tick 46400 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	46400
+Thread 1	ProcessReady	46500
+Tick 46500 Thread 1 move to RR queue
+Tick 46500 Thread 2 stay in RR queue
+Tick 46500 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	46500
+Tick 46546 Thread2 changes its priority to 20
+Thread 2	ProcessReady	46600
+Tick 46600 Thread 2 move to Priority queue
+Tick 46600 Thread 2 stay in Priority queue
+Tick 46600 Thread 1 stay in RR queue
+Thread 1	ProcessRunning	46600
+Thread 1	ProcessReady	46700
+Tick 46700 Thread 1 move to RR queue
+Tick 46700 Thread 2 stay in Priority queue
+Tick 46700 Thread 1 stay in RR queue
+Thread 1	ProcessReady	46800
+Tick 46800 Thread 1 move to RR queue
+Tick 46800 Thread 2 stay in Priority queue
+Tick 46800 Thread 1 stay in RR queue
+Thread 1	ProcessReady	46900
+Tick 46900 Thread 1 move to RR queue
+Tick 46900 Thread 2 stay in Priority queue
+Tick 46900 Thread 1 stay in RR queue
+Thread 1	ProcessReady	47000
+Tick 47000 Thread 1 move to RR queue
+Tick 47000 Thread 2 stay in Priority queue
+Tick 47000 Thread 1 stay in RR queue
+Thread 1	ProcessReady	47100
+Tick 47100 Thread 1 move to RR queue
+Tick 47100 Thread 2 stay in Priority queue
+Tick 47100 Thread 1 stay in RR queue
+Thread 1	ProcessReady	47200
+Tick 47200 Thread 1 move to RR queue
+Tick 47200 Thread 2 stay in Priority queue
+Tick 47200 Thread 1 stay in RR queue
+Thread 1	ProcessReady	47300
+Tick 47300 Thread 1 move to RR queue
+Tick 47300 Thread 2 stay in Priority queue
+Tick 47300 Thread 1 stay in RR queue
+Thread 1	ProcessReady	47400
+Tick 47400 Thread 1 move to RR queue
+Tick 47400 Thread 2 stay in Priority queue
+Tick 47400 Thread 1 stay in RR queue
+Thread 1	ProcessReady	47500
+Tick 47500 Thread 1 move to RR queue
+Tick 47500 Thread 2 stay in Priority queue
+Tick 47500 Thread 1 stay in RR queue
+Thread 1	ProcessReady	47600
+Tick 47600 Thread 1 move to RR queue
+Tick 47600 Thread 2 stay in Priority queue
+Tick 47600 Thread 1 stay in RR queue
+Thread 1	ProcessReady	47700
+Tick 47700 Thread 1 move to RR queue
+Tick 47700 Thread 2 stay in Priority queue
+Tick 47700 Thread 1 stay in RR queue
+Thread 1	ProcessReady	47800
+Tick 47800 Thread 1 move to RR queue
+Tick 47800 Thread 2 stay in Priority queue
+Tick 47800 Thread 1 stay in RR queue
+Thread 1	ProcessReady	47900
+Tick 47900 Thread 1 move to RR queue
+Tick 47900 Thread 2 stay in Priority queue
+Tick 47900 Thread 1 stay in RR queue
+Thread 1	ProcessReady	48000
+Tick 48000 Thread 1 move to RR queue
+Tick 48000 Thread 2 stay in Priority queue
+Tick 48000 Thread 1 stay in RR queue
+Thread 1	ProcessReady	48100
+Tick 48100 Thread 1 move to RR queue
+Tick 48100 Thread2 changes its priority to 30
+Tick 48100 Thread 2 stay in Priority queue
+Tick 48100 Thread 1 stay in RR queue
+Thread 1	ProcessReady	48200
+Tick 48200 Thread 1 move to RR queue
+Tick 48200 Thread 2 stay in Priority queue
+Tick 48200 Thread 1 stay in RR queue
+Thread 1	ProcessReady	48300
+Tick 48300 Thread 1 move to RR queue
+Tick 48300 Thread 2 stay in Priority queue
+Tick 48300 Thread 1 stay in RR queue
+Thread 1	ProcessReady	48400
+Tick 48400 Thread 1 move to RR queue
+Tick 48400 Thread 2 stay in Priority queue
+Tick 48400 Thread 1 stay in RR queue
+Thread 1	ProcessReady	48500
+Tick 48500 Thread 1 move to RR queue
+Tick 48500 Thread 2 stay in Priority queue
+Tick 48500 Thread 1 stay in RR queue
+Thread 1	ProcessReady	48600
+Tick 48600 Thread 1 move to RR queue
+Tick 48600 Thread 2 stay in Priority queue
+Tick 48600 Thread 1 stay in RR queue
+Thread 1	ProcessReady	48700
+Tick 48700 Thread 1 move to RR queue
+Tick 48700 Thread 2 stay in Priority queue
+Tick 48700 Thread 1 stay in RR queue
+Thread 1	ProcessReady	48800
+Tick 48800 Thread 1 move to RR queue
+Tick 48800 Thread 2 stay in Priority queue
+Tick 48800 Thread 1 stay in RR queue
+Thread 1	ProcessReady	48900
+Tick 48900 Thread 1 move to RR queue
+Tick 48900 Thread 2 stay in Priority queue
+Tick 48900 Thread 1 stay in RR queue
+Thread 1	ProcessReady	49000
+Tick 49000 Thread 1 move to RR queue
+Tick 49000 Thread 2 stay in Priority queue
+Tick 49000 Thread 1 stay in RR queue
+Thread 1	ProcessReady	49100
+Tick 49100 Thread 1 move to RR queue
+Tick 49100 Thread 2 stay in Priority queue
+Tick 49100 Thread 1 stay in RR queue
+Thread 1	ProcessReady	49200
+Tick 49200 Thread 1 move to RR queue
+Tick 49200 Thread 2 stay in Priority queue
+Tick 49200 Thread 1 stay in RR queue
+Thread 1	ProcessReady	49300
+Tick 49300 Thread 1 move to RR queue
+Tick 49300 Thread 2 stay in Priority queue
+Tick 49300 Thread 1 stay in RR queue
+Thread 1	ProcessReady	49400
+Tick 49400 Thread 1 move to RR queue
+Tick 49400 Thread 2 stay in Priority queue
+Tick 49400 Thread 1 stay in RR queue
+Thread 1	ProcessReady	49500
+Tick 49500 Thread 1 move to RR queue
+Tick 49500 Thread 2 stay in Priority queue
+Tick 49500 Thread 1 stay in RR queue
+Thread 1	ProcessReady	49600
+Tick 49600 Thread 1 move to RR queue
+Tick 49600 Thread2 changes its priority to 40
+Tick 49600 Thread 2 stay in Priority queue
+Tick 49600 Thread 1 stay in RR queue
+Thread 1	ProcessReady	49700
+Tick 49700 Thread 1 move to RR queue
+Tick 49700 Thread 2 stay in Priority queue
+Tick 49700 Thread 1 stay in RR queue
+Thread 1	ProcessReady	49800
+Tick 49800 Thread 1 move to RR queue
+Tick 49800 Thread 2 stay in Priority queue
+Tick 49800 Thread 1 stay in RR queue
+Thread 1	ProcessReady	49900
+Tick 49900 Thread 1 move to RR queue
+Tick 49900 Thread 2 stay in Priority queue
+Tick 49900 Thread 1 stay in RR queue
+Thread 1	ProcessReady	50000
+Tick 50000 Thread 1 move to RR queue
+Tick 50000 Thread 2 stay in Priority queue
+Tick 50000 Thread 1 stay in RR queue
+Thread 1	ProcessReady	50100
+Tick 50100 Thread 1 move to RR queue
+Tick 50100 Thread 2 stay in Priority queue
+Tick 50100 Thread 1 stay in RR queue
+Thread 1	ProcessReady	50200
+Tick 50200 Thread 1 move to RR queue
+Tick 50200 Thread 2 stay in Priority queue
+Tick 50200 Thread 1 stay in RR queue
+Thread 1	ProcessReady	50300
+Tick 50300 Thread 1 move to RR queue
+Tick 50300 Thread 2 stay in Priority queue
+Tick 50300 Thread 1 stay in RR queue
+Thread 1	ProcessReady	50400
+Tick 50400 Thread 1 move to RR queue
+Tick 50400 Thread 2 stay in Priority queue
+Tick 50400 Thread 1 stay in RR queue
+Thread 1	ProcessReady	50500
+Tick 50500 Thread 1 move to RR queue
+Tick 50500 Thread 2 stay in Priority queue
+Tick 50500 Thread 1 stay in RR queue
+Thread 1	ProcessReady	50600
+Tick 50600 Thread 1 move to RR queue
+Tick 50600 Thread 2 stay in Priority queue
+Tick 50600 Thread 1 stay in RR queue
+Thread 1	ProcessReady	50700
+Tick 50700 Thread 1 move to RR queue
+Tick 50700 Thread 2 stay in Priority queue
+Tick 50700 Thread 1 stay in RR queue
+Thread 1	ProcessReady	50800
+Tick 50800 Thread 1 move to RR queue
+Tick 50800 Thread 2 stay in Priority queue
+Tick 50800 Thread 1 stay in RR queue
+Thread 1	ProcessReady	50900
+Tick 50900 Thread 1 move to RR queue
+Tick 50900 Thread 2 stay in Priority queue
+Tick 50900 Thread 1 stay in RR queue
+Thread 1	ProcessReady	51000
+Tick 51000 Thread 1 move to RR queue
+Tick 51000 Thread 2 stay in Priority queue
+Tick 51000 Thread 1 stay in RR queue
+Thread 1	ProcessReady	51100
+Tick 51100 Thread 1 move to RR queue
+Tick 51100 Thread2 changes its priority to 50
+Tick 51100 Thread 2 stay in Priority queue
+Tick 51100 Thread 1 stay in RR queue
+Thread 1	ProcessReady	51200
+Tick 51200 Thread 1 move to RR queue
+Tick 51200 Thread 2 stay in Priority queue
+Tick 51200 Thread 1 stay in RR queue
+Thread 1	ProcessReady	51300
+Tick 51300 Thread 1 move to RR queue
+Tick 51300 Thread 2 stay in Priority queue
+Tick 51300 Thread 1 stay in RR queue
+Thread 1	ProcessReady	51400
+Tick 51400 Thread 1 move to RR queue
+Tick 51400 Thread 2 stay in Priority queue
+Tick 51400 Thread 1 stay in RR queue
+Thread 1	ProcessReady	51500
+Tick 51500 Thread 1 move to RR queue
+Tick 51500 Thread 2 stay in Priority queue
+Tick 51500 Thread 1 stay in RR queue
+Thread 1	ProcessReady	51600
+Tick 51600 Thread 1 move to RR queue
+Tick 51600 Thread 2 stay in Priority queue
+Tick 51600 Thread 1 stay in RR queue
+Thread 1	ProcessReady	51700
+Tick 51700 Thread 1 move to RR queue
+Tick 51700 Thread 2 stay in Priority queue
+Tick 51700 Thread 1 stay in RR queue
+Thread 1	ProcessReady	51800
+Tick 51800 Thread 1 move to RR queue
+Tick 51800 Thread 2 stay in Priority queue
+Tick 51800 Thread 1 stay in RR queue
+Thread 1	ProcessReady	51900
+Tick 51900 Thread 1 move to RR queue
+Tick 51900 Thread 2 stay in Priority queue
+Tick 51900 Thread 1 stay in RR queue
+Thread 1	ProcessReady	52000
+Tick 52000 Thread 1 move to RR queue
+Tick 52000 Thread 2 stay in Priority queue
+Tick 52000 Thread 1 stay in RR queue
+Thread 1	ProcessReady	52100
+Tick 52100 Thread 1 move to RR queue
+Tick 52100 Thread 2 stay in Priority queue
+Tick 52100 Thread 1 stay in RR queue
+Thread 1	ProcessReady	52200
+Tick 52200 Thread 1 move to RR queue
+Tick 52200 Thread 2 stay in Priority queue
+Tick 52200 Thread 1 stay in RR queue
+Thread 1	ProcessReady	52300
+Tick 52300 Thread 1 move to RR queue
+Tick 52300 Thread 2 stay in Priority queue
+Tick 52300 Thread 1 stay in RR queue
+Thread 1	ProcessReady	52400
+Tick 52400 Thread 1 move to RR queue
+Tick 52400 Thread 2 stay in Priority queue
+Tick 52400 Thread 1 stay in RR queue
+Thread 1	ProcessReady	52500
+Tick 52500 Thread 1 move to RR queue
+Tick 52500 Thread 2 stay in Priority queue
+Tick 52500 Thread 1 stay in RR queue
+Thread 1	ProcessReady	52600
+Tick 52600 Thread 1 move to RR queue
+Tick 52600 Thread2 changes its priority to 60
+Tick 52600 Thread 2 stay in Priority queue
+Tick 52600 Thread 1 stay in RR queue
+Thread 1	ProcessReady	52700
+Tick 52700 Thread 1 move to RR queue
+Tick 52700 Thread 2 stay in Priority queue
+Tick 52700 Thread 1 stay in RR queue
+Thread 1	ProcessReady	52800
+Tick 52800 Thread 1 move to RR queue
+Tick 52800 Thread 2 stay in Priority queue
+Tick 52800 Thread 1 stay in RR queue
+Thread 1	ProcessReady	52900
+Tick 52900 Thread 1 move to RR queue
+Tick 52900 Thread 2 stay in Priority queue
+Tick 52900 Thread 1 stay in RR queue
+Thread 1	ProcessReady	53000
+Tick 53000 Thread 1 move to RR queue
+Tick 53000 Thread 2 stay in Priority queue
+Tick 53000 Thread 1 stay in RR queue
+Thread 1	ProcessReady	53100
+Tick 53100 Thread 1 move to RR queue
+Tick 53100 Thread 2 stay in Priority queue
+Tick 53100 Thread 1 stay in RR queue
+Thread 1	ProcessReady	53200
+Tick 53200 Thread 1 move to RR queue
+Tick 53200 Thread 2 stay in Priority queue
+Tick 53200 Thread 1 stay in RR queue
+Thread 1	ProcessReady	53300
+Tick 53300 Thread 1 move to RR queue
+Tick 53300 Thread 2 stay in Priority queue
+Tick 53300 Thread 1 stay in RR queue
+Thread 1	ProcessReady	53400
+Tick 53400 Thread 1 move to RR queue
+Tick 53400 Thread 2 stay in Priority queue
+Tick 53400 Thread 1 stay in RR queue
+Thread 1	ProcessReady	53500
+Tick 53500 Thread 1 move to RR queue
+Tick 53500 Thread 2 stay in Priority queue
+Tick 53500 Thread 1 stay in RR queue
+Thread 1	ProcessReady	53600
+Tick 53600 Thread 1 move to RR queue
+Tick 53600 Thread 2 stay in Priority queue
+Tick 53600 Thread 1 stay in RR queue
+Thread 1	ProcessReady	53700
+Tick 53700 Thread 1 move to RR queue
+Tick 53700 Thread 2 stay in Priority queue
+Tick 53700 Thread 1 stay in RR queue
+Thread 1	ProcessReady	53800
+Tick 53800 Thread 1 move to RR queue
+Tick 53800 Thread 2 stay in Priority queue
+Tick 53800 Thread 1 stay in RR queue
+Thread 1	ProcessReady	53900
+Tick 53900 Thread 1 move to RR queue
+Tick 53900 Thread 2 stay in Priority queue
+Tick 53900 Thread 1 stay in RR queue
+Thread 1	ProcessReady	54000
+Tick 54000 Thread 1 move to RR queue
+Tick 54000 Thread 2 stay in Priority queue
+Tick 54000 Thread 1 stay in RR queue
+Thread 1	ProcessReady	54100
+Tick 54100 Thread 1 move to RR queue
+Tick 54100 Thread2 changes its priority to 70
+Tick 54100 Thread 2 move to RR queue
+Tick 54100 Thread 1 stay in RR queue
+Tick 54100 Thread 2 stay in RR queue
+Thread 1	ProcessReady	54200
+Tick 54200 Thread 1 move to RR queue
+Tick 54200 Thread 2 stay in RR queue
+Tick 54200 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	54200
+Thread 2	ProcessReady	54300
+Tick 54300 Thread 2 move to RR queue
+Tick 54300 Thread 1 stay in RR queue
+Tick 54300 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	54300
+Thread 1	ProcessReady	54400
+Tick 54400 Thread 1 move to RR queue
+Tick 54400 Thread 2 stay in RR queue
+Tick 54400 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	54400
+Thread 2	ProcessReady	54500
+Tick 54500 Thread 2 move to RR queue
+Tick 54500 Thread 1 stay in RR queue
+Tick 54500 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	54500
+Thread 1	ProcessReady	54600
+Tick 54600 Thread 1 move to RR queue
+Tick 54600 Thread 2 stay in RR queue
+Tick 54600 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	54600
+Thread 2	ProcessReady	54700
+Tick 54700 Thread 2 move to RR queue
+Tick 54700 Thread 1 stay in RR queue
+Tick 54700 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	54700
+Thread 1	ProcessReady	54800
+Tick 54800 Thread 1 move to RR queue
+Tick 54800 Thread 2 stay in RR queue
+Tick 54800 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	54800
+Thread 2	ProcessReady	54900
+Tick 54900 Thread 2 move to RR queue
+Tick 54900 Thread 1 stay in RR queue
+Tick 54900 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	54900
+Thread 1	ProcessReady	55000
+Tick 55000 Thread 1 move to RR queue
+Tick 55000 Thread 2 stay in RR queue
+Tick 55000 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	55000
+Thread 2	ProcessReady	55100
+Tick 55100 Thread 2 move to RR queue
+Tick 55100 Thread 1 stay in RR queue
+Tick 55100 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	55100
+Thread 1	ProcessReady	55200
+Tick 55200 Thread 1 move to RR queue
+Tick 55200 Thread 2 stay in RR queue
+Tick 55200 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	55200
+Thread 2	ProcessReady	55300
+Tick 55300 Thread 2 move to RR queue
+Tick 55300 Thread 1 stay in RR queue
+Tick 55300 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	55300
+Thread 1	ProcessReady	55400
+Tick 55400 Thread 1 move to RR queue
+Tick 55400 Thread 2 stay in RR queue
+Tick 55400 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	55400
+Thread 2	ProcessReady	55500
+Tick 55500 Thread 2 move to RR queue
+Tick 55500 Thread 1 stay in RR queue
+Tick 55500 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	55500
+Thread 1	ProcessReady	55600
+Tick 55600 Thread 1 move to RR queue
+Tick 55600 Thread 2 stay in RR queue
+Tick 55600 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	55600
+Thread 2	ProcessReady	55700
+Tick 55700 Thread 2 move to RR queue
+Tick 55700 Thread 1 stay in RR queue
+Tick 55700 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	55700
+Thread 1	ProcessReady	55800
+Tick 55800 Thread 1 move to RR queue
+Tick 55800 Thread 2 stay in RR queue
+Tick 55800 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	55800
+Thread 2	ProcessReady	55900
+Tick 55900 Thread 2 move to RR queue
+Tick 55900 Thread 1 stay in RR queue
+Tick 55900 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	55900
+Thread 1	ProcessReady	56000
+Tick 56000 Thread 1 move to RR queue
+Tick 56000 Thread 2 stay in RR queue
+Tick 56000 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	56000
+Thread 2	ProcessReady	56100
+Tick 56100 Thread 2 move to RR queue
+Tick 56100 Thread 1 stay in RR queue
+Tick 56100 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	56100
+Thread 1	ProcessReady	56200
+Tick 56200 Thread 1 move to RR queue
+Tick 56200 Thread 2 stay in RR queue
+Tick 56200 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	56200
+Thread 2	ProcessReady	56300
+Tick 56300 Thread 2 move to RR queue
+Tick 56300 Thread 1 stay in RR queue
+Tick 56300 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	56300
+Thread 1	ProcessReady	56400
+Tick 56400 Thread 1 move to RR queue
+Tick 56400 Thread 2 stay in RR queue
+Tick 56400 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	56400
+Thread 2	ProcessReady	56500
+Tick 56500 Thread 2 move to RR queue
+Tick 56500 Thread 1 stay in RR queue
+Tick 56500 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	56500
+Thread 1	ProcessReady	56600
+Tick 56600 Thread 1 move to RR queue
+Tick 56600 Thread 2 stay in RR queue
+Tick 56600 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	56600
+Thread 2	ProcessReady	56700
+Tick 56700 Thread 2 move to RR queue
+Tick 56700 Thread 1 stay in RR queue
+Tick 56700 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	56700
+Thread 1	ProcessReady	56800
+Tick 56800 Thread 1 move to RR queue
+Tick 56800 Thread 2 stay in RR queue
+Tick 56800 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	56800
+Thread 2	ProcessReady	56900
+Tick 56900 Thread 2 move to RR queue
+Tick 56900 Thread 1 stay in RR queue
+Tick 56900 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	56900
+Thread 1	ProcessReady	57000
+Tick 57000 Thread 1 move to RR queue
+Tick 57000 Thread 2 stay in RR queue
+Tick 57000 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	57000
+Thread 2	ProcessReady	57100
+Tick 57100 Thread 2 move to RR queue
+Tick 57100 Thread 1 stay in RR queue
+Tick 57100 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	57100
+Thread 1	ProcessReady	57200
+Tick 57200 Thread 1 move to RR queue
+Tick 57200 Thread 2 stay in RR queue
+Tick 57200 Thread 1 stay in RR queue
+Thread 2	ProcessRunning	57200
+Thread 2	ProcessReady	57300
+Tick 57300 Thread 2 move to RR queue
+Tick 57300 Thread 1 stay in RR queue
+Tick 57300 Thread 2 stay in RR queue
+Thread 1	ProcessRunning	57300
+return value:0
+Thread 1	ProcessFinish	57321
+Thread 1	ProcessSleep	57321
+Tick 57321 Thread 2 stay in RR queue
+Thread 2	ProcessRunning	57321
+Thread 2	ProcessReady	57400
+Tick 57400 Thread 2 move to RR queue
+Tick 57400 Thread 2 stay in RR queue
+Thread 2	ProcessReady	57500
+Tick 57500 Thread 2 move to RR queue
+Tick 57500 Thread 2 stay in RR queue
+Thread 2	ProcessReady	57600
+Tick 57600 Thread 2 move to RR queue
+Tick 57600 Thread 2 stay in RR queue
+Thread 2	ProcessReady	57700
+Tick 57700 Thread 2 move to RR queue
+Tick 57700 Thread 2 stay in RR queue
+Thread 2	ProcessReady	57800
+Tick 57800 Thread 2 move to RR queue
+Tick 57800 Thread 2 stay in RR queue
+Thread 2	ProcessReady	57900
+Tick 57900 Thread 2 move to RR queue
+Tick 57900 Thread 2 stay in RR queue
+Thread 2	ProcessReady	58000
+Tick 58000 Thread 2 move to RR queue
+Tick 58000 Thread 2 stay in RR queue
+Thread 2	ProcessReady	58100
+Tick 58100 Thread 2 move to RR queue
+Tick 58100 Thread 2 stay in RR queue
+Thread 2	ProcessReady	58200
+Tick 58200 Thread 2 move to RR queue
+Tick 58200 Thread 2 stay in RR queue
+Thread 2	ProcessReady	58300
+Tick 58300 Thread 2 move to RR queue
+Tick 58300 Thread 2 stay in RR queue
+Thread 2	ProcessReady	58400
+Tick 58400 Thread 2 move to RR queue
+Tick 58400 Thread 2 stay in RR queue
+Thread 2	ProcessReady	58500
+Tick 58500 Thread 2 move to RR queue
+Tick 58500 Thread 2 stay in RR queue
+Thread 2	ProcessReady	58600
+Tick 58600 Thread 2 move to RR queue
+Tick 58600 Thread 2 stay in RR queue
+Thread 2	ProcessReady	58700
+Tick 58700 Thread 2 move to RR queue
+Tick 58700 Thread 2 stay in RR queue
+Thread 2	ProcessReady	58800
+Tick 58800 Thread 2 move to RR queue
+Tick 58800 Thread 2 stay in RR queue
+Thread 2	ProcessReady	58900
+Tick 58900 Thread 2 move to RR queue
+Tick 58900 Thread 2 stay in RR queue
+Thread 2	ProcessReady	59000
+Tick 59000 Thread 2 move to RR queue
+Tick 59000 Thread 2 stay in RR queue
+Thread 2	ProcessReady	59100
+Tick 59100 Thread 2 move to RR queue
+Tick 59100 Thread 2 stay in RR queue
+Thread 2	ProcessReady	59200
+Tick 59200 Thread 2 move to RR queue
+Tick 59200 Thread 2 stay in RR queue
+Thread 2	ProcessReady	59300
+Tick 59300 Thread 2 move to RR queue
+Tick 59300 Thread 2 stay in RR queue
+Thread 2	ProcessReady	59400
+Tick 59400 Thread 2 move to RR queue
+Tick 59400 Thread 2 stay in RR queue
+Thread 2	ProcessReady	59500
+Tick 59500 Thread 2 move to RR queue
+Tick 59500 Thread 2 stay in RR queue
+Thread 2	ProcessReady	59600
+Tick 59600 Thread 2 move to RR queue
+Tick 59600 Thread 2 stay in RR queue
+Thread 2	ProcessReady	59700
+Tick 59700 Thread 2 move to RR queue
+Tick 59700 Thread 2 stay in RR queue
+Thread 2	ProcessReady	59800
+Tick 59800 Thread 2 move to RR queue
+Tick 59800 Thread 2 stay in RR queue
+Thread 2	ProcessReady	59900
+Tick 59900 Thread 2 move to RR queue
+Tick 59900 Thread 2 stay in RR queue
+Thread 2	ProcessReady	60000
+Tick 60000 Thread 2 move to RR queue
+Tick 60000 Thread 2 stay in RR queue
+Thread 2	ProcessReady	60100
+Tick 60100 Thread 2 move to RR queue
+Tick 60100 Thread 2 stay in RR queue
+Thread 2	ProcessReady	60200
+Tick 60200 Thread 2 move to RR queue
+Tick 60200 Thread 2 stay in RR queue
+Thread 2	ProcessReady	60300
+Tick 60300 Thread 2 move to RR queue
+Tick 60300 Thread 2 stay in RR queue
+Thread 2	ProcessReady	60400
+Tick 60400 Thread 2 move to RR queue
+Tick 60400 Thread 2 stay in RR queue
+Thread 2	ProcessReady	60500
+Tick 60500 Thread 2 move to RR queue
+Tick 60500 Thread 2 stay in RR queue
+Thread 2	ProcessReady	60600
+Tick 60600 Thread 2 move to RR queue
+Tick 60600 Thread 2 stay in RR queue
+Thread 2	ProcessReady	60700
+Tick 60700 Thread 2 move to RR queue
+Tick 60700 Thread 2 stay in RR queue
+Thread 2	ProcessReady	60800
+Tick 60800 Thread 2 move to RR queue
+Tick 60800 Thread 2 stay in RR queue
+Thread 2	ProcessReady	60900
+Tick 60900 Thread 2 move to RR queue
+Tick 60900 Thread 2 stay in RR queue
+Thread 2	ProcessReady	61000
+Tick 61000 Thread 2 move to RR queue
+Tick 61000 Thread 2 stay in RR queue
+Thread 2	ProcessReady	61100
+Tick 61100 Thread 2 move to RR queue
+Tick 61100 Thread 2 stay in RR queue
+Thread 2	ProcessReady	61200
+Tick 61200 Thread 2 move to RR queue
+Tick 61200 Thread 2 stay in RR queue
+return value:0
+Thread 2	ProcessFinish	61246
+Thread 2	ProcessSleep	61246
+No threads ready or runnable, and no pending interrupts.
+Assuming the program completed.
+Machine halting!
+
+Ticks: total 61300, idle 54, system 6170, user 55076
+Disk I/O: reads 0, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 0
+Network I/O: packets received 0, sent 0
