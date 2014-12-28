@@ -456,7 +456,11 @@ Thread::SelfTest()
 }
 bool Thread::setPriority(int _priority)// OAO
 {
-    if(_priority<0 || _priority>149)return false;
+    if(_priority<0)return false;
+    if(_priority>149){
+        priority=149;
+        return true;
+    }
     priority=_priority;
     cout<< "Tick " << kernel->stats->totalTicks << " Thread" << ID << " changes its priority to " << priority <<endl;
     return true;
@@ -473,4 +477,26 @@ void Thread::setReadyTime(int _readyTime)//OAO
 int Thread::getReadyTime()//OAO
 {
     return startReadyTime;
+}
+//2-2
+bool Thread::setBurstTime()//OAO
+{
+    burstTime=(kernel->stats->totalTicks - startBurstTime + burstTime)/2;
+    cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<this->getID()<<" change its burst time to "<<burstTime<<endl;
+    if(burstTime<0)return false;
+    return true;
+}
+double Thread::getBurstTime()//OAO
+{
+    return burstTime;
+}
+bool Thread::setStartBurst(int _startBurstTime)//OAO
+{
+    if(_startBurstTime<0)return false;
+    startBurstTime=_startBurstTime;
+    return true;
+}
+int Thread::getStartBurst()//OAO
+{
+    return startBurstTime;
 }

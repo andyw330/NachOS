@@ -80,6 +80,9 @@ class Thread {
     int *stackTop;           // the current stack pointer
     void *machineState[MachineStateSize];  // all registers except for stackTop
     int priority, startReadyTime;//OAO
+    // OAO 2-2
+    double burstTime;// OAO
+    static int startBurstTime;//OAO
   public:
     Thread(char* debugName, int threadID);      // initialize a Thread 
     Thread(char* threadName, int threadID, int _priority);// OAO initialize with priority
@@ -113,6 +116,16 @@ class Thread {
         int pri1=t1->getPriority(), pri2=t2->getPriority();
         if(pri1>pri2)return -1;
         if(pri1<pri2)return 1;
+        return 0;
+    }
+    // 2-2
+    bool setBurstTime();//OAO
+    double getBurstTime();//OAO
+    bool setStartBurst(int);//OAO
+    int getStartBurst();//OAO
+    static int compare_by_burst(Thread* t1, Thread* t2){// OAO 2-2
+        if(t1->getBurstTime() < t2->getBurstTime())return -1;
+        if(t1->getBurstTime() < t2->getBurstTime())return 1;
         return 0;
     }
     void setReadyTime(int);//OAO

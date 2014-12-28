@@ -95,8 +95,12 @@ ExceptionHandler(ExceptionType which)
 			return;	
 			ASSERTNOTREACHED();
             break;
-    case SC_Nice:
+    case SC_Nice:// 2-2 OAO change startBurstTime, burstTime
     		val=kernel->machine->ReadRegister(4);
+    		//OAO ?
+    		kernel->currentThread->setBurstTime();
+    		kernel->currentThread->setStartBurstTime(kernel->stats->totalTicks);
+
 			SysNice(val);
 			kernel->machine->WriteRegister(PCReg, kernel->machine->ReadRegister(PCReg) + 4);
 			kernel->machine->WriteRegister(NextPCReg, kernel->machine->ReadRegister(PCReg)+4);

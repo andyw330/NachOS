@@ -33,6 +33,7 @@ Scheduler::Scheduler()
 { 
     readyList = new SortedList< Thread *>(Thread::compare_by_priority); // OAO
     readyRRList = new List< Thread *>(); // OAO work item 2(1)
+    readySJFList = new SortedList< Thread *>(Thread::compare_by_burst);// OAO 2-2
     toBeDestroyed = NULL;
 } 
 
@@ -91,17 +92,22 @@ Scheduler::FindNextToRun ()
     ASSERT(kernel->interrupt->getLevel() == IntOff);
     aging(readyList);//OAO work item 1(3)
     aging(readyRRList);// OAO work item 2(1)
-    // aging(readySJFList);// not yet OAO work item 2(2)
+    aging(readySJFList);// OAO ?
     moveBetweenQueues();//OAO check priority
-    if(readyRRList->IsEmpty()){// work item 2(1)
-        if (readyList->IsEmpty()) {
-            return NULL;
-        } else {
-            return readyList->RemoveFront();
+    if(readySJFList->IsEmpty()){// 2-2
+        if(readyRRList->IsEmpty()){// work item 2(1)
+            if (readyList->IsEmpty()) {
+                return NULL;
+            } else {
+                return readyList->RemoveFront();
+            }    
+        }
+        else{
+            return readyRRList->RemoveFront();
         }    
     }
     else{
-        return readyRRList->RemoveFront();
+        return readySJFList->RemoveFront();
     }
     
 }
@@ -243,11 +249,17 @@ Scheduler::moveBetweenQueues()// check priority OAO
     ListIterator<Thread *> *iter = new ListIterator<Thread *>((List<Thread *>*)readyList);
     for (; !iter->IsDone(); iter->Next()) {
         Thread* thread = iter->Item();
-        if(thread->getPriority() >= 60){// < 100 
+        if(60 <= thread->getPriority() && thread->getPriority() < 100){ 
             //to RR Q
             readyList->Remove(thread);
             readyRRList->Append(thread);
             cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to RR queue"<<endl;
+        }
+        else if(100 <= thread->getPriority()){
+            //to SJF Q
+            readyList->Remove(thread);
+            readySJFList->Insert(thread);
+            cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to SJF queue"<<endl;
         }
         else{// should I print this or not?
             cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" stay in Priority queue"<<endl;
@@ -263,8 +275,33 @@ Scheduler::moveBetweenQueues()// check priority OAO
             readyList->Insert(thread);
             cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to Priority queue"<<endl;
         }
+        else if(100 <= thread->getPriority()){
+            // to SJF Q
+            readyRRList->Remove(thread);
+            readySJFList->Insert(thread);
+            cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to SJF queue"<<endl;
+        }
         else{// should I print this or not?
             cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" stay in RR queue"<<endl;
+        }
+    }
+    iter= new ListIterator<Thread *>((List<Thread *>*)readySJFList);
+    for (; !iter->IsDone(); iter->Next()) {
+        Thread* thread = iter->Item();
+        if(thread->getPriority() < 60){
+            // to priority Q
+            readySJFList->Remove(thread);
+            readyList->Insert(thread);
+            cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to Priority queue"<<endl;
+        }
+        else if(60 <= thread->getPriority() && thread->getPriority() < 100){
+            // to RR Q
+            readySJFList->Remove(thread);
+            readyRRList->Append(thread);
+            cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to RR queue"<<endl;
+        }
+        else{// should I print this or not?
+            cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" stay in SJF queue"<<endl;
         }
     }
 }
