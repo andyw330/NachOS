@@ -481,9 +481,9 @@ int Thread::getReadyTime()//OAO
     return startReadyTime;
 }
 //2-2
-bool Thread::setBurstTime()//OAO
+bool Thread::setBurstTime(double _burstTime)//OAO
 {
-    burstTime=(kernel->stats->totalTicks - startBurstTime + burstTime)/2;
+    burstTime=(kernel->stats->totalTicks - startBurstTime + _burstTime)/2;
     cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<this->getID()<<" change its burst time to "<<burstTime<<endl;
     if(burstTime<0)return false;
     return true;

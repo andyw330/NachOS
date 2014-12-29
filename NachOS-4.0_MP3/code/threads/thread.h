@@ -119,7 +119,7 @@ class Thread {
         return 0;
     }
     // 2-2
-    bool setBurstTime();//OAO
+    bool setBurstTime(double);//OAO
     double getBurstTime();//OAO
     static bool setStartBurstTime(int);//OAO
     int getStartBurstTime();//OAO

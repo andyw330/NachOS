@@ -73,11 +73,15 @@ Scheduler::ReadyToRun (Thread *thread)
         readyList->Insert(thread);// OAO Append is private
     }
     // 60 ~ 99 : RR queue
-    else{ // OAO RR queue
+    else if(60 <= thread->getPriority() && thread->getPriority() < 99){ // OAO RR queue
         cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to RR queue"<<endl;
         readyRRList->Append(thread);
     }
     // 100 ~ 149 : SJF queue
+    else{
+        cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to SJF queue"<<endl;
+        readySJFList->Insert(thread);
+    }
 }
 
 //----------------------------------------------------------------------
@@ -93,7 +97,7 @@ Scheduler::FindNextToRun ()
 {
     ASSERT(kernel->interrupt->getLevel() == IntOff);
     aging(readyList);//OAO work item 1(3)
-    aging(readyRRList);// OAO work item 2(1)
+    // aging(readyRRList);// OAO work item 2(1)
     // aging(readySJFList);// OAO ?
     moveBetweenQueues();//OAO check priority
     if(readySJFList->IsEmpty()){// 2-2
@@ -153,7 +157,7 @@ Scheduler::Run (Thread *nextThread, bool finishing)
     oldThread->CheckOverflow();		    // check if the old thread
 					    // had an undetected stack overflow
     // OAO 2-2?
-    nextThread->setBurstTime();//OAO 2-2?
+    nextThread->setBurstTime(oldThread->getBurstTime());//OAO 2-2?
     nextThread->setStartBurstTime(kernel->stats->totalTicks);// OAO 2-2
     
     kernel->currentThread = nextThread;  // switch to the next thread
