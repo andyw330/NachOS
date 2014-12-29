@@ -99,7 +99,7 @@ Scheduler::FindNextToRun ()
     aging(readyList);//OAO work item 1(3)
     // aging(readyRRList);// OAO work item 2(1)
     // aging(readySJFList);// OAO ?
-    moveBetweenQueues();//OAO check priority
+    // moveBetweenQueues();//OAO check priority
     if(readySJFList->IsEmpty()){// 2-2
         if(readyRRList->IsEmpty()){// work item 2(1)
             if (readyList->IsEmpty()) {
@@ -141,9 +141,9 @@ Scheduler::Run (Thread *nextThread, bool finishing)
     Thread *oldThread = kernel->currentThread;
     // OAO 2-2?
     // cout<<"XD switch "<<oldThread->getID()<<" -> "<<nextThread->getID()<<endl;
-    // if(oldThread->getID()){
-    nextThread->setBurstTime(oldThread->getBurstTime());//OAO 2-2?
-    // }
+    if(oldThread->getID()){
+        nextThread->setBurstTime( (kernel->stats->totalTicks - oldThread->getStartBurstTime() + oldThread->getBurstTime()) / 2.0 );//OAO 2-2?
+    }
     nextThread->setStartBurstTime(kernel->stats->totalTicks);// OAO 2-2
     
     ASSERT(kernel->interrupt->getLevel() == IntOff);
@@ -232,10 +232,31 @@ Scheduler::aging(SortedList<Thread*>* list)// OAO
             list->Remove(thread);
             thread->setReadyTime(kernel->stats->totalTicks);
             thread->setPriority(thread->getPriority()+10);
-            list->Insert(thread);
+            // added OAO ---------
+            if(thread->getPriority()>=100){
+                // SJF
+                cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to SJF queue"<<endl;
+                readySJFList->Insert(thread);
+            }
+            else if(thread->getPriority()>=60){
+                // RR
+                cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to RR queue"<<endl;
+                readyRRList->Append(thread);
+            }
+            else{
+                // Priority Q
+                cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to Priority queue"<<endl;
+                readyList->Insert(thread);
+            }
+            // end added ---------
         }
     }
 }
+
+
+
+
+// ignore below OAO
 void
 Scheduler::aging(List<Thread*>* list)// OAO
 {// list = SJF/RR/priority queues

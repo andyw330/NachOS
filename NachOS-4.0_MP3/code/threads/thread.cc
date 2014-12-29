@@ -35,6 +35,7 @@ const int STACK_FENCEPOST = 0xdedbeef;
 
 Thread::Thread(char* threadName, int threadID)
 {
+    startBurstTime=0;//OAO?
     burstTime=0;//OAO 2-2
     priority=75;// OAO set default priority = 75
     ID = threadID;
@@ -52,6 +53,7 @@ Thread::Thread(char* threadName, int threadID)
 }
 Thread::Thread(char* threadName, int threadID, int _priority)//OAO
 {
+    startBurstTime=0;//OAO?
     burstTime=0;//OAO 2-2
     priority=_priority;// OAO set default priority = _priority
     ID = threadID;
@@ -483,8 +485,9 @@ int Thread::getReadyTime()//OAO
 //2-2
 bool Thread::setBurstTime(double _burstTime)//OAO
 {
-    cout<<"setBurstTime = "<<kernel->stats->totalTicks<<" - "<<startBurstTime<<" + "<<_burstTime<<endl;
-    burstTime=(kernel->stats->totalTicks - startBurstTime + _burstTime)/2;
+    // cout<<"setBurstTime = "<<kernel->stats->totalTicks<<" - "<<startBurstTime<<" + "<<_burstTime<<endl;
+    // burstTime=(kernel->stats->totalTicks - startBurstTime + _burstTime)/2;
+    burstTime=_burstTime;
     cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<this->getID()<<" change its burst time to "<<burstTime<<endl;
     if(burstTime<0)return false;
     return true;
@@ -503,4 +506,4 @@ int Thread::getStartBurstTime()//OAO
 {
     return startBurstTime;
 }
-int Thread::startBurstTime=0;
+// int Thread::startBurstTime=0;

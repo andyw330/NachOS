@@ -3,42 +3,35 @@ Thread 0	ProcessNew	0
 Thread 1	test5		(Pri: 100)
 Thread 1	ProcessNew	10
 Thread 1	ProcessReady	10
-Tick 10 Thread 1 move to RR queue
+Tick 10 Thread 1 move to SJF queue
 Thread 0	ProcessFinish	20
 Thread 0	ProcessSleep	20
-Tick 20 Thread 1 move to SJF queue
-Tick 20 Thread 1 stay in SJF queue
-Tick 20 Thread 1 change its burst time to 10
 Thread 1	ProcessRunning	20
-Tick 42 Thread 1 change its burst time to 16
+Tick 42 Thread 1 change its burst time to 11
 Tick 42 Thread1 changes its priority to 100
-Tick 162 Thread 1 change its burst time to 68
+Tick 162 Thread 1 change its burst time to 65.5
 Tick 162 Thread1 changes its priority to 100
-Tick 286 Thread 1 change its burst time to 96
+Tick 286 Thread 1 change its burst time to 94.75
 Tick 286 Thread1 changes its priority to 100
-Tick 410 Thread 1 change its burst time to 110
+Tick 410 Thread 1 change its burst time to 109.375
 Tick 410 Thread1 changes its priority to 100
 Thread 1	ProcessReady	500
-Tick 500 Thread 1 move to RR queue
 Tick 500 Thread 1 move to SJF queue
-Tick 500 Thread 1 stay in SJF queue
-Tick 544 Thread 1 change its burst time to 122
+Tick 544 Thread 1 change its burst time to 121.688
 Tick 544 Thread1 changes its priority to 100
-Tick 668 Thread 1 change its burst time to 123
+Tick 668 Thread 1 change its burst time to 122.844
 Tick 668 Thread1 changes its priority to 100
-Tick 792 Thread 1 change its burst time to 123.5
+Tick 792 Thread 1 change its burst time to 123.422
 Tick 792 Thread1 changes its priority to 100
-Tick 916 Thread 1 change its burst time to 123.75
+Tick 916 Thread 1 change its burst time to 123.711
 Tick 916 Thread1 changes its priority to 100
 Thread 1	ProcessReady	1000
-Tick 1000 Thread 1 move to RR queue
 Tick 1000 Thread 1 move to SJF queue
-Tick 1000 Thread 1 stay in SJF queue
-Tick 1050 Thread 1 change its burst time to 128.875
+Tick 1050 Thread 1 change its burst time to 128.855
 Tick 1050 Thread1 changes its priority to 100
-Tick 1174 Thread 1 change its burst time to 126.438
+Tick 1174 Thread 1 change its burst time to 126.428
 Tick 1174 Thread1 changes its priority to 100
-Tick 1298 Thread 1 change its burst time to 125.219
+Tick 1298 Thread 1 change its burst time to 125.214
 Tick 1298 Thread1 changes its priority to 100
 return value:0
 Thread 1	ProcessFinish	1321

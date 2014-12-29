@@ -82,7 +82,8 @@ class Thread {
     int priority, startReadyTime;//OAO
     // OAO 2-2
     double burstTime;// OAO
-    static int startBurstTime;//OAO
+    // static int startBurstTime;//OAO
+    int startBurstTime;//OAO?
   public:
     Thread(char* debugName, int threadID);      // initialize a Thread 
     Thread(char* threadName, int threadID, int _priority);// OAO initialize with priority
@@ -121,11 +122,13 @@ class Thread {
     // 2-2
     bool setBurstTime(double);//OAO
     double getBurstTime();//OAO
-    static bool setStartBurstTime(int);//OAO
+    // static bool setStartBurstTime(int);//OAO
+
+    bool setStartBurstTime(int);//OAO?
     int getStartBurstTime();//OAO
     static int compare_by_burst(Thread* t1, Thread* t2){// OAO 2-2
         if(t1->getBurstTime() < t2->getBurstTime())return -1;
-        if(t1->getBurstTime() < t2->getBurstTime())return 1;
+        if(t1->getBurstTime() > t2->getBurstTime())return 1;
         return 0;
     }
     void setReadyTime(int);//OAO

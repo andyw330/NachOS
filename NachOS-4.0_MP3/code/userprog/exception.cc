@@ -98,7 +98,7 @@ ExceptionHandler(ExceptionType which)
     case SC_Nice:// 2-2 OAO change startBurstTime, burstTime
     		val=kernel->machine->ReadRegister(4);
     		//OAO ?
-    		kernel->currentThread->setBurstTime(kernel->currentThread->getBurstTime());
+    		kernel->currentThread->setBurstTime((kernel->stats->totalTicks - kernel->currentThread->getStartBurstTime() + kernel->currentThread->getBurstTime()) / 2.0 );
     		kernel->currentThread->setStartBurstTime(kernel->stats->totalTicks);
 
 			SysNice(val);
