@@ -1,0 +1,62 @@
+test4
+Thread 0	ProcessNew	0
+Thread 1	test4		(Pri: 105)
+Thread 1	ProcessNew	10
+Thread 1	ProcessReady	10
+Tick 10 Thread 1 move to RR queue
+Thread 0	ProcessFinish	20
+Thread 0	ProcessSleep	20
+Tick 20 Thread 1 move to SJF queue
+Tick 20 Thread 1 stay in SJF queue
+Tick 20 Thread 1 change its burst time to 10
+Thread 1	ProcessRunning	20
+Tick 42 Thread 1 change its burst time to 16
+Tick 42 Thread1 changes its priority to 105
+Tick 262 Thread 1 change its burst time to 118
+Tick 262 Thread1 changes its priority to 105
+Tick 486 Thread 1 change its burst time to 171
+Tick 486 Thread1 changes its priority to 105
+Thread 1	ProcessReady	500
+Tick 500 Thread 1 move to RR queue
+Tick 500 Thread 1 move to SJF queue
+Tick 500 Thread 1 stay in SJF queue
+Tick 720 Thread 1 change its burst time to 202.5
+Tick 720 Thread1 changes its priority to 105
+Tick 944 Thread 1 change its burst time to 213.25
+Tick 944 Thread1 changes its priority to 105
+Thread 1	ProcessReady	1000
+Tick 1000 Thread 1 move to RR queue
+Tick 1000 Thread 1 move to SJF queue
+Tick 1000 Thread 1 stay in SJF queue
+Tick 1178 Thread 1 change its burst time to 223.625
+Tick 1178 Thread1 changes its priority to 105
+Tick 1402 Thread 1 change its burst time to 223.812
+Tick 1402 Thread1 changes its priority to 105
+Thread 1	ProcessReady	1500
+Tick 1500 Thread 1 move to RR queue
+Tick 1500 Thread 1 move to SJF queue
+Tick 1500 Thread 1 stay in SJF queue
+Tick 1636 Thread 1 change its burst time to 228.906
+Tick 1636 Thread1 changes its priority to 105
+Tick 1860 Thread 1 change its burst time to 226.453
+Tick 1860 Thread1 changes its priority to 105
+Thread 1	ProcessReady	2000
+Tick 2000 Thread 1 move to RR queue
+Tick 2000 Thread 1 move to SJF queue
+Tick 2000 Thread 1 stay in SJF queue
+Tick 2094 Thread 1 change its burst time to 230.227
+Tick 2094 Thread1 changes its priority to 105
+Tick 2318 Thread 1 change its burst time to 227.113
+Tick 2318 Thread1 changes its priority to 105
+return value:0
+Thread 1	ProcessFinish	2341
+Thread 1	ProcessSleep	2341
+No threads ready or runnable, and no pending interrupts.
+Assuming the program completed.
+Machine halting!
+
+Ticks: total 2500, idle 159, system 70, user 2271
+Disk I/O: reads 0, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 0
+Network I/O: packets received 0, sent 0

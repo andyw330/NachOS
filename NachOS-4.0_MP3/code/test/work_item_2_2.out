@@ -1,0 +1,118 @@
+test4
+test5
+Thread 0	ProcessNew	0
+Thread 1	test4		(Pri: 105)
+Thread 1	ProcessNew	10
+Thread 1	ProcessReady	10
+Tick 10 Thread 1 move to RR queue
+Thread 2	test5		(Pri: 100)
+Thread 2	ProcessNew	20
+Thread 2	ProcessReady	20
+Tick 20 Thread 2 move to RR queue
+Thread 0	ProcessFinish	30
+Thread 0	ProcessSleep	30
+Tick 30 Thread 1 move to SJF queue
+Tick 30 Thread 1 stay in SJF queue
+Tick 30 Thread 1 change its burst time to 15
+Thread 1	ProcessRunning	30
+Tick 52 Thread 1 change its burst time to 18.5
+Tick 52 Thread1 changes its priority to 105
+Tick 272 Thread 1 change its burst time to 119.25
+Tick 272 Thread1 changes its priority to 105
+Tick 496 Thread 1 change its burst time to 171.625
+Tick 496 Thread1 changes its priority to 105
+Thread 1	ProcessReady	500
+Tick 500 Thread 1 move to RR queue
+Tick 500 Thread 2 move to SJF queue
+Tick 500 Thread 2 stay in SJF queue
+Tick 500 Thread 2 change its burst time to 2
+Thread 2	ProcessRunning	500
+Tick 522 Thread 2 change its burst time to 12
+Tick 522 Thread2 changes its priority to 100
+Tick 642 Thread 2 change its burst time to 66
+Tick 642 Thread2 changes its priority to 100
+Tick 766 Thread 2 change its burst time to 95
+Tick 766 Thread2 changes its priority to 100
+Tick 890 Thread 2 change its burst time to 109.5
+Tick 890 Thread2 changes its priority to 100
+Thread 2	ProcessReady	1000
+Tick 1000 Thread 2 move to RR queue
+Tick 1000 Thread 1 move to SJF queue
+Tick 1000 Thread 1 stay in SJF queue
+Tick 1000 Thread 1 change its burst time to 140.812
+Thread 1	ProcessRunning	1000
+Tick 1230 Thread 1 change its burst time to 185.406
+Tick 1230 Thread1 changes its priority to 105
+Tick 1454 Thread 1 change its burst time to 204.703
+Tick 1454 Thread1 changes its priority to 105
+Thread 1	ProcessReady	1500
+Tick 1500 Thread 1 move to RR queue
+Tick 1500 Thread 2 move to SJF queue
+Tick 1500 Thread 2 stay in SJF queue
+Tick 1500 Thread 2 change its burst time to 77.75
+Thread 2	ProcessRunning	1500
+Tick 1524 Thread 2 change its burst time to 50.875
+Tick 1524 Thread2 changes its priority to 100
+Tick 1648 Thread 2 change its burst time to 87.4375
+Tick 1648 Thread2 changes its priority to 100
+Tick 1772 Thread 2 change its burst time to 105.719
+Tick 1772 Thread2 changes its priority to 100
+Tick 1896 Thread 2 change its burst time to 114.859
+Tick 1896 Thread2 changes its priority to 100
+Thread 2	ProcessReady	2000
+Tick 2000 Thread 2 move to RR queue
+Tick 2000 Thread 1 move to SJF queue
+Tick 2000 Thread 1 stay in SJF queue
+Tick 2000 Thread 1 change its burst time to 154.352
+Thread 1	ProcessRunning	2000
+Tick 2188 Thread 1 change its burst time to 171.176
+Tick 2188 Thread1 changes its priority to 105
+Tick 2412 Thread 1 change its burst time to 197.588
+Tick 2412 Thread1 changes its priority to 105
+Thread 1	ProcessReady	2500
+Tick 2500 Thread 1 move to RR queue
+Tick 2500 Thread 2 move to SJF queue
+Tick 2500 Thread 2 stay in SJF queue
+Tick 2500 Thread 2 change its burst time to 101.43
+Thread 2	ProcessRunning	2500
+Tick 2530 Thread 2 change its burst time to 65.7148
+Tick 2530 Thread2 changes its priority to 100
+Tick 2654 Thread 2 change its burst time to 94.8574
+Tick 2654 Thread2 changes its priority to 100
+Tick 2778 Thread 2 change its burst time to 109.429
+Tick 2778 Thread2 changes its priority to 100
+return value:0
+Thread 2	ProcessFinish	2801
+Thread 2	ProcessSleep	2801
+Tick 2801 Thread 1 move to SJF queue
+Tick 2801 Thread 1 stay in SJF queue
+Tick 2801 Thread 1 change its burst time to 110.294
+Thread 1	ProcessRunning	2801
+Tick 2947 Thread 1 change its burst time to 128.147
+Tick 2947 Thread1 changes its priority to 105
+Thread 1	ProcessReady	3000
+Tick 3000 Thread 1 move to RR queue
+Tick 3000 Thread 1 move to SJF queue
+Tick 3000 Thread 1 stay in SJF queue
+Tick 3181 Thread 1 change its burst time to 181.073
+Tick 3181 Thread1 changes its priority to 105
+Tick 3405 Thread 1 change its burst time to 202.537
+Tick 3405 Thread1 changes its priority to 105
+Thread 1	ProcessReady	3500
+Tick 3500 Thread 1 move to RR queue
+Tick 3500 Thread 1 move to SJF queue
+Tick 3500 Thread 1 stay in SJF queue
+Tick 3639 Thread 1 change its burst time to 218.268
+Tick 3639 Thread1 changes its priority to 105
+return value:0
+Thread 1	ProcessFinish	3662
+Thread 1	ProcessSleep	3662
+No threads ready or runnable, and no pending interrupts.
+Assuming the program completed.
+Machine halting!
+
+Ticks: total 4000, idle 338, system 120, user 3542
+Disk I/O: reads 0, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 0
+Network I/O: packets received 0, sent 0

@@ -121,8 +121,8 @@ class Thread {
     // 2-2
     bool setBurstTime();//OAO
     double getBurstTime();//OAO
-    bool setStartBurst(int);//OAO
-    int getStartBurst();//OAO
+    static bool setStartBurstTime(int);//OAO
+    int getStartBurstTime();//OAO
     static int compare_by_burst(Thread* t1, Thread* t2){// OAO 2-2
         if(t1->getBurstTime() < t2->getBurstTime())return -1;
         if(t1->getBurstTime() < t2->getBurstTime())return 1;
@@ -155,7 +155,6 @@ class Thread {
 
     AddrSpace *space;           // User code this thread is running.
 };
-
 
 // external function, dummy routine whose sole job is to call Thread::Print
 extern void ThreadPrint(Thread *thread);     

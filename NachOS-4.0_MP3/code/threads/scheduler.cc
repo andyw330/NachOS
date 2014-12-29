@@ -46,7 +46,8 @@ Scheduler::~Scheduler()
 { 
     delete readyList; 
     delete readyRRList;
-} 
+    delete readySJFList;
+}
 
 //----------------------------------------------------------------------
 // Scheduler::ReadyToRun
@@ -64,6 +65,7 @@ Scheduler::ReadyToRun (Thread *thread)
 	//cout << "Putting thread on ready list: " << thread->getName() << endl ;
     thread->setStatus(READY);
     thread->setReadyTime(kernel->stats->totalTicks);//OAO work item 1(3)
+    
     cout << "Thread " <<  thread->getID() << "\tProcessReady\t" << kernel->stats->totalTicks << endl;
     // 0 ~ 59 : priority queue
     if(thread->getPriority()<60){// OAO priority queue
@@ -92,7 +94,7 @@ Scheduler::FindNextToRun ()
     ASSERT(kernel->interrupt->getLevel() == IntOff);
     aging(readyList);//OAO work item 1(3)
     aging(readyRRList);// OAO work item 2(1)
-    aging(readySJFList);// OAO ?
+    // aging(readySJFList);// OAO ?
     moveBetweenQueues();//OAO check priority
     if(readySJFList->IsEmpty()){// 2-2
         if(readyRRList->IsEmpty()){// work item 2(1)
@@ -138,7 +140,6 @@ Scheduler::Run (Thread *nextThread, bool finishing)
 
     //OAO old thread == new thread => don't do context switch(?)
     // if(oldThread->getID()==nextThread->getID())return;
-
     if (finishing) {	// mark that we need to delete current thread
          ASSERT(toBeDestroyed == NULL);
 	 toBeDestroyed = oldThread;
@@ -151,7 +152,10 @@ Scheduler::Run (Thread *nextThread, bool finishing)
     
     oldThread->CheckOverflow();		    // check if the old thread
 					    // had an undetected stack overflow
-
+    // OAO 2-2?
+    nextThread->setBurstTime();//OAO 2-2?
+    nextThread->setStartBurstTime(kernel->stats->totalTicks);// OAO 2-2
+    
     kernel->currentThread = nextThread;  // switch to the next thread
     nextThread->setStatus(RUNNING);      // nextThread is now running
     cout << "Thread " << kernel->currentThread->getID() << "\tProcessRunning\t" << kernel->stats->totalTicks << endl;
