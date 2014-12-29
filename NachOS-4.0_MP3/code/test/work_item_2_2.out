@@ -13,82 +13,107 @@ Thread 0	ProcessFinish	30
 Thread 0	ProcessSleep	30
 Tick 30 Thread 1 stay in SJF queue
 Tick 30 Thread 2 stay in SJF queue
+setBurstTime = 30 - 0 + 0
 Tick 30 Thread 1 change its burst time to 15
 Thread 1	ProcessRunning	30
+setBurstTime = 52 - 30 + 15
 Tick 52 Thread 1 change its burst time to 18.5
 Tick 52 Thread1 changes its priority to 105
+setBurstTime = 272 - 52 + 18.5
 Tick 272 Thread 1 change its burst time to 119.25
 Tick 272 Thread1 changes its priority to 105
+setBurstTime = 496 - 272 + 119.25
 Tick 496 Thread 1 change its burst time to 171.625
 Tick 496 Thread1 changes its priority to 105
 Thread 1	ProcessReady	500
 Tick 500 Thread 1 move to SJF queue
 Tick 500 Thread 2 stay in SJF queue
 Tick 500 Thread 1 stay in SJF queue
+setBurstTime = 500 - 496 + 171.625
 Tick 500 Thread 2 change its burst time to 87.8125
 Thread 2	ProcessRunning	500
+setBurstTime = 522 - 500 + 87.8125
 Tick 522 Thread 2 change its burst time to 54.9062
 Tick 522 Thread2 changes its priority to 100
+setBurstTime = 642 - 522 + 54.9062
 Tick 642 Thread 2 change its burst time to 87.4531
 Tick 642 Thread2 changes its priority to 100
+setBurstTime = 766 - 642 + 87.4531
 Tick 766 Thread 2 change its burst time to 105.727
 Tick 766 Thread2 changes its priority to 100
+setBurstTime = 890 - 766 + 105.727
 Tick 890 Thread 2 change its burst time to 114.863
 Tick 890 Thread2 changes its priority to 100
 Thread 2	ProcessReady	1000
 Tick 1000 Thread 2 move to SJF queue
 Tick 1000 Thread 2 stay in SJF queue
 Tick 1000 Thread 1 stay in SJF queue
+setBurstTime = 1024 - 890 + 114.863
 Tick 1024 Thread 2 change its burst time to 124.432
 Tick 1024 Thread2 changes its priority to 100
+setBurstTime = 1148 - 1024 + 124.432
 Tick 1148 Thread 2 change its burst time to 124.216
 Tick 1148 Thread2 changes its priority to 100
+setBurstTime = 1272 - 1148 + 124.216
 Tick 1272 Thread 2 change its burst time to 124.108
 Tick 1272 Thread2 changes its priority to 100
+setBurstTime = 1396 - 1272 + 124.108
 Tick 1396 Thread 2 change its burst time to 124.054
 Tick 1396 Thread2 changes its priority to 100
 Thread 2	ProcessReady	1500
 Tick 1500 Thread 2 move to SJF queue
 Tick 1500 Thread 2 stay in SJF queue
 Tick 1500 Thread 1 stay in SJF queue
+setBurstTime = 1530 - 1396 + 124.054
 Tick 1530 Thread 2 change its burst time to 129.027
 Tick 1530 Thread2 changes its priority to 100
+setBurstTime = 1654 - 1530 + 129.027
 Tick 1654 Thread 2 change its burst time to 126.513
 Tick 1654 Thread2 changes its priority to 100
+setBurstTime = 1778 - 1654 + 126.513
 Tick 1778 Thread 2 change its burst time to 125.257
 Tick 1778 Thread2 changes its priority to 100
 return value:0
 Thread 2	ProcessFinish	1801
 Thread 2	ProcessSleep	1801
 Tick 1801 Thread 1 stay in SJF queue
+setBurstTime = 1801 - 1778 + 125.257
 Tick 1801 Thread 1 change its burst time to 74.1284
 Thread 1	ProcessRunning	1801
 Thread 1	ProcessReady	2000
 Tick 2000 Thread 1 move to SJF queue
 Tick 2000 Thread 1 stay in SJF queue
+setBurstTime = 2041 - 1801 + 74.1284
 Tick 2041 Thread 1 change its burst time to 157.064
 Tick 2041 Thread1 changes its priority to 105
+setBurstTime = 2265 - 2041 + 157.064
 Tick 2265 Thread 1 change its burst time to 190.532
 Tick 2265 Thread1 changes its priority to 105
+setBurstTime = 2489 - 2265 + 190.532
 Tick 2489 Thread 1 change its burst time to 207.266
 Tick 2489 Thread1 changes its priority to 105
 Thread 1	ProcessReady	2500
 Tick 2500 Thread 1 move to SJF queue
 Tick 2500 Thread 1 stay in SJF queue
+setBurstTime = 2723 - 2489 + 207.266
 Tick 2723 Thread 1 change its burst time to 220.633
 Tick 2723 Thread1 changes its priority to 105
+setBurstTime = 2947 - 2723 + 220.633
 Tick 2947 Thread 1 change its burst time to 222.317
 Tick 2947 Thread1 changes its priority to 105
 Thread 1	ProcessReady	3000
 Tick 3000 Thread 1 move to SJF queue
 Tick 3000 Thread 1 stay in SJF queue
+setBurstTime = 3181 - 2947 + 222.317
 Tick 3181 Thread 1 change its burst time to 228.158
 Tick 3181 Thread1 changes its priority to 105
+setBurstTime = 3405 - 3181 + 228.158
 Tick 3405 Thread 1 change its burst time to 226.079
 Tick 3405 Thread1 changes its priority to 105
 Thread 1	ProcessReady	3500
 Tick 3500 Thread 1 move to SJF queue
 Tick 3500 Thread 1 stay in SJF queue
+setBurstTime = 3639 - 3405 + 226.079
 Tick 3639 Thread 1 change its burst time to 230.04
 Tick 3639 Thread1 changes its priority to 105
 return value:0

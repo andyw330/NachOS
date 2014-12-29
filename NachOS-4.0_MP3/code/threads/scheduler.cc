@@ -73,7 +73,7 @@ Scheduler::ReadyToRun (Thread *thread)
         readyList->Insert(thread);// OAO Append is private
     }
     // 60 ~ 99 : RR queue
-    else if(60 <= thread->getPriority() && thread->getPriority() < 99){ // OAO RR queue
+    else if(60 <= thread->getPriority() && thread->getPriority() < 100){ // OAO RR queue
         cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to RR queue"<<endl;
         readyRRList->Append(thread);
     }
@@ -139,6 +139,12 @@ void
 Scheduler::Run (Thread *nextThread, bool finishing)
 {
     Thread *oldThread = kernel->currentThread;
+    // OAO 2-2?
+    // cout<<"XD switch "<<oldThread->getID()<<" -> "<<nextThread->getID()<<endl;
+    // if(oldThread->getID()){
+    nextThread->setBurstTime(oldThread->getBurstTime());//OAO 2-2?
+    // }
+    nextThread->setStartBurstTime(kernel->stats->totalTicks);// OAO 2-2
     
     ASSERT(kernel->interrupt->getLevel() == IntOff);
 
@@ -156,9 +162,6 @@ Scheduler::Run (Thread *nextThread, bool finishing)
     
     oldThread->CheckOverflow();		    // check if the old thread
 					    // had an undetected stack overflow
-    // OAO 2-2?
-    nextThread->setBurstTime(oldThread->getBurstTime());//OAO 2-2?
-    nextThread->setStartBurstTime(kernel->stats->totalTicks);// OAO 2-2
     
     kernel->currentThread = nextThread;  // switch to the next thread
     nextThread->setStatus(RUNNING);      // nextThread is now running
