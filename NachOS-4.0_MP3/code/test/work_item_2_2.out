@@ -12,6 +12,14 @@ Tick 20 Thread 2 move to SJF queue
 Thread 0	ProcessFinish	30
 Thread 0	ProcessSleep	30
 Thread 1	ProcessRunning	30
+XD switch 0 -> 1
+display all:
+readyList
+
+readyRRList
+
+readySJFList
+2 : 0 -> 
 Tick 52 Thread 1 change its burst time to 11
 Tick 52 Thread1 changes its priority to 105
 Tick 272 Thread 1 change its burst time to 115.5
@@ -20,8 +28,18 @@ Tick 496 Thread 1 change its burst time to 169.75
 Tick 496 Thread1 changes its priority to 105
 Thread 1	ProcessReady	500
 Tick 500 Thread 1 move to SJF queue
-Tick 500 Thread 2 change its burst time to 86.875
 Thread 2	ProcessRunning	500
+XD switch 1 -> 2
+display all:
+readyList
+
+readyRRList
+
+readySJFList
+1 : 169.75 -> 
+nextThread burst: 0
+500 - 496 + 169.75
+Tick 500 Thread 2 change its burst time to 86.875
 Tick 522 Thread 2 change its burst time to 54.4375
 Tick 522 Thread2 changes its priority to 100
 Tick 642 Thread 2 change its burst time to 87.2188
@@ -51,8 +69,18 @@ Tick 1778 Thread2 changes its priority to 100
 return value:0
 Thread 2	ProcessFinish	1801
 Thread 2	ProcessSleep	1801
-Tick 1801 Thread 1 change its burst time to 74.1281
 Thread 1	ProcessRunning	1801
+XD switch 2 -> 1
+display all:
+readyList
+
+readyRRList
+
+readySJFList
+
+nextThread burst: 169.75
+1801 - 1778 + 125.256
+Tick 1801 Thread 1 change its burst time to 74.1281
 Thread 1	ProcessReady	2000
 Tick 2000 Thread 1 move to SJF queue
 Tick 2041 Thread 1 change its burst time to 157.064

@@ -139,12 +139,6 @@ void
 Scheduler::Run (Thread *nextThread, bool finishing)
 {
     Thread *oldThread = kernel->currentThread;
-    // OAO 2-2?
-    // cout<<"XD switch "<<oldThread->getID()<<" -> "<<nextThread->getID()<<endl;
-    if(oldThread->getID()){
-        nextThread->setBurstTime( (kernel->stats->totalTicks - oldThread->getStartBurstTime() + oldThread->getBurstTime()) / 2.0 );//OAO 2-2?
-    }
-    nextThread->setStartBurstTime(kernel->stats->totalTicks);// OAO 2-2
     
     ASSERT(kernel->interrupt->getLevel() == IntOff);
 
@@ -174,6 +168,38 @@ Scheduler::Run (Thread *nextThread, bool finishing)
     // a bit to figure out what happens after this, both from the point
     // of view of the thread and from the perspective of the "outside world".
 
+
+    // OAO 2-2?
+    cout<<"XD switch "<<oldThread->getID()<<" -> "<<nextThread->getID()<<endl;
+    // cout<<"display all:"<<endl;
+    // ListIterator<Thread *> *iter = new ListIterator<Thread *>((List<Thread *>*)readyList);
+    // cout<<"readyList"<<endl;
+    // for (; !iter->IsDone(); iter->Next()) {
+    //     Thread* thread = iter->Item();
+    //     cout<<thread->getID()<<" : "<<thread->getBurstTime()<<" -> ";
+    // }
+    // cout<<endl;
+    // iter = new ListIterator<Thread *>((List<Thread *>*)readyRRList);
+    // cout<<"readyRRList"<<endl;
+    // for (; !iter->IsDone(); iter->Next()) {
+    //     Thread* thread = iter->Item();
+    //     cout<<thread->getID()<<" : "<<thread->getBurstTime()<<" -> ";
+    // }
+    // cout<<endl;
+    // iter = new ListIterator<Thread *>((List<Thread *>*)readySJFList);
+    // cout<<"readySJFList"<<endl;
+    // for (; !iter->IsDone(); iter->Next()) {
+    //     Thread* thread = iter->Item();
+    //     cout<<thread->getID()<<" : "<<thread->getBurstTime()<<" -> ";
+    // }
+    // cout<<endl;
+    // if(oldThread->getID()){// thread 0
+    //     cout<<"nextThread burst: "<<nextThread->getBurstTime()<<endl;
+    //     cout<<kernel->stats->totalTicks<<" - "<<oldThread->getStartBurstTime()<<" + "<<oldThread->getBurstTime()<<endl;
+    //     nextThread->setBurstTime( (kernel->stats->totalTicks - oldThread->getStartBurstTime() + oldThread->getBurstTime()) / 2.0 );//OAO 2-2?
+    // }
+    nextThread->setStartBurstTime(kernel->stats->totalTicks);// OAO 2-2
+    
     SWITCH(oldThread, nextThread);
 
     // we're back, running oldThread
@@ -235,6 +261,7 @@ Scheduler::aging(SortedList<Thread*>* list)// OAO
             // added OAO ---------
             if(thread->getPriority()>=100){
                 // SJF
+                //thr
                 cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to SJF queue"<<endl;
                 readySJFList->Insert(thread);
             }
