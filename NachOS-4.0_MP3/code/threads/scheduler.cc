@@ -65,7 +65,10 @@ Scheduler::ReadyToRun (Thread *thread)
 	//cout << "Putting thread on ready list: " << thread->getName() << endl ;
     thread->setStatus(READY);
     thread->setReadyTime(kernel->stats->totalTicks);//OAO work item 1(3)
-    
+    // here?
+    // aging(readyList);//OAO work item 1(3)
+    // aging(readyRRList);// OAO work item 2(1)
+    // aging(readySJFList);// OAO ?
     cout << "Thread " <<  thread->getID() << "\tProcessReady\t" << kernel->stats->totalTicks << endl;
     // 0 ~ 59 : priority queue
     if(thread->getPriority()<60){// OAO priority queue
@@ -82,6 +85,8 @@ Scheduler::ReadyToRun (Thread *thread)
         cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to SJF queue"<<endl;
         readySJFList->Insert(thread);
     }
+    // aging(readyList);//OAO work item 1(3)
+    
 }
 
 //----------------------------------------------------------------------
@@ -97,9 +102,8 @@ Scheduler::FindNextToRun ()
 {
     ASSERT(kernel->interrupt->getLevel() == IntOff);
     aging(readyList);//OAO work item 1(3)
-    // aging(readyRRList);// OAO work item 2(1)
-    // aging(readySJFList);// OAO ?
-    // moveBetweenQueues();//OAO check priority
+    aging(readyRRList);// OAO work item 2(1)
+    // aging(readySJFList);// OAO because the sorted index is burst but aging changes the priority, this implementation will be aborted while running
     if(readySJFList->IsEmpty()){// 2-2
         if(readyRRList->IsEmpty()){// work item 2(1)
             if (readyList->IsEmpty()) {
@@ -170,6 +174,9 @@ Scheduler::Run (Thread *nextThread, bool finishing)
 
 
     // OAO 2-2?
+
+
+    // -----------------------------------------------------------------
     cout<<"XD switch "<<oldThread->getID()<<" -> "<<nextThread->getID()<<endl;
     // cout<<"display all:"<<endl;
     // ListIterator<Thread *> *iter = new ListIterator<Thread *>((List<Thread *>*)readyList);
@@ -193,11 +200,13 @@ Scheduler::Run (Thread *nextThread, bool finishing)
     //     cout<<thread->getID()<<" : "<<thread->getBurstTime()<<" -> ";
     // }
     // cout<<endl;
-    // if(oldThread->getID()){// thread 0
-    //     cout<<"nextThread burst: "<<nextThread->getBurstTime()<<endl;
-    //     cout<<kernel->stats->totalTicks<<" - "<<oldThread->getStartBurstTime()<<" + "<<oldThread->getBurstTime()<<endl;
-    //     nextThread->setBurstTime( (kernel->stats->totalTicks - oldThread->getStartBurstTime() + oldThread->getBurstTime()) / 2.0 );//OAO 2-2?
-    // }
+    // -----------------------------------------------------------------
+
+    if(oldThread->getID()){// thread 0 OAO
+        cout<<"nextThread burst: "<<nextThread->getBurstTime()<<endl;
+        cout<<kernel->stats->totalTicks<<" - "<<oldThread->getStartBurstTime()<<" + "<<oldThread->getBurstTime()<<endl;
+        nextThread->setBurstTime( (kernel->stats->totalTicks - oldThread->getStartBurstTime() + oldThread->getBurstTime()) / 2.0 );//OAO 2-2?
+    }
     nextThread->setStartBurstTime(kernel->stats->totalTicks);// OAO 2-2
     
     SWITCH(oldThread, nextThread);
@@ -258,109 +267,47 @@ Scheduler::aging(SortedList<Thread*>* list)// OAO
             list->Remove(thread);
             thread->setReadyTime(kernel->stats->totalTicks);
             thread->setPriority(thread->getPriority()+10);
-            // added OAO ---------
-            if(thread->getPriority()>=100){
-                // SJF
-                //thr
-                cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to SJF queue"<<endl;
-                readySJFList->Insert(thread);
-            }
-            else if(thread->getPriority()>=60){
-                // RR
-                cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to RR queue"<<endl;
-                readyRRList->Append(thread);
-            }
-            else{
-                // Priority Q
-                cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to Priority queue"<<endl;
-                readyList->Insert(thread);
-            }
-            // end added ---------
         }
+        moveBetweenQueues(thread);
+        
     }
 }
 
 
 
 
-// ignore below OAO
-// void
-// Scheduler::aging(List<Thread*>* list)// OAO
-// {// list = SJF/RR/priority queues
-//     ListIterator<Thread *> *iter = new ListIterator<Thread *>((List<Thread *>*)list);
-//     for (; !iter->IsDone(); iter->Next()) {
-//         Thread* thread = iter->Item();
-//         if(kernel->stats->totalTicks - thread->getReadyTime() >= 1500){
-//             list->Remove(thread);
-//             thread->setReadyTime(kernel->stats->totalTicks);
-//             thread->setPriority(thread->getPriority()+10);
-//             list->Append(thread);
-//         }
-//     }
-// }
-// void
-// Scheduler::moveBetweenQueues()// check priority OAO
-// {
-//     // after aging
-//     // 0 ~ 59 : priority queue
-//     // 60 ~ 99 : RR queue
-//     // 100 ~ 149 : SJF queue
-//     ListIterator<Thread *> *iter = new ListIterator<Thread *>((List<Thread *>*)readyList);
-//     for (; !iter->IsDone(); iter->Next()) {
-//         Thread* thread = iter->Item();
-//         if(60 <= thread->getPriority() && thread->getPriority() < 100){ 
-//             //to RR Q
-//             readyList->Remove(thread);
-//             readyRRList->Append(thread);
-//             cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to RR queue"<<endl;
-//         }
-//         else if(100 <= thread->getPriority()){
-//             //to SJF Q
-//             readyList->Remove(thread);
-//             readySJFList->Insert(thread);
-//             cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to SJF queue"<<endl;
-//         }
-//         else{// should I print this or not?
-//             cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" stay in Priority queue"<<endl;
-//         }
-//     }
-    
-//     iter= new ListIterator<Thread *>((List<Thread *>*)readyRRList);
-//     for (; !iter->IsDone(); iter->Next()) {
-//         Thread* thread = iter->Item();
-//         if(thread->getPriority() < 60){
-//             // to priority Q
-//             readyRRList->Remove(thread);
-//             readyList->Insert(thread);
-//             cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to Priority queue"<<endl;
-//         }
-//         else if(100 <= thread->getPriority()){
-//             // to SJF Q
-//             readyRRList->Remove(thread);
-//             readySJFList->Insert(thread);
-//             cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to SJF queue"<<endl;
-//         }
-//         else{// should I print this or not?
-//             cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" stay in RR queue"<<endl;
-//         }
-//     }
-//     iter= new ListIterator<Thread *>((List<Thread *>*)readySJFList);
-//     for (; !iter->IsDone(); iter->Next()) {
-//         Thread* thread = iter->Item();
-//         if(thread->getPriority() < 60){
-//             // to priority Q
-//             readySJFList->Remove(thread);
-//             readyList->Insert(thread);
-//             cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to Priority queue"<<endl;
-//         }
-//         else if(60 <= thread->getPriority() && thread->getPriority() < 100){
-//             // to RR Q
-//             readySJFList->Remove(thread);
-//             readyRRList->Append(thread);
-//             cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to RR queue"<<endl;
-//         }
-//         else{// should I print this or not?
-//             cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" stay in SJF queue"<<endl;
-//         }
-//     }
-// }
+void
+Scheduler::aging(List<Thread*>* list)// OAO
+{// list = SJF/RR/priority queues
+    ListIterator<Thread *> *iter = new ListIterator<Thread *>((List<Thread *>*)list);
+    for (; !iter->IsDone(); iter->Next()) {
+        Thread* thread = iter->Item();
+        if(kernel->stats->totalTicks - thread->getReadyTime() >= 1500){
+            list->Remove(thread);
+            thread->setReadyTime(kernel->stats->totalTicks);
+            thread->setPriority(thread->getPriority()+10);
+        }
+        moveBetweenQueues(thread);
+    }
+}
+void Scheduler::moveBetweenQueues(Thread* thread)//OAO
+{
+    // move between queues
+    cout<<"MBQ!!!"<<endl;
+    if(thread->getPriority()>=100){
+        // SJF
+        //thr
+        cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to SJF queue"<<endl;
+        readySJFList->Insert(thread);
+    }
+    else if(thread->getPriority()>=60){
+        // RR
+        cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to RR queue"<<endl;
+        readyRRList->Append(thread);
+    }
+    else{
+        // Priority Q
+        cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to Priority queue"<<endl;
+        readyList->Insert(thread);
+    }
+}
