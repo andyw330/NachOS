@@ -257,83 +257,83 @@ Scheduler::aging(SortedList<Thread*>* list)// OAO
 
 
 // ignore below OAO
-void
-Scheduler::aging(List<Thread*>* list)// OAO
-{// list = SJF/RR/priority queues
-    ListIterator<Thread *> *iter = new ListIterator<Thread *>((List<Thread *>*)list);
-    for (; !iter->IsDone(); iter->Next()) {
-        Thread* thread = iter->Item();
-        if(kernel->stats->totalTicks - thread->getReadyTime() >= 1500){
-            list->Remove(thread);
-            thread->setReadyTime(kernel->stats->totalTicks);
-            thread->setPriority(thread->getPriority()+10);
-            list->Append(thread);
-        }
-    }
-}
-void
-Scheduler::moveBetweenQueues()// check priority OAO
-{
-    // after aging
-    // 0 ~ 59 : priority queue
-    // 60 ~ 99 : RR queue
-    // 100 ~ 149 : SJF queue
-    ListIterator<Thread *> *iter = new ListIterator<Thread *>((List<Thread *>*)readyList);
-    for (; !iter->IsDone(); iter->Next()) {
-        Thread* thread = iter->Item();
-        if(60 <= thread->getPriority() && thread->getPriority() < 100){ 
-            //to RR Q
-            readyList->Remove(thread);
-            readyRRList->Append(thread);
-            cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to RR queue"<<endl;
-        }
-        else if(100 <= thread->getPriority()){
-            //to SJF Q
-            readyList->Remove(thread);
-            readySJFList->Insert(thread);
-            cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to SJF queue"<<endl;
-        }
-        else{// should I print this or not?
-            cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" stay in Priority queue"<<endl;
-        }
-    }
+// void
+// Scheduler::aging(List<Thread*>* list)// OAO
+// {// list = SJF/RR/priority queues
+//     ListIterator<Thread *> *iter = new ListIterator<Thread *>((List<Thread *>*)list);
+//     for (; !iter->IsDone(); iter->Next()) {
+//         Thread* thread = iter->Item();
+//         if(kernel->stats->totalTicks - thread->getReadyTime() >= 1500){
+//             list->Remove(thread);
+//             thread->setReadyTime(kernel->stats->totalTicks);
+//             thread->setPriority(thread->getPriority()+10);
+//             list->Append(thread);
+//         }
+//     }
+// }
+// void
+// Scheduler::moveBetweenQueues()// check priority OAO
+// {
+//     // after aging
+//     // 0 ~ 59 : priority queue
+//     // 60 ~ 99 : RR queue
+//     // 100 ~ 149 : SJF queue
+//     ListIterator<Thread *> *iter = new ListIterator<Thread *>((List<Thread *>*)readyList);
+//     for (; !iter->IsDone(); iter->Next()) {
+//         Thread* thread = iter->Item();
+//         if(60 <= thread->getPriority() && thread->getPriority() < 100){ 
+//             //to RR Q
+//             readyList->Remove(thread);
+//             readyRRList->Append(thread);
+//             cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to RR queue"<<endl;
+//         }
+//         else if(100 <= thread->getPriority()){
+//             //to SJF Q
+//             readyList->Remove(thread);
+//             readySJFList->Insert(thread);
+//             cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to SJF queue"<<endl;
+//         }
+//         else{// should I print this or not?
+//             cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" stay in Priority queue"<<endl;
+//         }
+//     }
     
-    iter= new ListIterator<Thread *>((List<Thread *>*)readyRRList);
-    for (; !iter->IsDone(); iter->Next()) {
-        Thread* thread = iter->Item();
-        if(thread->getPriority() < 60){
-            // to priority Q
-            readyRRList->Remove(thread);
-            readyList->Insert(thread);
-            cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to Priority queue"<<endl;
-        }
-        else if(100 <= thread->getPriority()){
-            // to SJF Q
-            readyRRList->Remove(thread);
-            readySJFList->Insert(thread);
-            cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to SJF queue"<<endl;
-        }
-        else{// should I print this or not?
-            cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" stay in RR queue"<<endl;
-        }
-    }
-    iter= new ListIterator<Thread *>((List<Thread *>*)readySJFList);
-    for (; !iter->IsDone(); iter->Next()) {
-        Thread* thread = iter->Item();
-        if(thread->getPriority() < 60){
-            // to priority Q
-            readySJFList->Remove(thread);
-            readyList->Insert(thread);
-            cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to Priority queue"<<endl;
-        }
-        else if(60 <= thread->getPriority() && thread->getPriority() < 100){
-            // to RR Q
-            readySJFList->Remove(thread);
-            readyRRList->Append(thread);
-            cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to RR queue"<<endl;
-        }
-        else{// should I print this or not?
-            cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" stay in SJF queue"<<endl;
-        }
-    }
-}
+//     iter= new ListIterator<Thread *>((List<Thread *>*)readyRRList);
+//     for (; !iter->IsDone(); iter->Next()) {
+//         Thread* thread = iter->Item();
+//         if(thread->getPriority() < 60){
+//             // to priority Q
+//             readyRRList->Remove(thread);
+//             readyList->Insert(thread);
+//             cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to Priority queue"<<endl;
+//         }
+//         else if(100 <= thread->getPriority()){
+//             // to SJF Q
+//             readyRRList->Remove(thread);
+//             readySJFList->Insert(thread);
+//             cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to SJF queue"<<endl;
+//         }
+//         else{// should I print this or not?
+//             cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" stay in RR queue"<<endl;
+//         }
+//     }
+//     iter= new ListIterator<Thread *>((List<Thread *>*)readySJFList);
+//     for (; !iter->IsDone(); iter->Next()) {
+//         Thread* thread = iter->Item();
+//         if(thread->getPriority() < 60){
+//             // to priority Q
+//             readySJFList->Remove(thread);
+//             readyList->Insert(thread);
+//             cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to Priority queue"<<endl;
+//         }
+//         else if(60 <= thread->getPriority() && thread->getPriority() < 100){
+//             // to RR Q
+//             readySJFList->Remove(thread);
+//             readyRRList->Append(thread);
+//             cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to RR queue"<<endl;
+//         }
+//         else{// should I print this or not?
+//             cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" stay in SJF queue"<<endl;
+//         }
+//     }
+// }

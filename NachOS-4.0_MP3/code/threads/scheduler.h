@@ -36,8 +36,8 @@ class Scheduler {
     
   private:
     void aging(SortedList<Thread*>* list);//OAO
-    void aging(List<Thread*>* list);// OAO work item 2
-    void moveBetweenQueues();// work item 2 (1) OAO
+    // void aging(List<Thread*>* list);// OAO work item 2
+    // void moveBetweenQueues();// work item 2 (1) OAO
     List<Thread *>*readyRRList;// OAO 2-1
     SortedList<Thread *> *readySJFList;// OAO 2-2
     // OAO priority queue
