@@ -1,0 +1,29 @@
+test1
+Thread 0	ProcessNew	0
+Thread 1	test1		(Pri: 75)
+Thread 1	ProcessNew	10
+Thread 1	ProcessReady	10
+Tick 10 Thread 1 move to RR queue
+Thread 0	ProcessFinish	20
+Thread 0	ProcessSleep	20
+Thread 1	ProcessRunning	20
+Tick 42 Thread 1 change its burst time to 11
+Tick 42 Thread1 changes its priority to 25
+Thread 1	ProcessReady	500
+Tick 500 Thread 1 move to Priority queue
+Tick 500 Thread 1 move to Priority queue
+Thread 1	ProcessReady	1000
+Tick 1000 Thread 1 move to Priority queue
+Tick 1000 Thread 1 move to Priority queue
+return value:0
+Thread 1	ProcessFinish	1081
+Thread 1	ProcessSleep	1081
+No threads ready or runnable, and no pending interrupts.
+Assuming the program completed.
+Machine halting!
+
+Ticks: total 1500, idle 419, system 50, user 1031
+Disk I/O: reads 0, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 0
+Network I/O: packets received 0, sent 0

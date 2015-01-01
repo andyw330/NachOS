@@ -102,7 +102,7 @@ Scheduler::FindNextToRun ()
 {
     ASSERT(kernel->interrupt->getLevel() == IntOff);
     aging(readyList);//OAO work item 1(3)
-    aging(readyRRList);// OAO work item 2(1)
+    // aging(readyRRList);// OAO work item 2(1)
     // aging(readySJFList);// OAO because the sorted index is burst but aging changes the priority, this implementation will be aborted while running
     if(readySJFList->IsEmpty()){// 2-2
         if(readyRRList->IsEmpty()){// work item 2(1)
@@ -230,11 +230,13 @@ Scheduler::Print()
 void
 Scheduler::aging(SortedList<Thread*>* list)// OAO
 {// list = SJF/RR/priority queues
+    // cout<<"aging (sort"<<endl;
     ListIterator<Thread *> *iter = new ListIterator<Thread *>((List<Thread *>*)list);
     for (; !iter->IsDone(); iter->Next()) {
         Thread* thread = iter->Item();
+        if(!list->IsInList(thread))break;//
+        list->Remove(thread);
         if(kernel->stats->totalTicks - thread->getReadyTime() >= 1500){
-            list->Remove(thread);
             thread->setReadyTime(kernel->stats->totalTicks);
             thread->setPriority(thread->getPriority()+10);
         }
@@ -245,25 +247,28 @@ Scheduler::aging(SortedList<Thread*>* list)// OAO
 
 
 
-
-void
-Scheduler::aging(List<Thread*>* list)// OAO
-{// list = SJF/RR/priority queues
-    ListIterator<Thread *> *iter = new ListIterator<Thread *>((List<Thread *>*)list);
-    for (; !iter->IsDone(); iter->Next()) {
-        Thread* thread = iter->Item();
-        if(kernel->stats->totalTicks - thread->getReadyTime() >= 1500){
-            list->Remove(thread);
-            thread->setReadyTime(kernel->stats->totalTicks);
-            thread->setPriority(thread->getPriority()+10);
-        }
-        moveBetweenQueues(thread);
-    }
-}
+// not reach
+// void
+// Scheduler::aging(List<Thread*>* list)// OAO
+// {// list = SJF/RR/priority queues
+//     // cout<<"aging"<<endl;
+//     ListIterator<Thread *> *iter = new ListIterator<Thread *>((List<Thread *>*)list);
+//     for (; !iter->IsDone(); iter->Next()) {
+//         Thread* thread = iter->Item();
+//         if(!list->IsInList(thread))break;//
+//         list->Remove(thread);
+//         if(kernel->stats->totalTicks - thread->getReadyTime() >= 1500){
+//             thread->setReadyTime(kernel->stats->totalTicks);
+//             thread->setPriority(thread->getPriority()+10);
+//         }
+//         moveBetweenQueues(thread);
+//     }
+//     // cout<<"end aging"<<endl;
+// }
 void Scheduler::moveBetweenQueues(Thread* thread)//OAO
 {
     // move between queues
-    cout<<"MBQ!!!"<<endl;
+    // cout<<"MBQ!!!"<<endl;
     if(thread->getPriority()>=100){
         // SJF
         //thr
@@ -280,4 +285,6 @@ void Scheduler::moveBetweenQueues(Thread* thread)//OAO
         cout<<"Tick "<<kernel->stats->totalTicks<<" Thread "<<thread->getID()<<" move to Priority queue"<<endl;
         readyList->Insert(thread);
     }
+
+    // cout<<"MBQ end!!!"<<endl;
 }

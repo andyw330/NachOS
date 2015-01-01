@@ -1,0 +1,209 @@
+test1
+test2
+Thread 0	ProcessNew	0
+Thread 1	test1		(Pri: 75)
+Thread 1	ProcessNew	10
+Thread 1	ProcessReady	10
+Tick 10 Thread 1 move to RR queue
+Thread 2	test2		(Pri: 75)
+Thread 2	ProcessNew	20
+Thread 2	ProcessReady	20
+Tick 20 Thread 2 move to RR queue
+Thread 0	ProcessFinish	30
+Thread 0	ProcessSleep	30
+Thread 1	ProcessRunning	30
+Tick 52 Thread 1 change its burst time to 11
+Tick 52 Thread1 changes its priority to 25
+Thread 1	ProcessReady	500
+Tick 500 Thread 1 move to Priority queue
+Tick 500 Thread 1 move to Priority queue
+Thread 2	ProcessRunning	500
+Tick 500 Thread 1 change its burst time to 229.5
+Tick 522 Thread 2 change its burst time to 11
+Tick 522 Thread2 changes its priority to 40
+Thread 2	ProcessReady	1000
+Tick 1000 Thread 2 move to Priority queue
+Tick 1000 Thread 2 move to Priority queue
+Tick 1000 Thread 1 move to Priority queue
+Thread 2	ProcessReady	1500
+Tick 1500 Thread 2 move to Priority queue
+Tick 1500 Thread 2 move to Priority queue
+Tick 1500 Thread 1 move to Priority queue
+Thread 2	ProcessReady	2000
+Tick 2000 Thread 2 move to Priority queue
+Tick 2000 Thread 2 move to Priority queue
+Tick 2000 Thread1 changes its priority to 35
+Tick 2000 Thread 1 move to Priority queue
+Thread 2	ProcessReady	2500
+Tick 2500 Thread 2 move to Priority queue
+Tick 2500 Thread 2 move to Priority queue
+Tick 2500 Thread 1 move to Priority queue
+Thread 2	ProcessReady	3000
+Tick 3000 Thread 2 move to Priority queue
+Tick 3000 Thread 2 move to Priority queue
+Tick 3000 Thread 1 move to Priority queue
+Thread 2	ProcessReady	3500
+Tick 3500 Thread 2 move to Priority queue
+Tick 3500 Thread 2 move to Priority queue
+Tick 3500 Thread1 changes its priority to 45
+Tick 3500 Thread 1 move to Priority queue
+Tick 3500 Thread 2 move to Priority queue
+Thread 1	ProcessRunning	3500
+Tick 3500 Thread 2 change its burst time to 1494.5
+Thread 1	ProcessReady	4000
+Tick 4000 Thread 1 move to Priority queue
+Tick 4000 Thread 1 move to Priority queue
+Tick 4000 Thread 2 move to Priority queue
+return value:0
+Thread 1	ProcessFinish	4091
+Thread 1	ProcessSleep	4091
+Tick 4091 Thread 2 move to Priority queue
+Thread 2	ProcessRunning	4091
+Tick 4091 Thread 1 change its burst time to 410.25
+Thread 2	ProcessReady	4500
+Tick 4500 Thread 2 move to Priority queue
+Tick 4500 Thread 2 move to Priority queue
+Thread 2	ProcessReady	5000
+Tick 5000 Thread 2 move to Priority queue
+Tick 5000 Thread 2 move to Priority queue
+Thread 2	ProcessReady	5500
+Tick 5500 Thread 2 move to Priority queue
+Tick 5500 Thread 2 move to Priority queue
+Thread 2	ProcessReady	6000
+Tick 6000 Thread 2 move to Priority queue
+Tick 6000 Thread 2 move to Priority queue
+Thread 2	ProcessReady	6500
+Tick 6500 Thread 2 move to Priority queue
+Tick 6500 Thread 2 move to Priority queue
+Thread 2	ProcessReady	7000
+Tick 7000 Thread 2 move to Priority queue
+Tick 7000 Thread 2 move to Priority queue
+Thread 2	ProcessReady	7500
+Tick 7500 Thread 2 move to Priority queue
+Tick 7500 Thread 2 move to Priority queue
+Thread 2	ProcessReady	8000
+Tick 8000 Thread 2 move to Priority queue
+Tick 8000 Thread 2 move to Priority queue
+Thread 2	ProcessReady	8500
+Tick 8500 Thread 2 move to Priority queue
+Tick 8500 Thread 2 move to Priority queue
+Thread 2	ProcessReady	9000
+Tick 9000 Thread 2 move to Priority queue
+Tick 9000 Thread 2 move to Priority queue
+Thread 2	ProcessReady	9500
+Tick 9500 Thread 2 move to Priority queue
+Tick 9500 Thread 2 move to Priority queue
+Thread 2	ProcessReady	10000
+Tick 10000 Thread 2 move to Priority queue
+Tick 10000 Thread 2 move to Priority queue
+Thread 2	ProcessReady	10500
+Tick 10500 Thread 2 move to Priority queue
+Tick 10500 Thread 2 move to Priority queue
+Thread 2	ProcessReady	11000
+Tick 11000 Thread 2 move to Priority queue
+Tick 11000 Thread 2 move to Priority queue
+Thread 2	ProcessReady	11500
+Tick 11500 Thread 2 move to Priority queue
+Tick 11500 Thread 2 move to Priority queue
+Thread 2	ProcessReady	12000
+Tick 12000 Thread 2 move to Priority queue
+Tick 12000 Thread 2 move to Priority queue
+Thread 2	ProcessReady	12500
+Tick 12500 Thread 2 move to Priority queue
+Tick 12500 Thread 2 move to Priority queue
+Thread 2	ProcessReady	13000
+Tick 13000 Thread 2 move to Priority queue
+Tick 13000 Thread 2 move to Priority queue
+Thread 2	ProcessReady	13500
+Tick 13500 Thread 2 move to Priority queue
+Tick 13500 Thread 2 move to Priority queue
+Thread 2	ProcessReady	14000
+Tick 14000 Thread 2 move to Priority queue
+Tick 14000 Thread 2 move to Priority queue
+Thread 2	ProcessReady	14500
+Tick 14500 Thread 2 move to Priority queue
+Tick 14500 Thread 2 move to Priority queue
+Thread 2	ProcessReady	15000
+Tick 15000 Thread 2 move to Priority queue
+Tick 15000 Thread 2 move to Priority queue
+Thread 2	ProcessReady	15500
+Tick 15500 Thread 2 move to Priority queue
+Tick 15500 Thread 2 move to Priority queue
+Thread 2	ProcessReady	16000
+Tick 16000 Thread 2 move to Priority queue
+Tick 16000 Thread 2 move to Priority queue
+Thread 2	ProcessReady	16500
+Tick 16500 Thread 2 move to Priority queue
+Tick 16500 Thread 2 move to Priority queue
+Thread 2	ProcessReady	17000
+Tick 17000 Thread 2 move to Priority queue
+Tick 17000 Thread 2 move to Priority queue
+Thread 2	ProcessReady	17500
+Tick 17500 Thread 2 move to Priority queue
+Tick 17500 Thread 2 move to Priority queue
+Thread 2	ProcessReady	18000
+Tick 18000 Thread 2 move to Priority queue
+Tick 18000 Thread 2 move to Priority queue
+Thread 2	ProcessReady	18500
+Tick 18500 Thread 2 move to Priority queue
+Tick 18500 Thread 2 move to Priority queue
+Thread 2	ProcessReady	19000
+Tick 19000 Thread 2 move to Priority queue
+Tick 19000 Thread 2 move to Priority queue
+Thread 2	ProcessReady	19500
+Tick 19500 Thread 2 move to Priority queue
+Tick 19500 Thread 2 move to Priority queue
+Thread 2	ProcessReady	20000
+Tick 20000 Thread 2 move to Priority queue
+Tick 20000 Thread 2 move to Priority queue
+Thread 2	ProcessReady	20500
+Tick 20500 Thread 2 move to Priority queue
+Tick 20500 Thread 2 move to Priority queue
+Thread 2	ProcessReady	21000
+Tick 21000 Thread 2 move to Priority queue
+Tick 21000 Thread 2 move to Priority queue
+Thread 2	ProcessReady	21500
+Tick 21500 Thread 2 move to Priority queue
+Tick 21500 Thread 2 move to Priority queue
+Thread 2	ProcessReady	22000
+Tick 22000 Thread 2 move to Priority queue
+Tick 22000 Thread 2 move to Priority queue
+Thread 2	ProcessReady	22500
+Tick 22500 Thread 2 move to Priority queue
+Tick 22500 Thread 2 move to Priority queue
+Thread 2	ProcessReady	23000
+Tick 23000 Thread 2 move to Priority queue
+Tick 23000 Thread 2 move to Priority queue
+Thread 2	ProcessReady	23500
+Tick 23500 Thread 2 move to Priority queue
+Tick 23500 Thread 2 move to Priority queue
+Thread 2	ProcessReady	24000
+Tick 24000 Thread 2 move to Priority queue
+Tick 24000 Thread 2 move to Priority queue
+Thread 2	ProcessReady	24500
+Tick 24500 Thread 2 move to Priority queue
+Tick 24500 Thread 2 move to Priority queue
+Thread 2	ProcessReady	25000
+Tick 25000 Thread 2 move to Priority queue
+Tick 25000 Thread 2 move to Priority queue
+Thread 2	ProcessReady	25500
+Tick 25500 Thread 2 move to Priority queue
+Tick 25500 Thread 2 move to Priority queue
+Thread 2	ProcessReady	26000
+Tick 26000 Thread 2 move to Priority queue
+Tick 26000 Thread 2 move to Priority queue
+Thread 2	ProcessReady	26500
+Tick 26500 Thread 2 move to Priority queue
+Tick 26500 Thread 2 move to Priority queue
+return value:0
+Thread 2	ProcessFinish	26642
+Thread 2	ProcessSleep	26642
+No threads ready or runnable, and no pending interrupts.
+Assuming the program completed.
+Machine halting!
+
+Ticks: total 27000, idle 358, system 580, user 26062
+Disk I/O: reads 0, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 0
+Network I/O: packets received 0, sent 0
