@@ -13,6 +13,7 @@ Thread 0	ProcessFinish	30
 Thread 0	ProcessSleep	30
 Tick 30 Thread 1 move to Priority queue
 Thread 2	ProcessRunning	30
+Tick 30 Thread 0 change its burst time to 15
 Tick 52 Thread 2 change its burst time to 11
 Tick 52 Thread2 changes its priority to 80
 Thread 2	ProcessReady	500

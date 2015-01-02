@@ -7,6 +7,7 @@ Tick 10 Thread 1 move to SJF queue
 Thread 0	ProcessFinish	20
 Thread 0	ProcessSleep	20
 Thread 1	ProcessRunning	20
+Tick 20 Thread 0 change its burst time to 10
 Tick 42 Thread 1 change its burst time to 11
 Tick 42 Thread1 changes its priority to 100
 Tick 162 Thread 1 change its burst time to 65.5

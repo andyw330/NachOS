@@ -175,7 +175,7 @@ Scheduler::Run (Thread *nextThread, bool finishing)
 
     // OAO 2-2?
     // because I don't want to print the information of Thread 0?
-    if(oldThread->getID())
+    // if(oldThread->getID())
         oldThread->setBurstTime( (kernel->stats->totalTicks - oldThread->getStartBurstTime() + oldThread->getBurstTime()) / 2.0 );//OAO 2-2?
     nextThread->setStartBurstTime(kernel->stats->totalTicks);// OAO 2-2
     
